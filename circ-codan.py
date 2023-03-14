@@ -1,12 +1,20 @@
+#!/usr/bin/env python3
+
+# circCodAn was developed from CodAn tool on March, 2023.
+# circCodAn predicts CDS in circRNA sequences
+# Author: Denilson Fagundes Barbosa (denilsonfbar@gmail.com)
+
 import os
 import pandas as pd
+import datetime as dt
+import multiprocessing
+from optparse import OptionParser
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
 
-## Considers zero-indexed sequences
-#
+# This function considers zero-indexed sequences
 def calcule_circ_orf_details(circrna_seq_str, orf_start_position):
 
     stop_codons = ['TAA', 'TAG', 'TGA']
@@ -169,3 +177,59 @@ def circCodAn_output_changes(output_dir, circrna_fasta_file):
     if os.path.exists(output_dir + "5utr_sequences.fasta"):
         os.remove(output_dir + "5utr_sequences.fasta")
 
+
+def __main__():
+
+    parser = OptionParser()
+    parser.add_option("-f", "--file", dest="file", help="Mandatory - input circRNAs file (FASTA format), /path/to/circRNA_seqs.fa", metavar="file", default=None)
+    parser.add_option("-o", "--output", dest="output_folder", help="Optional - path to output folder, /path/to/output/folder/\nif not declared, it will be created at the circRNAs input folder [default=\"circCodAn_output\"]", metavar="folder", default=None)
+    (options, args) = parser.parse_args()
+    
+    if options.file == None:
+        print("""
+circCodAn v1.0
+
+Use -h for help. 
+Basic usage to find CDS in circRNA sequences:
+
+circ-codan.py -f circRNA_seqs.fa
+
+        """)
+        quit()
+
+    if options.file != None and os.path.isfile(options.file) == False:
+        print("The circRNAs file indicated is not a valid file.")
+        print('Please, indicate a valid FASTA file to the \"-f\" option.')
+        quit()
+
+    if options.output_folder == None:
+        options.output_folder = ""
+        folder_l = options.file.split("/")
+        for i in range(0, len(folder_l)-1):
+            options.output_folder += str(folder_l[i])+"/"
+        options.output_folder += "circCodAn_output/"
+    elif options.output_folder.endswith("/") == False:
+        options.output_folder += "/"
+    if os.path.isdir(options.output_folder) == False:
+        os.mkdir(options.output_folder)
+    
+    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> started circCodAn v1.0")
+    
+    script_path = os.path.abspath(__file__)
+    CodAn_path = script_path.replace("circ-codan.py","CodAn/bin")
+    model_path = script_path.replace("circ-codan.py","models/VERT_circ")
+    n_threads = multiprocessing.cpu_count()
+
+    call_os = 'export PATH=' + CodAn_path + ':$PATH' + ' && ' \
+            + 'python3 ' + CodAn_path +'/codan.py -t ' + options.file \
+            + ' -o ' + options.output_folder + ' -m ' + model_path + ' -s plus -c ' + str(n_threads)
+    os.system(call_os)
+
+    circCodAn_output_changes(options.output_folder, options.file)
+
+    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> prediction finished.")
+    print("\tPredicted CDS sequences FASTA file  -> "+options.output_folder+"CDS_predicted_seqs.fa")
+    print("\tGTF file with prediction annotation -> "+options.output_folder+"CDS_prediction.gtf")
+
+
+__main__()
