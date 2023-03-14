@@ -1,0 +1,10 @@
+name: circcodan_env
+channels:
+  - bioconda
+dependencies:
+  - python=3.7
+  - biopython
+  - perl
+  - perl-bioperl 
+  - perl-mce 
+  - blast
