@@ -14,6 +14,14 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
 
+def count_sequences(fasta_file):
+    count = 0
+    with open(fasta_file, "r") as handle:
+        for record in SeqIO.parse(handle, "fasta"):
+            count += 1
+    return count
+
+
 # This function considers zero-indexed sequences
 def calcule_circ_orf_details(circrna_seq_str, orf_start_position):
 
@@ -108,7 +116,6 @@ def create_cds_circrna_predicted_gtf_file(gtf_file_CodAn_prediction, new_gtf_fil
         
         seqname_gtf = circrna_id
         strand_gtf = row["strand"]
-        frame_gtf = row["frame"]
 
         circrna_seq_str = circrna_seqs_file_idx[circrna_id].seq
 
@@ -116,6 +123,8 @@ def create_cds_circrna_predicted_gtf_file(gtf_file_CodAn_prediction, new_gtf_fil
 
         feature_gtf = "start_codon"
         start_gtf = orf_start_position + 1  # index correction
+        frame_gtf = start_gtf % 3
+        if frame_gtf == 0: frame_gtf = 3
 
         end_gtf = start_gtf + 2
         if end_gtf == len(circrna_seq_str) + 1: end_gtf = 1
@@ -139,6 +148,8 @@ def create_cds_circrna_predicted_gtf_file(gtf_file_CodAn_prediction, new_gtf_fil
         start_gtf = end_gtf - 2
         if start_gtf == 0: start_gtf = len(circrna_seq_str)
         elif start_gtf == -1: start_gtf = len(circrna_seq_str) - 1
+        frame_gtf = start_gtf % 3
+        if frame_gtf == 0: frame_gtf = 3
 
         attribute_gtf = "."
         if orf_length == len(circrna_seq_str) * orf_trans_cycles:  # infinite ORF
@@ -176,6 +187,8 @@ def circCodAn_output_changes(output_dir, circrna_fasta_file):
 
     if os.path.exists(output_dir + "5utr_sequences.fasta"):
         os.remove(output_dir + "5utr_sequences.fasta")
+    
+    return n_predictions
 
 
 def __main__():
@@ -190,9 +203,9 @@ def __main__():
 circCodAn v1.0
 
 Use -h for help. 
-Basic usage to find CDS in circRNA sequences:
+Basic example to find CDS in circRNA sequences:
 
-circ-codan.py -f circRNA_seqs.fa
+python3 circ-codan.py -f example/circRNA_seqs.fa
 
         """)
         quit()
@@ -202,6 +215,8 @@ circ-codan.py -f circRNA_seqs.fa
         print('Please, indicate a valid FASTA file to the \"-f\" option.')
         quit()
 
+    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> started circCodAn v1.0")
+    
     if options.output_folder == None:
         options.output_folder = ""
         folder_l = options.file.split("/")
@@ -213,23 +228,25 @@ circ-codan.py -f circRNA_seqs.fa
     if os.path.isdir(options.output_folder) == False:
         os.mkdir(options.output_folder)
     
-    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> started circCodAn v1.0")
-    
     script_path = os.path.abspath(__file__)
     CodAn_path = script_path.replace("circ-codan.py","CodAn/bin")
     model_path = script_path.replace("circ-codan.py","models/VERT_circ")
     n_threads = multiprocessing.cpu_count()
+    n_samples = count_sequences(options.file)
 
     call_os = 'export PATH=' + CodAn_path + ':$PATH' + ' && ' \
             + 'python3 ' + CodAn_path +'/codan.py -t ' + options.file \
-            + ' -o ' + options.output_folder + ' -m ' + model_path + ' -s plus -c ' + str(n_threads)
+            + ' -o ' + options.output_folder + ' -m ' + model_path + ' -s plus -c ' + str(n_threads) \
+            + ' > /dev/null 2>&1'
     os.system(call_os)
 
-    circCodAn_output_changes(options.output_folder, options.file)
+    n_predictions = circCodAn_output_changes(options.output_folder, options.file)
 
-    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> prediction finished.")
-    print("\tPredicted CDS sequences FASTA file  -> "+options.output_folder+"CDS_predicted_seqs.fa")
-    print("\tGTF file with prediction annotation -> "+options.output_folder+"CDS_prediction.gtf")
+    print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> prediction finished")
+    print("Number of input sequences -> " + str(n_samples))
+    print("Number of predicted CDSs  -> " + str(n_predictions))
+    print("Predicted CDS sequences FASTA file  -> " + options.output_folder+"CDS_predicted_seqs.fa")
+    print("GTF file with prediction annotation -> " + options.output_folder+"CDS_prediction.gtf")
 
 
 __main__()
