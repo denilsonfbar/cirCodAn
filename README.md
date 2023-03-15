@@ -5,7 +5,7 @@ circCodAn
 **circCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
 
 
-# Installation
+## Installation
 
 Clone the circCodAn repository:
 ```
@@ -33,7 +33,7 @@ conda activate circcodan_env
 ```
 
 
-# Running
+## Running
 
 Run the prediction example using Python interpreter:
 ```
@@ -78,7 +78,7 @@ Predicted peptides FASTA file -> example/circCodAn_output/CDS_predicted_seqs_aa.
 The files with the outputs of circCodAn execution are recorded at the addresses given.
 
 
-# Manual installation
+## Manual installation
 
 Install the following requirements:
 
@@ -89,7 +89,7 @@ Install the following requirements:
 Carry out of the same steps described in **Installation** section, except for creating and activating the Conda environment.
 
 
-# Usage
+## Usage
 
 ```
 Usage: circ-codan.py [options]
@@ -110,18 +110,18 @@ Basic example to find CDS in circRNA sequences:
 python3 circ-codan.py -f example/circRNA_seqs.fa
 ```
 
-# Reference
+## Reference
 
 If you use or discuss circCodAn, please cite:
 
 (not published yet)
 
 
-# License
+## License
 
 [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
 
 
-# Contact
+## Contact
 
 To report bugs, to ask for help and to give any feedback, please contact denilsonfbar@gmail.com
