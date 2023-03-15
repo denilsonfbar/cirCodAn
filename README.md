@@ -82,7 +82,7 @@ The files with the outputs of circCodAn execution are recorded at the addresses 
 
 Install the following requirements:
 
-- [Python3](https://www.python.org/), [Pandas] (https://pandas.pydata.org/docs/getting_started/install.html) and [Biopython](https://biopython.org/wiki/Download)
+- [Python3](https://www.python.org/), [Pandas](https://pandas.pydata.org/docs/getting_started/install.html) and [Biopython](https://biopython.org/wiki/Download)
 - [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE)
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
 
@@ -123,6 +123,5 @@ If you use or discuss circCodAn, please cite:
 
 
 # Contact
-=======
 
 To report bugs, to ask for help and to give any feedback, please contact denilsonfbar@gmail.com
