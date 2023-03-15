@@ -1,7 +1,8 @@
 circCodAn
 =======
 **circCodAn** (**circ**ular **Cod**ing sequence **An**notator) is a computational tool designed to CDS prediction in circRNAs.
-**circCodAn** is an extension of the **CodAn** tool, disponível em [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
+
+**circCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
 
 
 # Installation
