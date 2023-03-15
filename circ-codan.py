@@ -22,6 +22,18 @@ def count_sequences(fasta_file):
     return count
 
 
+def translate_orfs_in_file(input_file, output_file):
+    
+    file_translated = open(output_file,"w")
+
+    for record in SeqIO.parse(input_file, "fasta"):
+        id_seq = str(record.id)
+        protein_seq = str(record.seq.translate())
+        file_translated.write(">"+id_seq+"\n"+protein_seq+"\n")
+
+    file_translated.close()
+
+
 # This function considers zero-indexed sequences
 def calcule_circ_orf_details(circrna_seq_str, orf_start_position):
 
@@ -176,6 +188,8 @@ def circCodAn_output_changes(output_dir, circrna_fasta_file):
 
     n_predictions = create_cds_circrna_predicted_gtf_file(gtf_file_CodAn_prediction, new_gtf_file_name, circrna_fasta_file, new_cds_fasta_file)
 
+    translate_orfs_in_file(new_cds_fasta_file, output_dir + "CDS_predicted_seqs_aa.fa")
+
     if os.path.exists(fasta_file_CodAn_prediction):
         os.remove(fasta_file_CodAn_prediction)
 
@@ -245,8 +259,9 @@ python3 circ-codan.py -f example/circRNA_seqs.fa
     print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" -> prediction finished")
     print("Number of input sequences -> " + str(n_samples))
     print("Number of predicted CDSs  -> " + str(n_predictions))
-    print("Predicted CDS sequences FASTA file  -> " + options.output_folder+"CDS_predicted_seqs.fa")
-    print("GTF file with prediction annotation -> " + options.output_folder+"CDS_prediction.gtf")
+    print("GTF file with prediction annotation -> " + options.output_folder + "CDS_prediction.gtf")
+    print("Predicted CDS seqs FASTA file -> " + options.output_folder + "CDS_predicted_seqs.fa")
+    print("Predicted peptides FASTA file -> " + options.output_folder + "CDS_predicted_seqs_aa.fa")
 
 
 __main__()
