@@ -4,6 +4,8 @@ circCodAn
 
 **circCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
 
+Repository of circCodAn development: [https://github.com/denilsonfbar/circCodAn-exps](https://github.com/denilsonfbar/circCodAn-exps)
+
 
 ## Installation
 
@@ -114,8 +116,9 @@ python3 circ-codan.py -f example/circRNA_seqs.fa
 
 If you use or discuss circCodAn, please cite:
 
-(not published yet)
+(circCodAn book chapter under peer review)
 
+Nachtigall, P. G., Kashiwabara, A. Y., & Durham, A. M. (2021). CodAn: Predictive models for precise identification of coding regions in eukaryotic transcripts. Briefings in Bioinformatics, 22(3), 1–11. https://doi.org/10.1093/bib/bbaa045
 
 ## License
 
