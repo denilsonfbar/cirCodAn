@@ -7,7 +7,7 @@ circCodAn
 Repository of circCodAn development: [https://github.com/denilsonfbar/circCodAn-exps](https://github.com/denilsonfbar/circCodAn-exps)
 
 
-## Installation
+## Fast Installation
 
 Clone the circCodAn repository:
 ```
