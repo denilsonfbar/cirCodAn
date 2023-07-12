@@ -1,19 +1,29 @@
 model_name = "GeneralizedHiddenMarkovModel"
-state_names = ("begin", "CDS",   "start")
+state_names = ("nocod", "start", "CDS")
 observation_symbols = ("A", "C", "G", "T")
-initial_probabilities = ("begin": 1)
+initial_probabilities = ("nocod": 1)
 
 transitions = ( 
-"begin" | "begin": 0.9999;
-"start" | "begin": 0.0001;
+"nocod" | "nocod": 0.55;
+"start" | "nocod": 0.45;
 "CDS" | "start": 1;
 "CDS" | "CDS": 1;
 )
+
+nocoding_model = "model/intergenic.model"
 start_model = "../ghmm/model/start_composed_motifless.model"
-stop_model = "../ghmm/model/stop.model"
 cds_model = "model/cds.model"
-noncoding_model = "model/intergenic.model"
+
 cds_length = "../ghmm/model/cds_length.model"
+
+nocod = [ observation = nocoding_model ]
+start = [ observation = start_model
+          sequence_length = 7 ]
+CDS = [ observation = cds_model 
+        duration = cds_duration
+        extend_emission = (4, 0)
+        input_phase =  1
+        output_phase = 2 ]
 
 cds_duration = [ model_name="PhasedRunLengthDistribution"
                  input_phase = 0
@@ -21,14 +31,3 @@ cds_duration = [ model_name="PhasedRunLengthDistribution"
                  number_of_phases = 3
                  delta = 4
                  model = cds_length ]
-
-start = [ observation = start_model
-          sequence_length = 7 ]
-begin = [ observation = noncoding_model ]
-CDS = [ observation = cds_model 
-        duration = cds_duration
-        extend_emission = (4, 0)
-        input_phase =  1
-        output_phase = 2 ] 
-
-# myop_train = "cp ../ghmm/cnf/ghmm_intronless.model  ../ghmm/model/ghmm_intronless.model"

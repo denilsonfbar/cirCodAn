@@ -1,4 +1,4 @@
-name: circcodan_env
+name: circcodan
 channels:
   - bioconda
 dependencies:
