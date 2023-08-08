@@ -68,7 +68,7 @@ def calcule_circ_orf_details(circrna_seq_str, orf_start_position):
                 codon_test = circrna_seq_str[-2:] + circrna_seq_str[0]
             elif codon_test_end == circrna_len + 1: 
                 codon_test_end = 1
-                codon_test = circrna_seq_str[-1] + circrna_seq_str[0:1]
+                codon_test = circrna_seq_str[-1] + circrna_seq_str[:2]
         else:
             codon_test = circrna_seq_str[codon_test_start:codon_test_end+1]
 
