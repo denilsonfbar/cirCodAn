@@ -1,0 +1,48 @@
+model_name = "InhomogeneousMarkovChain"
+p0 = ("A" | "" : 0; # leaf
+"C" | "" : 0.22045; # leaf
+"G" | "" : 0; # leaf
+"T" | "" : 0.77955; # leaf
+)
+p1 = ("A" | "" : 0;
+"C" | "" : 0.419821;
+"G" | "" : 0;
+"T" | "" : 0.580179;
+"A" | "C": 0; # leaf
+"C" | "C": 0; # leaf
+"G" | "C": 0; # leaf
+"T" | "C": 1; # leaf
+"A" | "T": 0; # leaf
+"C" | "T": 0.538543; # leaf
+"G" | "T": 0; # leaf
+"T" | "T": 0.461457; # leaf
+)
+p2 = ("A" | "" : 1;
+"C" | "" : 0;
+"G" | "" : 0;
+"T" | "" : 0;
+"A" | "C": 1;
+"C" | "C": 0;
+"G" | "C": 0;
+"T" | "C": 0;
+"A" | "C T": 1; # leaf
+"C" | "C T": 0; # leaf
+"G" | "C T": 0; # leaf
+"T" | "C T": 0; # leaf
+"A" | "T": 1;
+"C" | "T": 0;
+"G" | "T": 0;
+"T" | "T": 0;
+"A" | "T C": 1; # leaf
+"C" | "T C": 0; # leaf
+"G" | "T C": 0; # leaf
+"T" | "T C": 0; # leaf
+"A" | "T T": 1; # leaf
+"C" | "T T": 0; # leaf
+"G" | "T T": 0; # leaf
+"T" | "T T": 0; # leaf
+)
+position_specific_distribution = ("p0","p1","p2")
+phased =0
+alphabet = ("A", "C", "G", "T")
+

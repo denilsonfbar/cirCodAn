@@ -1,3 +1,4 @@
+# Model BIC: -2.43027e+06
 model_name = "VariableLengthMarkovChain"
 probabilities = ("A" | "" : 0.272004;
 "C" | "" : 0.220152;
@@ -1365,3 +1366,4 @@ probabilities = ("A" | "" : 0.272004;
 "T" | "T T T T": 0.410636; # leaf
 )
 alphabet = ("A", "C", "G", "T")
+

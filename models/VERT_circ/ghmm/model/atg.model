@@ -5,3 +5,4 @@ p1 = ("A"| "": 1)
 p2 = ("T"| "": 1)
 p3 = ("G"| "": 1)
 position_specific_distribution = ("p1", "p2", "p3") 
+# myop_train = "cp ../ghmm/cnf/atg.model  ../ghmm/model/atg.model"

@@ -442,3 +442,4 @@ p3 = ("A" | "" : 0.250337;
 position_specific_distribution = ("p0","p1","p2","p3")
 phased =0
 alphabet = ("A", "C", "G", "T")
+
