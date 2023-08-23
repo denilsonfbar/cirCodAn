@@ -28,6 +28,8 @@ def translate_orfs_in_file(input_file, output_file):
 
     for record in SeqIO.parse(input_file, "fasta"):
         id_seq = str(record.id)
+        while len(record.seq) % 3 != 0:
+            record.seq = record.seq[:-1]
         protein_seq = str(record.seq.translate())
         file_translated.write(">"+id_seq+"\n"+protein_seq+"\n")
 
