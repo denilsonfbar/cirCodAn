@@ -1,22 +1,22 @@
-circCodAn
+cirCodAn
 =======
-**circCodAn** (**circ**ular **Cod**ing sequence **An**notator) is a computational tool designed to CDS prediction in circRNAs.
+**cirCodAn** (**cir**cular **Cod**ing sequence **An**notator) is a computational tool designed to CDS prediction in circRNAs.
 
-**circCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
+**cirCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
 
-Repository of circCodAn development: [https://github.com/denilsonfbar/circCodAn-exps](https://github.com/denilsonfbar/circCodAn-exps)
+Repository of cirCodAn development: [https://github.com/denilsonfbar/cirCodAn-dev-v1](https://github.com/denilsonfbar/cirCodAn-dev-v1)
 
 
 ## Fast Installation
 
-Clone the circCodAn repository:
+Clone the cirCodAn repository:
 ```
-git clone https://github.com/denilsonfbar/circCodAn.git
+git clone https://github.com/denilsonfbar/cirCodAn.git
 ```
 
-Enter the circCodAn folder:
+Enter the cirCodAn folder:
 ```
-cd circCodAn
+cd cirCodAn
 ```
 
 Change the permissions of the ```CodAn/bin/``` folder, to allow the creation of temporary files necessary for running the tool:
@@ -39,45 +39,45 @@ conda activate circcodan_env
 
 Run the prediction example using Python interpreter:
 ```
-python3 circ-codan.py -f example/circRNA_seqs.fa
+python3 circodan.py -f example/circRNA_seqs.fa
 ```
 
 OR
 
-Give execution privileges to the circCodAn script file:
+Give execution privileges to the cirCodAn script file:
 ```
-chmod +x circ-codan.py
+chmod +x circodan.py
 ```
 
 And run the example directly from the script file:
 ```
-./circ-codan.py -f example/circRNA_seqs.fa
+./circodan.py -f example/circRNA_seqs.fa
 ```
 
 OR
 
-If you need to run circCodAn from anywhere on the file system, update the PATH variable:
+If you need to run cirCodAn from anywhere on the file system, update the PATH variable:
 ```
-export PATH=$PATH:path/to/circCodAn
+export PATH=$PATH:path/to/cirCodAn
 ```
 
 And run the example from anywhere on the file system:
 ```
-circ-codan.py -f path/to/example/circRNA_seqs.fa
+circodan.py -f path/to/example/circRNA_seqs.fa
 ```
 
 ### Expected example output
 ```
-2023-03-15 17:07:25 -> started circCodAn v1.0
+2023-03-15 17:07:25 -> started cirCodAn v1.0
 2023-03-15 17:07:26 -> prediction finished
 Number of input sequences -> 138
-Number of predicted CDSs  -> 86
-GTF file with prediction annotation -> example/circCodAn_output/CDS_prediction.gtf
-Predicted CDS seqs FASTA file -> example/circCodAn_output/CDS_predicted_seqs.fa
-Predicted peptides FASTA file -> example/circCodAn_output/CDS_predicted_seqs_aa.fa
+Number of predicted CDSs  -> 104
+GTF file with prediction annotation -> example/cirCodAn_output/CDS_predicted.gtf
+Predicted CDS seqs FASTA file -> example/cirCodAn_output/CDS_predicted_seqs.fa
+Predicted peptides FASTA file -> example/cirCodAn_output/CDS_predicted_seqs_aa.fa
 ```
 
-The files with the outputs of circCodAn execution are recorded at the addresses given.
+The files with the outputs of cirCodAn execution are recorded at the addresses given.
 
 
 ## Manual installation
@@ -94,7 +94,7 @@ Carry out of the same steps described in **Installation** section, except for cr
 ## Usage
 
 ```
-Usage: circ-codan.py [options]
+Usage: circodan.py [options]
 
 Options:
   -h, --help            show this help message and exit
@@ -104,12 +104,12 @@ Options:
                         Optional - path to output folder,
                         /path/to/output/folder/ if not declared, it will be
                         created at the circRNAs input folder
-                        [default="circCodAn_output"]
+                        [default="cirCodAn_output"]
 ```
 
 Basic example to find CDS in circRNA sequences:
 ```
-python3 circ-codan.py -f example/circRNA_seqs.fa
+python3 circodan.py -f example/circRNA_seqs.fa
 ```
 
 ## Reference
