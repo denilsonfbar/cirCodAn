@@ -1,0 +1,8 @@
+model_name ="InhomogeneousMarkovChain"
+alphabet = ("A", "C", "G", "T")
+phased = 0
+p1 = ("C"| "": 1)
+p2 = ("A"| "": 1)
+p3 = ("T"| "": 1)
+position_specific_distribution = ("p1", "p2", "p3") 
+# myop_train = "cp ../ghmm/cnf/cat.model  ../ghmm/model/cat.model"

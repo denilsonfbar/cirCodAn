@@ -1,4 +1,4 @@
-name: circcodan
+name: circodan
 channels:
   - bioconda
 dependencies:

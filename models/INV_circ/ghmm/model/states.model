@@ -1,0 +1,620 @@
+model_name = "VariableLengthMarkovChain"
+probabilities = ("N" | "" : 0.399925;
+"Is0" | "" : 0;
+"If0" | "" : 0;
+"Ig0" | "" : 0;
+"Is1" | "" : 0;
+"If1" | "" : 0;
+"Ig1" | "" : 0;
+"Is2" | "" : 0;
+"If2" | "" : 0;
+"Ig2" | "" : 0;
+"EI0" | "" : 0;
+"EI1" | "" : 0;
+"EI2" | "" : 0;
+"ES" | "" : 0.100012;
+"ET0" | "" : 0;
+"ET1" | "" : 0;
+"ET2" | "" : 0;
+"start" | "" : 0.100012;
+"stop" | "" : 0.100012;
+"acc0" | "" : 0;
+"acc1" | "" : 0;
+"acc2" | "" : 0;
+"don0" | "" : 0;
+"don1" | "" : 0;
+"don2" | "" : 0;
+"E00" | "" : 0;
+"E01" | "" : 0;
+"E02" | "" : 0;
+"E10" | "" : 0;
+"E11" | "" : 0;
+"E12" | "" : 0;
+"E20" | "" : 0;
+"E21" | "" : 0;
+"E22" | "" : 0;
+"UTR5" | "" : 0;
+"rUTR5" | "" : 0;
+"UTR3" | "" : 0;
+"rUTR3" | "" : 0;
+"rIs0" | "" : 0;
+"rIf0" | "" : 0;
+"rIg0" | "" : 0;
+"rIs1" | "" : 0;
+"rIf1" | "" : 0;
+"rIg1" | "" : 0;
+"rIs2" | "" : 0;
+"rIf2" | "" : 0;
+"rIg2" | "" : 0;
+"rEI0" | "" : 0;
+"rEI1" | "" : 0;
+"rEI2" | "" : 0;
+"rES" | "" : 0.100012;
+"rET0" | "" : 0;
+"rET1" | "" : 0;
+"rET2" | "" : 0;
+"rstart" | "" : 0.100012;
+"rstop" | "" : 0.100012;
+"racc0" | "" : 0;
+"racc1" | "" : 0;
+"racc2" | "" : 0;
+"rdon0" | "" : 0;
+"rdon1" | "" : 0;
+"rdon2" | "" : 0;
+"rE00" | "" : 0;
+"rE01" | "" : 0;
+"rE02" | "" : 0;
+"rE10" | "" : 0;
+"rE11" | "" : 0;
+"rE12" | "" : 0;
+"rE20" | "" : 0;
+"rE21" | "" : 0;
+"rE22" | "" : 0;
+"I0" | "" : 0;
+"I1" | "" : 0;
+"I2" | "" : 0;
+"rI0" | "" : 0;
+"rI1" | "" : 0;
+"rI2" | "" : 0;
+"N" | "N": 0.499844; # leaf
+"Is0" | "N": 0; # leaf
+"If0" | "N": 0; # leaf
+"Ig0" | "N": 0; # leaf
+"Is1" | "N": 0; # leaf
+"If1" | "N": 0; # leaf
+"Ig1" | "N": 0; # leaf
+"Is2" | "N": 0; # leaf
+"If2" | "N": 0; # leaf
+"Ig2" | "N": 0; # leaf
+"EI0" | "N": 0; # leaf
+"EI1" | "N": 0; # leaf
+"EI2" | "N": 0; # leaf
+"ES" | "N": 0; # leaf
+"ET0" | "N": 0; # leaf
+"ET1" | "N": 0; # leaf
+"ET2" | "N": 0; # leaf
+"start" | "N": 0.250078; # leaf
+"stop" | "N": 0; # leaf
+"acc0" | "N": 0; # leaf
+"acc1" | "N": 0; # leaf
+"acc2" | "N": 0; # leaf
+"don0" | "N": 0; # leaf
+"don1" | "N": 0; # leaf
+"don2" | "N": 0; # leaf
+"E00" | "N": 0; # leaf
+"E01" | "N": 0; # leaf
+"E02" | "N": 0; # leaf
+"E10" | "N": 0; # leaf
+"E11" | "N": 0; # leaf
+"E12" | "N": 0; # leaf
+"E20" | "N": 0; # leaf
+"E21" | "N": 0; # leaf
+"E22" | "N": 0; # leaf
+"UTR5" | "N": 0; # leaf
+"rUTR5" | "N": 0; # leaf
+"UTR3" | "N": 0; # leaf
+"rUTR3" | "N": 0; # leaf
+"rIs0" | "N": 0; # leaf
+"rIf0" | "N": 0; # leaf
+"rIg0" | "N": 0; # leaf
+"rIs1" | "N": 0; # leaf
+"rIf1" | "N": 0; # leaf
+"rIg1" | "N": 0; # leaf
+"rIs2" | "N": 0; # leaf
+"rIf2" | "N": 0; # leaf
+"rIg2" | "N": 0; # leaf
+"rEI0" | "N": 0; # leaf
+"rEI1" | "N": 0; # leaf
+"rEI2" | "N": 0; # leaf
+"rES" | "N": 0; # leaf
+"rET0" | "N": 0; # leaf
+"rET1" | "N": 0; # leaf
+"rET2" | "N": 0; # leaf
+"rstart" | "N": 0; # leaf
+"rstop" | "N": 0.250078; # leaf
+"racc0" | "N": 0; # leaf
+"racc1" | "N": 0; # leaf
+"racc2" | "N": 0; # leaf
+"rdon0" | "N": 0; # leaf
+"rdon1" | "N": 0; # leaf
+"rdon2" | "N": 0; # leaf
+"rE00" | "N": 0; # leaf
+"rE01" | "N": 0; # leaf
+"rE02" | "N": 0; # leaf
+"rE10" | "N": 0; # leaf
+"rE11" | "N": 0; # leaf
+"rE12" | "N": 0; # leaf
+"rE20" | "N": 0; # leaf
+"rE21" | "N": 0; # leaf
+"rE22" | "N": 0; # leaf
+"I0" | "N": 0; # leaf
+"I1" | "N": 0; # leaf
+"I2" | "N": 0; # leaf
+"rI0" | "N": 0; # leaf
+"rI1" | "N": 0; # leaf
+"rI2" | "N": 0; # leaf
+"N" | "ES": 0; # leaf
+"Is0" | "ES": 0; # leaf
+"If0" | "ES": 0; # leaf
+"Ig0" | "ES": 0; # leaf
+"Is1" | "ES": 0; # leaf
+"If1" | "ES": 0; # leaf
+"Ig1" | "ES": 0; # leaf
+"Is2" | "ES": 0; # leaf
+"If2" | "ES": 0; # leaf
+"Ig2" | "ES": 0; # leaf
+"EI0" | "ES": 0; # leaf
+"EI1" | "ES": 0; # leaf
+"EI2" | "ES": 0; # leaf
+"ES" | "ES": 0; # leaf
+"ET0" | "ES": 0; # leaf
+"ET1" | "ES": 0; # leaf
+"ET2" | "ES": 0; # leaf
+"start" | "ES": 0; # leaf
+"stop" | "ES": 1; # leaf
+"acc0" | "ES": 0; # leaf
+"acc1" | "ES": 0; # leaf
+"acc2" | "ES": 0; # leaf
+"don0" | "ES": 0; # leaf
+"don1" | "ES": 0; # leaf
+"don2" | "ES": 0; # leaf
+"E00" | "ES": 0; # leaf
+"E01" | "ES": 0; # leaf
+"E02" | "ES": 0; # leaf
+"E10" | "ES": 0; # leaf
+"E11" | "ES": 0; # leaf
+"E12" | "ES": 0; # leaf
+"E20" | "ES": 0; # leaf
+"E21" | "ES": 0; # leaf
+"E22" | "ES": 0; # leaf
+"UTR5" | "ES": 0; # leaf
+"rUTR5" | "ES": 0; # leaf
+"UTR3" | "ES": 0; # leaf
+"rUTR3" | "ES": 0; # leaf
+"rIs0" | "ES": 0; # leaf
+"rIf0" | "ES": 0; # leaf
+"rIg0" | "ES": 0; # leaf
+"rIs1" | "ES": 0; # leaf
+"rIf1" | "ES": 0; # leaf
+"rIg1" | "ES": 0; # leaf
+"rIs2" | "ES": 0; # leaf
+"rIf2" | "ES": 0; # leaf
+"rIg2" | "ES": 0; # leaf
+"rEI0" | "ES": 0; # leaf
+"rEI1" | "ES": 0; # leaf
+"rEI2" | "ES": 0; # leaf
+"rES" | "ES": 0; # leaf
+"rET0" | "ES": 0; # leaf
+"rET1" | "ES": 0; # leaf
+"rET2" | "ES": 0; # leaf
+"rstart" | "ES": 0; # leaf
+"rstop" | "ES": 0; # leaf
+"racc0" | "ES": 0; # leaf
+"racc1" | "ES": 0; # leaf
+"racc2" | "ES": 0; # leaf
+"rdon0" | "ES": 0; # leaf
+"rdon1" | "ES": 0; # leaf
+"rdon2" | "ES": 0; # leaf
+"rE00" | "ES": 0; # leaf
+"rE01" | "ES": 0; # leaf
+"rE02" | "ES": 0; # leaf
+"rE10" | "ES": 0; # leaf
+"rE11" | "ES": 0; # leaf
+"rE12" | "ES": 0; # leaf
+"rE20" | "ES": 0; # leaf
+"rE21" | "ES": 0; # leaf
+"rE22" | "ES": 0; # leaf
+"I0" | "ES": 0; # leaf
+"I1" | "ES": 0; # leaf
+"I2" | "ES": 0; # leaf
+"rI0" | "ES": 0; # leaf
+"rI1" | "ES": 0; # leaf
+"rI2" | "ES": 0; # leaf
+"N" | "start": 0; # leaf
+"Is0" | "start": 0; # leaf
+"If0" | "start": 0; # leaf
+"Ig0" | "start": 0; # leaf
+"Is1" | "start": 0; # leaf
+"If1" | "start": 0; # leaf
+"Ig1" | "start": 0; # leaf
+"Is2" | "start": 0; # leaf
+"If2" | "start": 0; # leaf
+"Ig2" | "start": 0; # leaf
+"EI0" | "start": 0; # leaf
+"EI1" | "start": 0; # leaf
+"EI2" | "start": 0; # leaf
+"ES" | "start": 1; # leaf
+"ET0" | "start": 0; # leaf
+"ET1" | "start": 0; # leaf
+"ET2" | "start": 0; # leaf
+"start" | "start": 0; # leaf
+"stop" | "start": 0; # leaf
+"acc0" | "start": 0; # leaf
+"acc1" | "start": 0; # leaf
+"acc2" | "start": 0; # leaf
+"don0" | "start": 0; # leaf
+"don1" | "start": 0; # leaf
+"don2" | "start": 0; # leaf
+"E00" | "start": 0; # leaf
+"E01" | "start": 0; # leaf
+"E02" | "start": 0; # leaf
+"E10" | "start": 0; # leaf
+"E11" | "start": 0; # leaf
+"E12" | "start": 0; # leaf
+"E20" | "start": 0; # leaf
+"E21" | "start": 0; # leaf
+"E22" | "start": 0; # leaf
+"UTR5" | "start": 0; # leaf
+"rUTR5" | "start": 0; # leaf
+"UTR3" | "start": 0; # leaf
+"rUTR3" | "start": 0; # leaf
+"rIs0" | "start": 0; # leaf
+"rIf0" | "start": 0; # leaf
+"rIg0" | "start": 0; # leaf
+"rIs1" | "start": 0; # leaf
+"rIf1" | "start": 0; # leaf
+"rIg1" | "start": 0; # leaf
+"rIs2" | "start": 0; # leaf
+"rIf2" | "start": 0; # leaf
+"rIg2" | "start": 0; # leaf
+"rEI0" | "start": 0; # leaf
+"rEI1" | "start": 0; # leaf
+"rEI2" | "start": 0; # leaf
+"rES" | "start": 0; # leaf
+"rET0" | "start": 0; # leaf
+"rET1" | "start": 0; # leaf
+"rET2" | "start": 0; # leaf
+"rstart" | "start": 0; # leaf
+"rstop" | "start": 0; # leaf
+"racc0" | "start": 0; # leaf
+"racc1" | "start": 0; # leaf
+"racc2" | "start": 0; # leaf
+"rdon0" | "start": 0; # leaf
+"rdon1" | "start": 0; # leaf
+"rdon2" | "start": 0; # leaf
+"rE00" | "start": 0; # leaf
+"rE01" | "start": 0; # leaf
+"rE02" | "start": 0; # leaf
+"rE10" | "start": 0; # leaf
+"rE11" | "start": 0; # leaf
+"rE12" | "start": 0; # leaf
+"rE20" | "start": 0; # leaf
+"rE21" | "start": 0; # leaf
+"rE22" | "start": 0; # leaf
+"I0" | "start": 0; # leaf
+"I1" | "start": 0; # leaf
+"I2" | "start": 0; # leaf
+"rI0" | "start": 0; # leaf
+"rI1" | "start": 0; # leaf
+"rI2" | "start": 0; # leaf
+"N" | "stop": 1; # leaf
+"Is0" | "stop": 0; # leaf
+"If0" | "stop": 0; # leaf
+"Ig0" | "stop": 0; # leaf
+"Is1" | "stop": 0; # leaf
+"If1" | "stop": 0; # leaf
+"Ig1" | "stop": 0; # leaf
+"Is2" | "stop": 0; # leaf
+"If2" | "stop": 0; # leaf
+"Ig2" | "stop": 0; # leaf
+"EI0" | "stop": 0; # leaf
+"EI1" | "stop": 0; # leaf
+"EI2" | "stop": 0; # leaf
+"ES" | "stop": 0; # leaf
+"ET0" | "stop": 0; # leaf
+"ET1" | "stop": 0; # leaf
+"ET2" | "stop": 0; # leaf
+"start" | "stop": 0; # leaf
+"stop" | "stop": 0; # leaf
+"acc0" | "stop": 0; # leaf
+"acc1" | "stop": 0; # leaf
+"acc2" | "stop": 0; # leaf
+"don0" | "stop": 0; # leaf
+"don1" | "stop": 0; # leaf
+"don2" | "stop": 0; # leaf
+"E00" | "stop": 0; # leaf
+"E01" | "stop": 0; # leaf
+"E02" | "stop": 0; # leaf
+"E10" | "stop": 0; # leaf
+"E11" | "stop": 0; # leaf
+"E12" | "stop": 0; # leaf
+"E20" | "stop": 0; # leaf
+"E21" | "stop": 0; # leaf
+"E22" | "stop": 0; # leaf
+"UTR5" | "stop": 0; # leaf
+"rUTR5" | "stop": 0; # leaf
+"UTR3" | "stop": 0; # leaf
+"rUTR3" | "stop": 0; # leaf
+"rIs0" | "stop": 0; # leaf
+"rIf0" | "stop": 0; # leaf
+"rIg0" | "stop": 0; # leaf
+"rIs1" | "stop": 0; # leaf
+"rIf1" | "stop": 0; # leaf
+"rIg1" | "stop": 0; # leaf
+"rIs2" | "stop": 0; # leaf
+"rIf2" | "stop": 0; # leaf
+"rIg2" | "stop": 0; # leaf
+"rEI0" | "stop": 0; # leaf
+"rEI1" | "stop": 0; # leaf
+"rEI2" | "stop": 0; # leaf
+"rES" | "stop": 0; # leaf
+"rET0" | "stop": 0; # leaf
+"rET1" | "stop": 0; # leaf
+"rET2" | "stop": 0; # leaf
+"rstart" | "stop": 0; # leaf
+"rstop" | "stop": 0; # leaf
+"racc0" | "stop": 0; # leaf
+"racc1" | "stop": 0; # leaf
+"racc2" | "stop": 0; # leaf
+"rdon0" | "stop": 0; # leaf
+"rdon1" | "stop": 0; # leaf
+"rdon2" | "stop": 0; # leaf
+"rE00" | "stop": 0; # leaf
+"rE01" | "stop": 0; # leaf
+"rE02" | "stop": 0; # leaf
+"rE10" | "stop": 0; # leaf
+"rE11" | "stop": 0; # leaf
+"rE12" | "stop": 0; # leaf
+"rE20" | "stop": 0; # leaf
+"rE21" | "stop": 0; # leaf
+"rE22" | "stop": 0; # leaf
+"I0" | "stop": 0; # leaf
+"I1" | "stop": 0; # leaf
+"I2" | "stop": 0; # leaf
+"rI0" | "stop": 0; # leaf
+"rI1" | "stop": 0; # leaf
+"rI2" | "stop": 0; # leaf
+"N" | "rES": 0; # leaf
+"Is0" | "rES": 0; # leaf
+"If0" | "rES": 0; # leaf
+"Ig0" | "rES": 0; # leaf
+"Is1" | "rES": 0; # leaf
+"If1" | "rES": 0; # leaf
+"Ig1" | "rES": 0; # leaf
+"Is2" | "rES": 0; # leaf
+"If2" | "rES": 0; # leaf
+"Ig2" | "rES": 0; # leaf
+"EI0" | "rES": 0; # leaf
+"EI1" | "rES": 0; # leaf
+"EI2" | "rES": 0; # leaf
+"ES" | "rES": 0; # leaf
+"ET0" | "rES": 0; # leaf
+"ET1" | "rES": 0; # leaf
+"ET2" | "rES": 0; # leaf
+"start" | "rES": 0; # leaf
+"stop" | "rES": 0; # leaf
+"acc0" | "rES": 0; # leaf
+"acc1" | "rES": 0; # leaf
+"acc2" | "rES": 0; # leaf
+"don0" | "rES": 0; # leaf
+"don1" | "rES": 0; # leaf
+"don2" | "rES": 0; # leaf
+"E00" | "rES": 0; # leaf
+"E01" | "rES": 0; # leaf
+"E02" | "rES": 0; # leaf
+"E10" | "rES": 0; # leaf
+"E11" | "rES": 0; # leaf
+"E12" | "rES": 0; # leaf
+"E20" | "rES": 0; # leaf
+"E21" | "rES": 0; # leaf
+"E22" | "rES": 0; # leaf
+"UTR5" | "rES": 0; # leaf
+"rUTR5" | "rES": 0; # leaf
+"UTR3" | "rES": 0; # leaf
+"rUTR3" | "rES": 0; # leaf
+"rIs0" | "rES": 0; # leaf
+"rIf0" | "rES": 0; # leaf
+"rIg0" | "rES": 0; # leaf
+"rIs1" | "rES": 0; # leaf
+"rIf1" | "rES": 0; # leaf
+"rIg1" | "rES": 0; # leaf
+"rIs2" | "rES": 0; # leaf
+"rIf2" | "rES": 0; # leaf
+"rIg2" | "rES": 0; # leaf
+"rEI0" | "rES": 0; # leaf
+"rEI1" | "rES": 0; # leaf
+"rEI2" | "rES": 0; # leaf
+"rES" | "rES": 0; # leaf
+"rET0" | "rES": 0; # leaf
+"rET1" | "rES": 0; # leaf
+"rET2" | "rES": 0; # leaf
+"rstart" | "rES": 1; # leaf
+"rstop" | "rES": 0; # leaf
+"racc0" | "rES": 0; # leaf
+"racc1" | "rES": 0; # leaf
+"racc2" | "rES": 0; # leaf
+"rdon0" | "rES": 0; # leaf
+"rdon1" | "rES": 0; # leaf
+"rdon2" | "rES": 0; # leaf
+"rE00" | "rES": 0; # leaf
+"rE01" | "rES": 0; # leaf
+"rE02" | "rES": 0; # leaf
+"rE10" | "rES": 0; # leaf
+"rE11" | "rES": 0; # leaf
+"rE12" | "rES": 0; # leaf
+"rE20" | "rES": 0; # leaf
+"rE21" | "rES": 0; # leaf
+"rE22" | "rES": 0; # leaf
+"I0" | "rES": 0; # leaf
+"I1" | "rES": 0; # leaf
+"I2" | "rES": 0; # leaf
+"rI0" | "rES": 0; # leaf
+"rI1" | "rES": 0; # leaf
+"rI2" | "rES": 0; # leaf
+"N" | "rstart": 1; # leaf
+"Is0" | "rstart": 0; # leaf
+"If0" | "rstart": 0; # leaf
+"Ig0" | "rstart": 0; # leaf
+"Is1" | "rstart": 0; # leaf
+"If1" | "rstart": 0; # leaf
+"Ig1" | "rstart": 0; # leaf
+"Is2" | "rstart": 0; # leaf
+"If2" | "rstart": 0; # leaf
+"Ig2" | "rstart": 0; # leaf
+"EI0" | "rstart": 0; # leaf
+"EI1" | "rstart": 0; # leaf
+"EI2" | "rstart": 0; # leaf
+"ES" | "rstart": 0; # leaf
+"ET0" | "rstart": 0; # leaf
+"ET1" | "rstart": 0; # leaf
+"ET2" | "rstart": 0; # leaf
+"start" | "rstart": 0; # leaf
+"stop" | "rstart": 0; # leaf
+"acc0" | "rstart": 0; # leaf
+"acc1" | "rstart": 0; # leaf
+"acc2" | "rstart": 0; # leaf
+"don0" | "rstart": 0; # leaf
+"don1" | "rstart": 0; # leaf
+"don2" | "rstart": 0; # leaf
+"E00" | "rstart": 0; # leaf
+"E01" | "rstart": 0; # leaf
+"E02" | "rstart": 0; # leaf
+"E10" | "rstart": 0; # leaf
+"E11" | "rstart": 0; # leaf
+"E12" | "rstart": 0; # leaf
+"E20" | "rstart": 0; # leaf
+"E21" | "rstart": 0; # leaf
+"E22" | "rstart": 0; # leaf
+"UTR5" | "rstart": 0; # leaf
+"rUTR5" | "rstart": 0; # leaf
+"UTR3" | "rstart": 0; # leaf
+"rUTR3" | "rstart": 0; # leaf
+"rIs0" | "rstart": 0; # leaf
+"rIf0" | "rstart": 0; # leaf
+"rIg0" | "rstart": 0; # leaf
+"rIs1" | "rstart": 0; # leaf
+"rIf1" | "rstart": 0; # leaf
+"rIg1" | "rstart": 0; # leaf
+"rIs2" | "rstart": 0; # leaf
+"rIf2" | "rstart": 0; # leaf
+"rIg2" | "rstart": 0; # leaf
+"rEI0" | "rstart": 0; # leaf
+"rEI1" | "rstart": 0; # leaf
+"rEI2" | "rstart": 0; # leaf
+"rES" | "rstart": 0; # leaf
+"rET0" | "rstart": 0; # leaf
+"rET1" | "rstart": 0; # leaf
+"rET2" | "rstart": 0; # leaf
+"rstart" | "rstart": 0; # leaf
+"rstop" | "rstart": 0; # leaf
+"racc0" | "rstart": 0; # leaf
+"racc1" | "rstart": 0; # leaf
+"racc2" | "rstart": 0; # leaf
+"rdon0" | "rstart": 0; # leaf
+"rdon1" | "rstart": 0; # leaf
+"rdon2" | "rstart": 0; # leaf
+"rE00" | "rstart": 0; # leaf
+"rE01" | "rstart": 0; # leaf
+"rE02" | "rstart": 0; # leaf
+"rE10" | "rstart": 0; # leaf
+"rE11" | "rstart": 0; # leaf
+"rE12" | "rstart": 0; # leaf
+"rE20" | "rstart": 0; # leaf
+"rE21" | "rstart": 0; # leaf
+"rE22" | "rstart": 0; # leaf
+"I0" | "rstart": 0; # leaf
+"I1" | "rstart": 0; # leaf
+"I2" | "rstart": 0; # leaf
+"rI0" | "rstart": 0; # leaf
+"rI1" | "rstart": 0; # leaf
+"rI2" | "rstart": 0; # leaf
+"N" | "rstop": 0; # leaf
+"Is0" | "rstop": 0; # leaf
+"If0" | "rstop": 0; # leaf
+"Ig0" | "rstop": 0; # leaf
+"Is1" | "rstop": 0; # leaf
+"If1" | "rstop": 0; # leaf
+"Ig1" | "rstop": 0; # leaf
+"Is2" | "rstop": 0; # leaf
+"If2" | "rstop": 0; # leaf
+"Ig2" | "rstop": 0; # leaf
+"EI0" | "rstop": 0; # leaf
+"EI1" | "rstop": 0; # leaf
+"EI2" | "rstop": 0; # leaf
+"ES" | "rstop": 0; # leaf
+"ET0" | "rstop": 0; # leaf
+"ET1" | "rstop": 0; # leaf
+"ET2" | "rstop": 0; # leaf
+"start" | "rstop": 0; # leaf
+"stop" | "rstop": 0; # leaf
+"acc0" | "rstop": 0; # leaf
+"acc1" | "rstop": 0; # leaf
+"acc2" | "rstop": 0; # leaf
+"don0" | "rstop": 0; # leaf
+"don1" | "rstop": 0; # leaf
+"don2" | "rstop": 0; # leaf
+"E00" | "rstop": 0; # leaf
+"E01" | "rstop": 0; # leaf
+"E02" | "rstop": 0; # leaf
+"E10" | "rstop": 0; # leaf
+"E11" | "rstop": 0; # leaf
+"E12" | "rstop": 0; # leaf
+"E20" | "rstop": 0; # leaf
+"E21" | "rstop": 0; # leaf
+"E22" | "rstop": 0; # leaf
+"UTR5" | "rstop": 0; # leaf
+"rUTR5" | "rstop": 0; # leaf
+"UTR3" | "rstop": 0; # leaf
+"rUTR3" | "rstop": 0; # leaf
+"rIs0" | "rstop": 0; # leaf
+"rIf0" | "rstop": 0; # leaf
+"rIg0" | "rstop": 0; # leaf
+"rIs1" | "rstop": 0; # leaf
+"rIf1" | "rstop": 0; # leaf
+"rIg1" | "rstop": 0; # leaf
+"rIs2" | "rstop": 0; # leaf
+"rIf2" | "rstop": 0; # leaf
+"rIg2" | "rstop": 0; # leaf
+"rEI0" | "rstop": 0; # leaf
+"rEI1" | "rstop": 0; # leaf
+"rEI2" | "rstop": 0; # leaf
+"rES" | "rstop": 1; # leaf
+"rET0" | "rstop": 0; # leaf
+"rET1" | "rstop": 0; # leaf
+"rET2" | "rstop": 0; # leaf
+"rstart" | "rstop": 0; # leaf
+"rstop" | "rstop": 0; # leaf
+"racc0" | "rstop": 0; # leaf
+"racc1" | "rstop": 0; # leaf
+"racc2" | "rstop": 0; # leaf
+"rdon0" | "rstop": 0; # leaf
+"rdon1" | "rstop": 0; # leaf
+"rdon2" | "rstop": 0; # leaf
+"rE00" | "rstop": 0; # leaf
+"rE01" | "rstop": 0; # leaf
+"rE02" | "rstop": 0; # leaf
+"rE10" | "rstop": 0; # leaf
+"rE11" | "rstop": 0; # leaf
+"rE12" | "rstop": 0; # leaf
+"rE20" | "rstop": 0; # leaf
+"rE21" | "rstop": 0; # leaf
+"rE22" | "rstop": 0; # leaf
+"I0" | "rstop": 0; # leaf
+"I1" | "rstop": 0; # leaf
+"I2" | "rstop": 0; # leaf
+"rI0" | "rstop": 0; # leaf
+"rI1" | "rstop": 0; # leaf
+"rI2" | "rstop": 0; # leaf
+)
+alphabet = ("N", "Is0", "If0", "Ig0", "Is1", "If1", "Ig1", "Is2", "If2", "Ig2", "EI0", "EI1", "EI2", "ES", "ET0", "ET1", "ET2", "start", "stop", "acc0", "acc1", "acc2", "don0", "don1", "don2", "E00", "E01", "E02", "E10", "E11", "E12", "E20", "E21", "E22", "UTR5", "rUTR5", "UTR3", "rUTR3", "rIs0", "rIf0", "rIg0", "rIs1", "rIf1", "rIg1", "rIs2", "rIf2", "rIg2", "rEI0", "rEI1", "rEI2", "rES", "rET0", "rET1", "rET2", "rstart", "rstop", "racc0", "racc1", "racc2", "rdon0", "rdon1", "rdon2", "rE00", "rE01", "rE02", "rE10", "rE11", "rE12", "rE20", "rE21", "rE22", "I0", "I1", "I2", "rI0", "rI1", "rI2")
+

@@ -1,0 +1,4017 @@
+# Model BIC: -3.13424e+06
+model_name = "InhomogeneousMarkovChain"
+p0 = ("A" | "" : 0.292959;
+"C" | "" : 0.212383;
+"G" | "" : 0.311035;
+"T" | "" : 0.183623;
+"A" | "A": 0.312011;
+"C" | "A": 0.203806;
+"G" | "A": 0.286954;
+"T" | "A": 0.197228;
+"A" | "A A": 0.312759;
+"C" | "A A": 0.204265;
+"G" | "A A": 0.300239;
+"T" | "A A": 0.182738;
+"A" | "A A A": 0.31668;
+"C" | "A A A": 0.19687;
+"G" | "A A A": 0.285708;
+"T" | "A A A": 0.200742;
+"A" | "A A A A": 0.301682; # leaf
+"C" | "A A A A": 0.196419; # leaf
+"G" | "A A A A": 0.295307; # leaf
+"T" | "A A A A": 0.206593; # leaf
+"A" | "A A A C": 0.292961; # leaf
+"C" | "A A A C": 0.205832; # leaf
+"G" | "A A A C": 0.298137; # leaf
+"T" | "A A A C": 0.203071; # leaf
+"A" | "A A A G": 0.34096; # leaf
+"C" | "A A A G": 0.196695; # leaf
+"G" | "A A A G": 0.269145; # leaf
+"T" | "A A A G": 0.1932; # leaf
+"A" | "A A A T": 0.335233; # leaf
+"C" | "A A A T": 0.18766; # leaf
+"G" | "A A A T": 0.278051; # leaf
+"T" | "A A A T": 0.199057; # leaf
+"A" | "A A C": 0.296666;
+"C" | "A A C": 0.25583;
+"G" | "A A C": 0.273628;
+"T" | "A A C": 0.173876;
+"A" | "A A C A": 0.297651; # leaf
+"C" | "A A C A": 0.25189; # leaf
+"G" | "A A C A": 0.27763; # leaf
+"T" | "A A C A": 0.172829; # leaf
+"A" | "A A C C": 0.285907; # leaf
+"C" | "A A C C": 0.222522; # leaf
+"G" | "A A C C": 0.305125; # leaf
+"T" | "A A C C": 0.186446; # leaf
+"A" | "A A C G": 0.280814; # leaf
+"C" | "A A C G": 0.315573; # leaf
+"G" | "A A C G": 0.238052; # leaf
+"T" | "A A C G": 0.165561; # leaf
+"A" | "A A C T": 0.313991; # leaf
+"C" | "A A C T": 0.229935; # leaf
+"G" | "A A C T": 0.281273; # leaf
+"T" | "A A C T": 0.174801; # leaf
+"A" | "A A G": 0.31995;
+"C" | "A A G": 0.176366;
+"G" | "A A G": 0.331725;
+"T" | "A A G": 0.171959;
+"A" | "A A G A": 0.313486; # leaf
+"C" | "A A G A": 0.167219; # leaf
+"G" | "A A G A": 0.34213; # leaf
+"T" | "A A G A": 0.177165; # leaf
+"A" | "A A G C": 0.303277; # leaf
+"C" | "A A G C": 0.184513; # leaf
+"G" | "A A G C": 0.327698; # leaf
+"T" | "A A G C": 0.184513; # leaf
+"A" | "A A G G": 0.316349; # leaf
+"C" | "A A G G": 0.201429; # leaf
+"G" | "A A G G": 0.313651; # leaf
+"T" | "A A G G": 0.168571; # leaf
+"A" | "A A G T": 0.339476; # leaf
+"C" | "A A G T": 0.159875; # leaf
+"G" | "A A G T": 0.338697; # leaf
+"T" | "A A G T": 0.161952; # leaf
+"A" | "A A T": 0.2; # leaf
+"C" | "A A T": 0.4; # leaf
+"G" | "A A T": 0.2; # leaf
+"T" | "A A T": 0.2; # leaf
+"A" | "A C": 0.30641;
+"C" | "A C": 0.208029;
+"G" | "A C": 0.288762;
+"T" | "A C": 0.196799;
+"A" | "A C A": 0.323261;
+"C" | "A C A": 0.196072;
+"G" | "A C A": 0.282311;
+"T" | "A C A": 0.198356;
+"A" | "A C A A": 0.324765; # leaf
+"C" | "A C A A": 0.177653; # leaf
+"G" | "A C A A": 0.285823; # leaf
+"T" | "A C A A": 0.211759; # leaf
+"A" | "A C A C": 0.305306; # leaf
+"C" | "A C A C": 0.208176; # leaf
+"G" | "A C A C": 0.282401; # leaf
+"T" | "A C A C": 0.204117; # leaf
+"A" | "A C A G": 0.329372; # leaf
+"C" | "A C A G": 0.2228; # leaf
+"G" | "A C A G": 0.274044; # leaf
+"T" | "A C A G": 0.173784; # leaf
+"A" | "A C A T": 0.335823; # leaf
+"C" | "A C A T": 0.182852; # leaf
+"G" | "A C A T": 0.284833; # leaf
+"T" | "A C A T": 0.196492; # leaf
+"A" | "A C C": 0.278142;
+"C" | "A C C": 0.243909;
+"G" | "A C C": 0.288633;
+"T" | "A C C": 0.189316;
+"A" | "A C C A": 0.274357; # leaf
+"C" | "A C C A": 0.267988; # leaf
+"G" | "A C C A": 0.275773; # leaf
+"T" | "A C C A": 0.181883; # leaf
+"A" | "A C C C": 0.263337; # leaf
+"C" | "A C C C": 0.22066; # leaf
+"G" | "A C C C": 0.308923; # leaf
+"T" | "A C C C": 0.207081; # leaf
+"A" | "A C C G": 0.272886; # leaf
+"C" | "A C C G": 0.253415; # leaf
+"G" | "A C C G": 0.304272; # leaf
+"T" | "A C C G": 0.169427; # leaf
+"A" | "A C C T": 0.291658; # leaf
+"C" | "A C C T": 0.225678; # leaf
+"G" | "A C C T": 0.279891; # leaf
+"T" | "A C C T": 0.202774; # leaf
+"A" | "A C G": 0.294122;
+"C" | "A C G": 0.184783;
+"G" | "A C G": 0.325321;
+"T" | "A C G": 0.195774;
+"A" | "A C G A": 0.299953; # leaf
+"C" | "A C G A": 0.171638; # leaf
+"G" | "A C G A": 0.344223; # leaf
+"T" | "A C G A": 0.184186; # leaf
+"A" | "A C G C": 0.255962; # leaf
+"C" | "A C G C": 0.197668; # leaf
+"G" | "A C G C": 0.340223; # leaf
+"T" | "A C G C": 0.206147; # leaf
+"A" | "A C G G": 0.281873; # leaf
+"C" | "A C G G": 0.202371; # leaf
+"G" | "A C G G": 0.33131; # leaf
+"T" | "A C G G": 0.184446; # leaf
+"A" | "A C G T": 0.313751; # leaf
+"C" | "A C G T": 0.178438; # leaf
+"G" | "A C G T": 0.29681; # leaf
+"T" | "A C G T": 0.211001; # leaf
+"A" | "A C T": 0.34032;
+"C" | "A C T": 0.204793;
+"G" | "A C T": 0.248402;
+"T" | "A C T": 0.206485;
+"A" | "A C T A": 0.326828; # leaf
+"C" | "A C T A": 0.199243; # leaf
+"G" | "A C T A": 0.27323; # leaf
+"T" | "A C T A": 0.200699; # leaf
+"A" | "A C T C": 0.354528; # leaf
+"C" | "A C T C": 0.205684; # leaf
+"G" | "A C T C": 0.22447; # leaf
+"T" | "A C T C": 0.215318; # leaf
+"A" | "A C T G": 0.314766; # leaf
+"C" | "A C T G": 0.218077; # leaf
+"G" | "A C T G": 0.261167; # leaf
+"T" | "A C T G": 0.205991; # leaf
+"A" | "A C T T": 0.360185; # leaf
+"C" | "A C T T": 0.202469; # leaf
+"G" | "A C T T": 0.229938; # leaf
+"T" | "A C T T": 0.207407; # leaf
+"A" | "A G": 0.323165;
+"C" | "A G": 0.191568;
+"G" | "A G": 0.284;
+"T" | "A G": 0.201266;
+"A" | "A G A": 0.345343;
+"C" | "A G A": 0.183009;
+"G" | "A G A": 0.276254;
+"T" | "A G A": 0.195394;
+"A" | "A G A A": 0.339247; # leaf
+"C" | "A G A A": 0.191802; # leaf
+"G" | "A G A A": 0.273784; # leaf
+"T" | "A G A A": 0.195167; # leaf
+"A" | "A G A C": 0.320607; # leaf
+"C" | "A G A C": 0.178473; # leaf
+"G" | "A G A C": 0.300828; # leaf
+"T" | "A G A C": 0.200092; # leaf
+"A" | "A G A G": 0.359107; # leaf
+"C" | "A G A G": 0.176546; # leaf
+"G" | "A G A G": 0.268041; # leaf
+"T" | "A G A G": 0.196306; # leaf
+"A" | "A G A T": 0.36549; # leaf
+"C" | "A G A T": 0.181502; # leaf
+"G" | "A G A T": 0.263053; # leaf
+"T" | "A G A T": 0.189955; # leaf
+"A" | "A G C": 0.287119;
+"C" | "A G C": 0.230127;
+"G" | "A G C": 0.275397;
+"T" | "A G C": 0.207357;
+"A" | "A G C A": 0.309204; # leaf
+"C" | "A G C A": 0.216132; # leaf
+"G" | "A G C A": 0.259049; # leaf
+"T" | "A G C A": 0.215615; # leaf
+"A" | "A G C C": 0.251397; # leaf
+"C" | "A G C C": 0.24182; # leaf
+"G" | "A G C C": 0.292897; # leaf
+"T" | "A G C C": 0.213887; # leaf
+"A" | "A G C G": 0.260845; # leaf
+"C" | "A G C G": 0.283676; # leaf
+"G" | "A G C G": 0.252854; # leaf
+"T" | "A G C G": 0.202626; # leaf
+"A" | "A G C T": 0.306212; # leaf
+"C" | "A G C T": 0.197595; # leaf
+"G" | "A G C T": 0.29499; # leaf
+"T" | "A G C T": 0.201202; # leaf
+"A" | "A G G": 0.326083;
+"C" | "A G G": 0.180038;
+"G" | "A G G": 0.291921;
+"T" | "A G G": 0.201959;
+"A" | "A G G A": 0.321712; # leaf
+"C" | "A G G A": 0.164463; # leaf
+"G" | "A G G A": 0.29887; # leaf
+"T" | "A G G A": 0.214956; # leaf
+"A" | "A G G C": 0.29532; # leaf
+"C" | "A G G C": 0.181011; # leaf
+"G" | "A G G C": 0.319258; # leaf
+"T" | "A G G C": 0.204411; # leaf
+"A" | "A G G G": 0.312127; # leaf
+"C" | "A G G G": 0.202109; # leaf
+"G" | "A G G G": 0.269947; # leaf
+"T" | "A G G G": 0.215817; # leaf
+"A" | "A G G T": 0.351087; # leaf
+"C" | "A G G T": 0.179921; # leaf
+"G" | "A G G T": 0.28192; # leaf
+"T" | "A G G T": 0.187071; # leaf
+"A" | "A G T": 0.142857; # leaf
+"C" | "A G T": 0.285714; # leaf
+"G" | "A G T": 0.285714; # leaf
+"T" | "A G T": 0.285714; # leaf
+"A" | "A T": 0.307996;
+"C" | "A T": 0.208558;
+"G" | "A T": 0.262159;
+"T" | "A T": 0.221287;
+"A" | "A T A": 0.305119;
+"C" | "A T A": 0.207885;
+"G" | "A T A": 0.250345;
+"T" | "A T A": 0.236651;
+"A" | "A T A A": 0.313889; # leaf
+"C" | "A T A A": 0.196605; # leaf
+"G" | "A T A A": 0.246914; # leaf
+"T" | "A T A A": 0.242593; # leaf
+"A" | "A T A C": 0.275368; # leaf
+"C" | "A T A C": 0.228211; # leaf
+"G" | "A T A C": 0.267789; # leaf
+"T" | "A T A C": 0.228632; # leaf
+"A" | "A T A G": 0.31353; # leaf
+"C" | "A T A G": 0.188205; # leaf
+"G" | "A T A G": 0.249783; # leaf
+"T" | "A T A G": 0.248482; # leaf
+"A" | "A T A T": 0.312584; # leaf
+"C" | "A T A T": 0.219381; # leaf
+"G" | "A T A T": 0.240579; # leaf
+"T" | "A T A T": 0.227456; # leaf
+"A" | "A T C": 0.307026;
+"C" | "A T C": 0.23312;
+"G" | "A T C": 0.27129;
+"T" | "A T C": 0.188564;
+"A" | "A T C A": 0.316774; # leaf
+"C" | "A T C A": 0.222581; # leaf
+"G" | "A T C A": 0.279355; # leaf
+"T" | "A T C A": 0.18129; # leaf
+"A" | "A T C C": 0.320652; # leaf
+"C" | "A T C C": 0.21118; # leaf
+"G" | "A T C C": 0.266304; # leaf
+"T" | "A T C C": 0.201863; # leaf
+"A" | "A T C G": 0.310738; # leaf
+"C" | "A T C G": 0.227355; # leaf
+"G" | "A T C G": 0.268746; # leaf
+"T" | "A T C G": 0.193161; # leaf
+"A" | "A T C T": 0.288046; # leaf
+"C" | "A T C T": 0.259241; # leaf
+"G" | "A T C T": 0.270283; # leaf
+"T" | "A T C T": 0.182429; # leaf
+"A" | "A T G": 0.292907;
+"C" | "A T G": 0.209449;
+"G" | "A T G": 0.268652;
+"T" | "A T G": 0.228992;
+"A" | "A T G A": 0.293383; # leaf
+"C" | "A T G A": 0.207657; # leaf
+"G" | "A T G A": 0.280483; # leaf
+"T" | "A T G A": 0.218477; # leaf
+"A" | "A T G C": 0.277234; # leaf
+"C" | "A T G C": 0.190476; # leaf
+"G" | "A T G C": 0.266797; # leaf
+"T" | "A T G C": 0.265492; # leaf
+"A" | "A T G G": 0.283811; # leaf
+"C" | "A T G G": 0.198534; # leaf
+"G" | "A T G G": 0.2505; # leaf
+"T" | "A T G G": 0.267155; # leaf
+"A" | "A T G T": 0.30391; # leaf
+"C" | "A T G T": 0.224801; # leaf
+"G" | "A T G T": 0.26909; # leaf
+"T" | "A T G T": 0.202199; # leaf
+"A" | "A T T": 0.324314;
+"C" | "A T T": 0.192901;
+"G" | "A T T": 0.263311;
+"T" | "A T T": 0.219474;
+"A" | "A T T A": 0.310073; # leaf
+"C" | "A T T A": 0.189197; # leaf
+"G" | "A T T A": 0.266277; # leaf
+"T" | "A T T A": 0.234453; # leaf
+"A" | "A T T C": 0.32084; # leaf
+"C" | "A T T C": 0.189655; # leaf
+"G" | "A T T C": 0.293853; # leaf
+"T" | "A T T C": 0.195652; # leaf
+"A" | "A T T G": 0.319662; # leaf
+"C" | "A T T G": 0.209288; # leaf
+"G" | "A T T G": 0.273824; # leaf
+"T" | "A T T G": 0.197226; # leaf
+"A" | "A T T T": 0.339734; # leaf
+"C" | "A T T T": 0.190476; # leaf
+"G" | "A T T T": 0.245776; # leaf
+"T" | "A T T T": 0.224014; # leaf
+"A" | "C": 0.360658;
+"C" | "C": 0.169424;
+"G" | "C": 0.284461;
+"T" | "C": 0.185457;
+"A" | "C A": 0.357301;
+"C" | "C A": 0.159615;
+"G" | "C A": 0.285654;
+"T" | "C A": 0.19743;
+"A" | "C A A": 0.375751;
+"C" | "C A A": 0.152359;
+"G" | "C A A": 0.273544;
+"T" | "C A A": 0.198346;
+"A" | "C A A A": 0.334086; # leaf
+"C" | "C A A A": 0.161117; # leaf
+"G" | "C A A A": 0.284989; # leaf
+"T" | "C A A A": 0.219808; # leaf
+"A" | "C A A C": 0.398682; # leaf
+"C" | "C A A C": 0.137184; # leaf
+"G" | "C A A C": 0.268561; # leaf
+"T" | "C A A C": 0.195574; # leaf
+"A" | "C A A G": 0.380671; # leaf
+"C" | "C A A G": 0.157372; # leaf
+"G" | "C A A G": 0.282845; # leaf
+"T" | "C A A G": 0.179112; # leaf
+"A" | "C A A T": 0.367988; # leaf
+"C" | "C A A T": 0.169409; # leaf
+"G" | "C A A T": 0.255423; # leaf
+"T" | "C A A T": 0.20718; # leaf
+"A" | "C A C": 0.336122;
+"C" | "C A C": 0.197622;
+"G" | "C A C": 0.271386;
+"T" | "C A C": 0.19487;
+"A" | "C A C A": 0.328875; # leaf
+"C" | "C A C A": 0.204863; # leaf
+"G" | "C A C A": 0.275988; # leaf
+"T" | "C A C A": 0.190274; # leaf
+"A" | "C A C C": 0.285467; # leaf
+"C" | "C A C C": 0.224913; # leaf
+"G" | "C A C C": 0.298875; # leaf
+"T" | "C A C C": 0.190744; # leaf
+"A" | "C A C G": 0.384207; # leaf
+"C" | "C A C G": 0.187547; # leaf
+"G" | "C A C G": 0.254746; # leaf
+"T" | "C A C G": 0.1735; # leaf
+"A" | "C A C T": 0.336661; # leaf
+"C" | "C A C T": 0.178514; # leaf
+"G" | "C A C T": 0.260383; # leaf
+"T" | "C A C T": 0.224441; # leaf
+"A" | "C A G": 0.348855;
+"C" | "C A G": 0.138437;
+"G" | "C A G": 0.312323;
+"T" | "C A G": 0.200385;
+"A" | "C A G A": 0.33794; # leaf
+"C" | "C A G A": 0.139191; # leaf
+"G" | "C A G A": 0.299112; # leaf
+"T" | "C A G A": 0.223758; # leaf
+"A" | "C A G C": 0.332181; # leaf
+"C" | "C A G C": 0.132751; # leaf
+"G" | "C A G C": 0.348242; # leaf
+"T" | "C A G C": 0.186827; # leaf
+"A" | "C A G G": 0.362487; # leaf
+"C" | "C A G G": 0.137406; # leaf
+"G" | "C A G G": 0.302251; # leaf
+"T" | "C A G G": 0.197856; # leaf
+"A" | "C A G T": 0.361359; # leaf
+"C" | "C A G T": 0.146329; # leaf
+"G" | "C A G T": 0.289931; # leaf
+"T" | "C A G T": 0.202381; # leaf
+"A" | "C A T": 0.359065;
+"C" | "C A T": 0.170304;
+"G" | "C A T": 0.276538;
+"T" | "C A T": 0.194094;
+"A" | "C A T A": 0.349429; # leaf
+"C" | "C A T A": 0.167252; # leaf
+"G" | "C A T A": 0.291045; # leaf
+"T" | "C A T A": 0.192274; # leaf
+"A" | "C A T C": 0.364232; # leaf
+"C" | "C A T C": 0.183451; # leaf
+"G" | "C A T C": 0.256248; # leaf
+"T" | "C A T C": 0.196069; # leaf
+"A" | "C A T G": 0.365515; # leaf
+"C" | "C A T G": 0.171133; # leaf
+"G" | "C A T G": 0.290604; # leaf
+"T" | "C A T G": 0.172748; # leaf
+"A" | "C A T T": 0.351441; # leaf
+"C" | "C A T T": 0.152254; # leaf
+"G" | "C A T T": 0.27901; # leaf
+"T" | "C A T T": 0.217295; # leaf
+"A" | "C C": 0.380539;
+"C" | "C C": 0.164552;
+"G" | "C C": 0.287406;
+"T" | "C C": 0.167502;
+"A" | "C C A": 0.396553;
+"C" | "C C A": 0.159909;
+"G" | "C C A": 0.270113;
+"T" | "C C A": 0.173424;
+"A" | "C C A A": 0.39491; # leaf
+"C" | "C C A A": 0.162582; # leaf
+"G" | "C C A A": 0.288878; # leaf
+"T" | "C C A A": 0.153629; # leaf
+"A" | "C C A C": 0.38381; # leaf
+"C" | "C C A C": 0.153393; # leaf
+"G" | "C C A C": 0.275802; # leaf
+"T" | "C C A C": 0.186995; # leaf
+"A" | "C C A G": 0.429759; # leaf
+"C" | "C C A G": 0.159478; # leaf
+"G" | "C C A G": 0.237831; # leaf
+"T" | "C C A G": 0.172932; # leaf
+"A" | "C C A T": 0.38338; # leaf
+"C" | "C C A T": 0.174515; # leaf
+"G" | "C C A T": 0.27867; # leaf
+"T" | "C C A T": 0.163435; # leaf
+"A" | "C C C": 0.379112;
+"C" | "C C C": 0.167054;
+"G" | "C C C": 0.298153;
+"T" | "C C C": 0.155681;
+"A" | "C C C A": 0.347826; # leaf
+"C" | "C C C A": 0.180517; # leaf
+"G" | "C C C A": 0.305999; # leaf
+"T" | "C C C A": 0.165658; # leaf
+"A" | "C C C C": 0.3768; # leaf
+"C" | "C C C C": 0.1664; # leaf
+"G" | "C C C C": 0.2952; # leaf
+"T" | "C C C C": 0.1616; # leaf
+"A" | "C C C G": 0.412039; # leaf
+"C" | "C C C G": 0.163741; # leaf
+"G" | "C C C G": 0.280903; # leaf
+"T" | "C C C G": 0.143318; # leaf
+"A" | "C C C T": 0.36465; # leaf
+"C" | "C C C T": 0.161304; # leaf
+"G" | "C C C T": 0.314028; # leaf
+"T" | "C C C T": 0.160017; # leaf
+"A" | "C C G": 0.384512;
+"C" | "C C G": 0.157619;
+"G" | "C C G": 0.302864;
+"T" | "C C G": 0.155004;
+"A" | "C C G A": 0.374607; # leaf
+"C" | "C C G A": 0.150752; # leaf
+"G" | "C C G A": 0.330185; # leaf
+"T" | "C C G A": 0.144456; # leaf
+"A" | "C C G C": 0.325695; # leaf
+"C" | "C C G C": 0.167479; # leaf
+"G" | "C C G C": 0.326182; # leaf
+"T" | "C C G C": 0.180644; # leaf
+"A" | "C C G G": 0.443248; # leaf
+"C" | "C C G G": 0.142289; # leaf
+"G" | "C C G G": 0.267026; # leaf
+"T" | "C C G G": 0.147437; # leaf
+"A" | "C C G T": 0.388328; # leaf
+"C" | "C C G T": 0.167901; # leaf
+"G" | "C C G T": 0.298092; # leaf
+"T" | "C C G T": 0.145679; # leaf
+"A" | "C C T": 0.358156;
+"C" | "C C T": 0.178295;
+"G" | "C C T": 0.273706;
+"T" | "C C T": 0.189842;
+"A" | "C C T A": 0.312914; # leaf
+"C" | "C C T A": 0.199917; # leaf
+"G" | "C C T A": 0.310017; # leaf
+"T" | "C C T A": 0.177152; # leaf
+"A" | "C C T C": 0.364158; # leaf
+"C" | "C C T C": 0.171556; # leaf
+"G" | "C C T C": 0.260204; # leaf
+"T" | "C C T C": 0.204082; # leaf
+"A" | "C C T G": 0.399732; # leaf
+"C" | "C C T G": 0.164359; # leaf
+"G" | "C C T G": 0.239393; # leaf
+"T" | "C C T G": 0.196516; # leaf
+"A" | "C C T T": 0.356557; # leaf
+"C" | "C C T T": 0.178689; # leaf
+"G" | "C C T T": 0.286475; # leaf
+"T" | "C C T T": 0.178279; # leaf
+"A" | "C G": 0.355095;
+"C" | "C G": 0.175459;
+"G" | "C G": 0.287304;
+"T" | "C G": 0.182142;
+"A" | "C G A": 0.388229;
+"C" | "C G A": 0.15476;
+"G" | "C G A": 0.268658;
+"T" | "C G A": 0.188353;
+"A" | "C G A A": 0.369951; # leaf
+"C" | "C G A A": 0.158128; # leaf
+"G" | "C G A A": 0.264532; # leaf
+"T" | "C G A A": 0.207389; # leaf
+"A" | "C G A C": 0.392719; # leaf
+"C" | "C G A C": 0.152305; # leaf
+"G" | "C G A C": 0.278759; # leaf
+"T" | "C G A C": 0.176217; # leaf
+"A" | "C G A G": 0.391399; # leaf
+"C" | "C G A G": 0.161808; # leaf
+"G" | "C G A G": 0.254009; # leaf
+"T" | "C G A G": 0.192784; # leaf
+"A" | "C G A T": 0.391374; # leaf
+"C" | "C G A T": 0.147497; # leaf
+"G" | "C G A T": 0.269436; # leaf
+"T" | "C G A T": 0.191693; # leaf
+"A" | "C G C": 0.350621;
+"C" | "C G C": 0.196424;
+"G" | "C G C": 0.285443;
+"T" | "C G C": 0.167512;
+"A" | "C G C A": 0.325269; # leaf
+"C" | "C G C A": 0.184812; # leaf
+"G" | "C G C A": 0.326613; # leaf
+"T" | "C G C A": 0.163306; # leaf
+"A" | "C G C C": 0.353716; # leaf
+"C" | "C G C C": 0.195572; # leaf
+"G" | "C G C C": 0.27359; # leaf
+"T" | "C G C C": 0.177122; # leaf
+"A" | "C G C G": 0.37807; # leaf
+"C" | "C G C G": 0.182895; # leaf
+"G" | "C G C G": 0.277193; # leaf
+"T" | "C G C G": 0.161842; # leaf
+"A" | "C G C T": 0.336319; # leaf
+"C" | "C G C T": 0.218988; # leaf
+"G" | "C G C T": 0.27631; # leaf
+"T" | "C G C T": 0.168383; # leaf
+"A" | "C G G": 0.348464;
+"C" | "C G G": 0.158608;
+"G" | "C G G": 0.314032;
+"T" | "C G G": 0.178897;
+"A" | "C G G A": 0.327243; # leaf
+"C" | "C G G A": 0.154218; # leaf
+"G" | "C G G A": 0.33208; # leaf
+"T" | "C G G A": 0.186459; # leaf
+"A" | "C G G C": 0.333687; # leaf
+"C" | "C G G C": 0.154907; # leaf
+"G" | "C G G C": 0.33687; # leaf
+"T" | "C G G C": 0.174536; # leaf
+"A" | "C G G G": 0.370881; # leaf
+"C" | "C G G G": 0.140803; # leaf
+"G" | "C G G G": 0.311264; # leaf
+"T" | "C G G G": 0.177052; # leaf
+"A" | "C G G T": 0.352682; # leaf
+"C" | "C G G T": 0.176781; # leaf
+"G" | "C G G T": 0.289578; # leaf
+"T" | "C G G T": 0.180959; # leaf
+"A" | "C G T": 0.323961;
+"C" | "C G T": 0.212366;
+"G" | "C G T": 0.270341;
+"T" | "C G T": 0.193332;
+"A" | "C G T A": 0.327227; # leaf
+"C" | "C G T A": 0.190145; # leaf
+"G" | "C G T A": 0.286166; # leaf
+"T" | "C G T A": 0.196462; # leaf
+"A" | "C G T C": 0.352594; # leaf
+"C" | "C G T C": 0.204403; # leaf
+"G" | "C G T C": 0.266903; # leaf
+"T" | "C G T C": 0.176101; # leaf
+"A" | "C G T G": 0.297146; # leaf
+"C" | "C G T G": 0.228338; # leaf
+"G" | "C G T G": 0.268603; # leaf
+"T" | "C G T G": 0.205912; # leaf
+"A" | "C G T T": 0.310556; # leaf
+"C" | "C G T T": 0.224885; # leaf
+"G" | "C G T T": 0.263641; # leaf
+"T" | "C G T T": 0.200918; # leaf
+"A" | "C T": 0.351094;
+"C" | "C T": 0.17946;
+"G" | "C T": 0.278299;
+"T" | "C T": 0.191148;
+"A" | "C T A": 0.357973;
+"C" | "C T A": 0.176197;
+"G" | "C T A": 0.289898;
+"T" | "C T A": 0.175931;
+"A" | "C T A A": 0.360175; # leaf
+"C" | "C T A A": 0.161725; # leaf
+"G" | "C T A A": 0.315364; # leaf
+"T" | "C T A A": 0.162736; # leaf
+"A" | "C T A C": 0.361678; # leaf
+"C" | "C T A C": 0.176991; # leaf
+"G" | "C T A C": 0.270681; # leaf
+"T" | "C T A C": 0.19065; # leaf
+"A" | "C T A G": 0.342504; # leaf
+"C" | "C T A G": 0.187279; # leaf
+"G" | "C T A G": 0.301868; # leaf
+"T" | "C T A G": 0.168349; # leaf
+"A" | "C T A T": 0.369602; # leaf
+"C" | "C T A T": 0.17477; # leaf
+"G" | "C T A T": 0.281877; # leaf
+"T" | "C T A T": 0.17375; # leaf
+"A" | "C T C": 0.370207;
+"C" | "C T C": 0.156572;
+"G" | "C T C": 0.274902;
+"T" | "C T C": 0.198318;
+"A" | "C T C A": 0.364242; # leaf
+"C" | "C T C A": 0.137146; # leaf
+"G" | "C T C A": 0.273737; # leaf
+"T" | "C T C A": 0.224875; # leaf
+"A" | "C T C C": 0.354812; # leaf
+"C" | "C T C C": 0.17113; # leaf
+"G" | "C T C C": 0.284519; # leaf
+"T" | "C T C C": 0.18954; # leaf
+"A" | "C T C G": 0.385608; # leaf
+"C" | "C T C G": 0.159199; # leaf
+"G" | "C T C G": 0.255261; # leaf
+"T" | "C T C G": 0.199932; # leaf
+"A" | "C T C T": 0.370461; # leaf
+"C" | "C T C T": 0.15433; # leaf
+"G" | "C T C T": 0.287709; # leaf
+"T" | "C T C T": 0.1875; # leaf
+"A" | "C T G": 0.366306;
+"C" | "C T G": 0.157925;
+"G" | "C T G": 0.293235;
+"T" | "C T G": 0.182535;
+"A" | "C T G A": 0.377104; # leaf
+"C" | "C T G A": 0.148629; # leaf
+"G" | "C T G A": 0.310726; # leaf
+"T" | "C T G A": 0.16354; # leaf
+"A" | "C T G C": 0.320678; # leaf
+"C" | "C T G C": 0.169185; # leaf
+"G" | "C T G C": 0.326207; # leaf
+"T" | "C T G C": 0.183929; # leaf
+"A" | "C T G G": 0.397942; # leaf
+"C" | "C T G G": 0.135391; # leaf
+"G" | "C T G G": 0.286008; # leaf
+"T" | "C T G G": 0.180658; # leaf
+"A" | "C T G T": 0.373265; # leaf
+"C" | "C T G T": 0.171394; # leaf
+"G" | "C T G T": 0.26041; # leaf
+"T" | "C T G T": 0.194931; # leaf
+"A" | "C T T": 0.321563;
+"C" | "C T T": 0.212194;
+"G" | "C T T": 0.258974;
+"T" | "C T T": 0.20727;
+"A" | "C T T A": 0.30146; # leaf
+"C" | "C T T A": 0.207558; # leaf
+"G" | "C T T A": 0.277985; # leaf
+"T" | "C T T A": 0.212997; # leaf
+"A" | "C T T C": 0.33116; # leaf
+"C" | "C T T C": 0.224146; # leaf
+"G" | "C T T C": 0.236286; # leaf
+"T" | "C T T C": 0.208408; # leaf
+"A" | "C T T G": 0.336927; # leaf
+"C" | "C T T G": 0.215903; # leaf
+"G" | "C T T G": 0.247978; # leaf
+"T" | "C T T G": 0.199191; # leaf
+"A" | "C T T T": 0.31357; # leaf
+"C" | "C T T T": 0.198946; # leaf
+"G" | "C T T T": 0.278788; # leaf
+"T" | "C T T T": 0.208696; # leaf
+"A" | "G": 0.287196;
+"C" | "G": 0.241649;
+"G" | "G": 0.312902;
+"T" | "G": 0.158252;
+"A" | "G A": 0.290843;
+"C" | "G A": 0.257172;
+"G" | "G A": 0.29687;
+"T" | "G A": 0.155115;
+"A" | "G A A": 0.322443;
+"C" | "G A A": 0.222107;
+"G" | "G A A": 0.291882;
+"T" | "G A A": 0.163567;
+"A" | "G A A A": 0.354046; # leaf
+"C" | "G A A A": 0.20151; # leaf
+"G" | "G A A A": 0.266551; # leaf
+"T" | "G A A A": 0.177894; # leaf
+"A" | "G A A C": 0.295282; # leaf
+"C" | "G A A C": 0.218827; # leaf
+"G" | "G A A C": 0.311088; # leaf
+"T" | "G A A C": 0.174804; # leaf
+"A" | "G A A G": 0.334297; # leaf
+"C" | "G A A G": 0.238697; # leaf
+"G" | "G A A G": 0.283148; # leaf
+"T" | "G A A G": 0.143858; # leaf
+"A" | "G A A T": 0.31907; # leaf
+"C" | "G A A T": 0.230795; # leaf
+"G" | "G A A T": 0.299865; # leaf
+"T" | "G A A T": 0.15027; # leaf
+"A" | "G A C": 0.249842;
+"C" | "G A C": 0.344493;
+"G" | "G A C": 0.251218;
+"T" | "G A C": 0.154446;
+"A" | "G A C A": 0.267655; # leaf
+"C" | "G A C A": 0.32345; # leaf
+"G" | "G A C A": 0.253908; # leaf
+"T" | "G A C A": 0.154987; # leaf
+"A" | "G A C C": 0.23877; # leaf
+"C" | "G A C C": 0.307373; # leaf
+"G" | "G A C C": 0.291016; # leaf
+"T" | "G A C C": 0.162842; # leaf
+"A" | "G A C G": 0.230136; # leaf
+"C" | "G A C G": 0.416933; # leaf
+"G" | "G A C G": 0.213674; # leaf
+"T" | "G A C G": 0.139258; # leaf
+"A" | "G A C T": 0.275974; # leaf
+"C" | "G A C T": 0.289773; # leaf
+"G" | "G A C T": 0.264881; # leaf
+"T" | "G A C T": 0.169372; # leaf
+"A" | "G A G": 0.290051;
+"C" | "G A G": 0.228103;
+"G" | "G A G": 0.334277;
+"T" | "G A G": 0.147569;
+"A" | "G A G A": 0.295883; # leaf
+"C" | "G A G A": 0.219886; # leaf
+"G" | "G A G A": 0.328296; # leaf
+"T" | "G A G A": 0.155935; # leaf
+"A" | "G A G C": 0.275308; # leaf
+"C" | "G A G C": 0.203765; # leaf
+"G" | "G A G C": 0.370891; # leaf
+"T" | "G A G C": 0.150036; # leaf
+"A" | "G A G G": 0.289373; # leaf
+"C" | "G A G G": 0.238022; # leaf
+"G" | "G A G G": 0.330657; # leaf
+"T" | "G A G G": 0.141947; # leaf
+"A" | "G A G T": 0.305841; # leaf
+"C" | "G A G T": 0.253354; # leaf
+"G" | "G A G T": 0.295185; # leaf
+"T" | "G A G T": 0.14562; # leaf
+"A" | "G C": 0.269765;
+"C" | "G C": 0.245287;
+"G" | "G C": 0.323;
+"T" | "G C": 0.161949;
+"A" | "G C A": 0.277034;
+"C" | "G C A": 0.23821;
+"G" | "G C A": 0.319368;
+"T" | "G C A": 0.165387;
+"A" | "G C A A": 0.278689; # leaf
+"C" | "G C A A": 0.242623; # leaf
+"G" | "G C A A": 0.31897; # leaf
+"T" | "G C A A": 0.159719; # leaf
+"A" | "G C A C": 0.25684; # leaf
+"C" | "G C A C": 0.244186; # leaf
+"G" | "G C A C": 0.327291; # leaf
+"T" | "G C A C": 0.171683; # leaf
+"A" | "G C A G": 0.294187; # leaf
+"C" | "G C A G": 0.249804; # leaf
+"G" | "G C A G": 0.291045; # leaf
+"T" | "G C A G": 0.164965; # leaf
+"A" | "G C A T": 0.28459; # leaf
+"C" | "G C A T": 0.201311; # leaf
+"G" | "G C A T": 0.351475; # leaf
+"T" | "G C A T": 0.162623; # leaf
+"A" | "G C C": 0.25253;
+"C" | "G C C": 0.298444;
+"G" | "G C C": 0.292351;
+"T" | "G C C": 0.156675;
+"A" | "G C C A": 0.268919; # leaf
+"C" | "G C C A": 0.294144; # leaf
+"G" | "G C C A": 0.27973; # leaf
+"T" | "G C C A": 0.157207; # leaf
+"A" | "G C C C": 0.280591; # leaf
+"C" | "G C C C": 0.236287; # leaf
+"G" | "G C C C": 0.305204; # leaf
+"T" | "G C C C": 0.177918; # leaf
+"A" | "G C C G": 0.232913; # leaf
+"C" | "G C C G": 0.363636; # leaf
+"G" | "G C C G": 0.266092; # leaf
+"T" | "G C C G": 0.137359; # leaf
+"A" | "G C C T": 0.245779; # leaf
+"C" | "G C C T": 0.259521; # leaf
+"G" | "G C C T": 0.327051; # leaf
+"T" | "G C C T": 0.167648; # leaf
+"A" | "G C G": 0.269284;
+"C" | "G C G": 0.195455;
+"G" | "G C G": 0.387603;
+"T" | "G C G": 0.147658;
+"A" | "G C G A": 0.272417; # leaf
+"C" | "G C G A": 0.178363; # leaf
+"G" | "G C G A": 0.405458; # leaf
+"T" | "G C G A": 0.143762; # leaf
+"A" | "G C G C": 0.28338; # leaf
+"C" | "G C G C": 0.189296; # leaf
+"G" | "G C G C": 0.339718; # leaf
+"T" | "G C G C": 0.187606; # leaf
+"A" | "G C G G": 0.251784; # leaf
+"C" | "G C G G": 0.219382; # leaf
+"G" | "G C G G": 0.400416; # leaf
+"T" | "G C G G": 0.128419; # leaf
+"A" | "G C G T": 0.281677; # leaf
+"C" | "G C G T": 0.180036; # leaf
+"G" | "G C G T": 0.389243; # leaf
+"T" | "G C G T": 0.149043; # leaf
+"A" | "G C T": 0.279216;
+"C" | "G C T": 0.24951;
+"G" | "G C T": 0.294412;
+"T" | "G C T": 0.176863;
+"A" | "G C T A": 0.289373; # leaf
+"C" | "G C T A": 0.245413; # leaf
+"G" | "G C T A": 0.284404; # leaf
+"T" | "G C T A": 0.18081; # leaf
+"A" | "G C T C": 0.274624; # leaf
+"C" | "G C T C": 0.255814; # leaf
+"G" | "G C T C": 0.288304; # leaf
+"T" | "G C T C": 0.181259; # leaf
+"A" | "G C T G": 0.251686; # leaf
+"C" | "G C T G": 0.285835; # leaf
+"G" | "G C T G": 0.289629; # leaf
+"T" | "G C T G": 0.17285; # leaf
+"A" | "G C T T": 0.301739; # leaf
+"C" | "G C T T": 0.208696; # leaf
+"G" | "G C T T": 0.318261; # leaf
+"T" | "G C T T": 0.171304; # leaf
+"A" | "G G": 0.316833;
+"C" | "G G": 0.236866;
+"G" | "G G": 0.28773;
+"T" | "G G": 0.15857;
+"A" | "G G A": 0.33294;
+"C" | "G G A": 0.243514;
+"G" | "G G A": 0.291667;
+"T" | "G G A": 0.131879;
+"A" | "G G A A": 0.345716; # leaf
+"C" | "G G A A": 0.244882; # leaf
+"G" | "G G A A": 0.277483; # leaf
+"T" | "G G A A": 0.131918; # leaf
+"A" | "G G A C": 0.291755; # leaf
+"C" | "G G A C": 0.258633; # leaf
+"G" | "G G A C": 0.311487; # leaf
+"T" | "G G A C": 0.138125; # leaf
+"A" | "G G A G": 0.357702; # leaf
+"C" | "G G A G": 0.238251; # leaf
+"G" | "G G A G": 0.285248; # leaf
+"T" | "G G A G": 0.118799; # leaf
+"A" | "G G A T": 0.336145; # leaf
+"C" | "G G A T": 0.225301; # leaf
+"G" | "G G A T": 0.291566; # leaf
+"T" | "G G A T": 0.146988; # leaf
+"A" | "G G C": 0.271158;
+"C" | "G G C": 0.280748;
+"G" | "G G C": 0.313354;
+"T" | "G G C": 0.13474;
+"A" | "G G C A": 0.291855; # leaf
+"C" | "G G C A": 0.279412; # leaf
+"G" | "G G C A": 0.291855; # leaf
+"T" | "G G C A": 0.136878; # leaf
+"A" | "G G C C": 0.256071; # leaf
+"C" | "G G C C": 0.325607; # leaf
+"G" | "G G C C": 0.292494; # leaf
+"T" | "G G C C": 0.125828; # leaf
+"A" | "G G C G": 0.257143; # leaf
+"C" | "G G C G": 0.288095; # leaf
+"G" | "G G C G": 0.335714; # leaf
+"T" | "G G C G": 0.119048; # leaf
+"A" | "G G C T": 0.282436; # leaf
+"C" | "G G C T": 0.237423; # leaf
+"G" | "G G C T": 0.321271; # leaf
+"T" | "G G C T": 0.15887; # leaf
+"A" | "G G G": 0.299485;
+"C" | "G G G": 0.243072;
+"G" | "G G G": 0.310372;
+"T" | "G G G": 0.14707;
+"A" | "G G G A": 0.326905; # leaf
+"C" | "G G G A": 0.226615; # leaf
+"G" | "G G G A": 0.31244; # leaf
+"T" | "G G G A": 0.134041; # leaf
+"A" | "G G G C": 0.29465; # leaf
+"C" | "G G G C": 0.227581; # leaf
+"G" | "G G G C": 0.321778; # leaf
+"T" | "G G G C": 0.155991; # leaf
+"A" | "G G G G": 0.28777; # leaf
+"C" | "G G G G": 0.276465; # leaf
+"G" | "G G G G": 0.281603; # leaf
+"T" | "G G G G": 0.154162; # leaf
+"A" | "G G G T": 0.292994; # leaf
+"C" | "G G G T": 0.246091; # leaf
+"G" | "G G G T": 0.316155; # leaf
+"T" | "G G G T": 0.14476; # leaf
+"A" | "G G T": 0.339962;
+"C" | "G G T": 0.207505;
+"G" | "G G T": 0.259115;
+"T" | "G G T": 0.193419;
+"A" | "G G T A": 0.368514; # leaf
+"C" | "G G T A": 0.194678; # leaf
+"G" | "G G T A": 0.260754; # leaf
+"T" | "G G T A": 0.176053; # leaf
+"A" | "G G T C": 0.305856; # leaf
+"C" | "G G T C": 0.209009; # leaf
+"G" | "G G T C": 0.271171; # leaf
+"T" | "G G T C": 0.213964; # leaf
+"A" | "G G T G": 0.338553; # leaf
+"C" | "G G T G": 0.215443; # leaf
+"G" | "G G T G": 0.257559; # leaf
+"T" | "G G T G": 0.188445; # leaf
+"A" | "G G T T": 0.345992; # leaf
+"C" | "G G T T": 0.212846; # leaf
+"G" | "G G T T": 0.246132; # leaf
+"T" | "G G T T": 0.19503; # leaf
+"A" | "G T": 0.283243;
+"C" | "G T": 0.225335;
+"G" | "G T": 0.33226;
+"T" | "G T": 0.159162;
+"A" | "G T A": 0.295565;
+"C" | "G T A": 0.212645;
+"G" | "G T A": 0.311985;
+"T" | "G T A": 0.179805;
+"A" | "G T A A": 0.287389; # leaf
+"C" | "G T A A": 0.208569; # leaf
+"G" | "G T A A": 0.327405; # leaf
+"T" | "G T A A": 0.176637; # leaf
+"A" | "G T A C": 0.294391; # leaf
+"C" | "G T A C": 0.214891; # leaf
+"G" | "G T A C": 0.301049; # leaf
+"T" | "G T A C": 0.189669; # leaf
+"A" | "G T A G": 0.303049; # leaf
+"C" | "G T A G": 0.225657; # leaf
+"G" | "G T A G": 0.303891; # leaf
+"T" | "G T A G": 0.167403; # leaf
+"A" | "G T A T": 0.298317; # leaf
+"C" | "G T A T": 0.198426; # leaf
+"G" | "G T A T": 0.316232; # leaf
+"T" | "G T A T": 0.187025; # leaf
+"A" | "G T C": 0.266596;
+"C" | "G T C": 0.260851;
+"G" | "G T C": 0.324174;
+"T" | "G T C": 0.148379;
+"A" | "G T C A": 0.282216; # leaf
+"C" | "G T C A": 0.234536; # leaf
+"G" | "G T C A": 0.340851; # leaf
+"T" | "G T C A": 0.142397; # leaf
+"A" | "G T C C": 0.232669; # leaf
+"C" | "G T C C": 0.261355; # leaf
+"G" | "G T C C": 0.348738; # leaf
+"T" | "G T C C": 0.157238; # leaf
+"A" | "G T C G": 0.280474; # leaf
+"C" | "G T C G": 0.271821; # leaf
+"G" | "G T C G": 0.302859; # leaf
+"T" | "G T C G": 0.144846; # leaf
+"A" | "G T C T": 0.267969; # leaf
+"C" | "G T C T": 0.266406; # leaf
+"G" | "G T C T": 0.315885; # leaf
+"T" | "G T C T": 0.14974; # leaf
+"A" | "G T G": 0.273466;
+"C" | "G T G": 0.230854;
+"G" | "G T G": 0.344507;
+"T" | "G T G": 0.151173;
+"A" | "G T G A": 0.290291; # leaf
+"C" | "G T G A": 0.217476; # leaf
+"G" | "G T G A": 0.33754; # leaf
+"T" | "G T G A": 0.154693; # leaf
+"A" | "G T G C": 0.250634; # leaf
+"C" | "G T G C": 0.209473; # leaf
+"G" | "G T G C": 0.373273; # leaf
+"T" | "G T G C": 0.16662; # leaf
+"A" | "G T G G": 0.265364; # leaf
+"C" | "G T G G": 0.248213; # leaf
+"G" | "G T G G": 0.341353; # leaf
+"T" | "G T G G": 0.145069; # leaf
+"A" | "G T G T": 0.286842; # leaf
+"C" | "G T G T": 0.24035; # leaf
+"G" | "G T G T": 0.329921; # leaf
+"T" | "G T G T": 0.142888; # leaf
+"A" | "G T T": 0.297147;
+"C" | "G T T": 0.194815;
+"G" | "G T T": 0.354722;
+"T" | "G T T": 0.153317;
+"A" | "G T T A": 0.307111; # leaf
+"C" | "G T T A": 0.19037; # leaf
+"G" | "G T T A": 0.340705; # leaf
+"T" | "G T T A": 0.161814; # leaf
+"A" | "G T T C": 0.264771; # leaf
+"C" | "G T T C": 0.211965; # leaf
+"G" | "G T T C": 0.379985; # leaf
+"T" | "G T T C": 0.143279; # leaf
+"A" | "G T T G": 0.296296; # leaf
+"C" | "G T T G": 0.215825; # leaf
+"G" | "G T T G": 0.325926; # leaf
+"T" | "G T T G": 0.161953; # leaf
+"A" | "G T T T": 0.308972; # leaf
+"C" | "G T T T": 0.174617; # leaf
+"G" | "G T T T": 0.369147; # leaf
+"T" | "G T T T": 0.147265; # leaf
+"A" | "T": 0.21902;
+"C" | "T": 0.233014;
+"G" | "T": 0.355595;
+"T" | "T": 0.19237;
+"A" | "T A": 0.232966;
+"C" | "T A": 0.235246;
+"G" | "T A": 0.337541;
+"T" | "T A": 0.194247;
+"A" | "T A A": 0.258901;
+"C" | "T A A": 0.222181;
+"G" | "T A A": 0.334015;
+"T" | "T A A": 0.184903;
+"A" | "T A A A": 0.261635; # leaf
+"C" | "T A A A": 0.198561; # leaf
+"G" | "T A A A": 0.351041; # leaf
+"T" | "T A A A": 0.188763; # leaf
+"A" | "T A A C": 0.231428; # leaf
+"C" | "T A A C": 0.250481; # leaf
+"G" | "T A A C": 0.350463; # leaf
+"T" | "T A A C": 0.167628; # leaf
+"A" | "T A A G": 0.261864; # leaf
+"C" | "T A A G": 0.25652; # leaf
+"G" | "T A A G": 0.309106; # leaf
+"T" | "T A A G": 0.17251; # leaf
+"A" | "T A A T": 0.286181; # leaf
+"C" | "T A A T": 0.185637; # leaf
+"G" | "T A A T": 0.314472; # leaf
+"T" | "T A A T": 0.213711; # leaf
+"A" | "T A C": 0.200919;
+"C" | "T A C": 0.307823;
+"G" | "T A C": 0.287042;
+"T" | "T A C": 0.204216;
+"A" | "T A C A": 0.205626; # leaf
+"C" | "T A C A": 0.280507; # leaf
+"G" | "T A C A": 0.297147; # leaf
+"T" | "T A C A": 0.216719; # leaf
+"A" | "T A C C": 0.165506; # leaf
+"C" | "T A C C": 0.343332; # leaf
+"G" | "T A C C": 0.305303; # leaf
+"T" | "T A C C": 0.18586; # leaf
+"A" | "T A C G": 0.193167; # leaf
+"C" | "T A C G": 0.328553; # leaf
+"G" | "T A C G": 0.267819; # leaf
+"T" | "T A C G": 0.21046; # leaf
+"A" | "T A C T": 0.223381; # leaf
+"C" | "T A C T": 0.293342; # leaf
+"G" | "T A C T": 0.282602; # leaf
+"T" | "T A C T": 0.200675; # leaf
+"A" | "T A G": 0.229952;
+"C" | "T A G": 0.21886;
+"G" | "T A G": 0.36623;
+"T" | "T A G": 0.184957;
+"A" | "T A G A": 0.234537; # leaf
+"C" | "T A G A": 0.206993; # leaf
+"G" | "T A G A": 0.368794; # leaf
+"T" | "T A G A": 0.189675; # leaf
+"A" | "T A G C": 0.187166; # leaf
+"C" | "T A G C": 0.238054; # leaf
+"G" | "T A G C": 0.393652; # leaf
+"T" | "T A G C": 0.181128; # leaf
+"A" | "T A G G": 0.238971; # leaf
+"C" | "T A G G": 0.245808; # leaf
+"G" | "T A G G": 0.34169; # leaf
+"T" | "T A G G": 0.173531; # leaf
+"A" | "T A G T": 0.251894; # leaf
+"C" | "T A G T": 0.191679; # leaf
+"G" | "T A G T": 0.362887; # leaf
+"T" | "T A G T": 0.19354; # leaf
+"A" | "T A T": 0.219945;
+"C" | "T A T": 0.233041;
+"G" | "T A T": 0.325199;
+"T" | "T A T": 0.221816;
+"A" | "T A T A": 0.214058; # leaf
+"C" | "T A T A": 0.224223; # leaf
+"G" | "T A T A": 0.315132; # leaf
+"T" | "T A T A": 0.246587; # leaf
+"A" | "T A T C": 0.197476; # leaf
+"C" | "T A T C": 0.236698; # leaf
+"G" | "T A T C": 0.379945; # leaf
+"T" | "T A T C": 0.18588; # leaf
+"A" | "T A T G": 0.220408; # leaf
+"C" | "T A T G": 0.268934; # leaf
+"G" | "T A T G": 0.29932; # leaf
+"T" | "T A T G": 0.211338; # leaf
+"A" | "T A T T": 0.242888; # leaf
+"C" | "T A T T": 0.217123; # leaf
+"G" | "T A T T": 0.306495; # leaf
+"T" | "T A T T": 0.233494; # leaf
+"A" | "T C": 0.205469;
+"C" | "T C": 0.230299;
+"G" | "T C": 0.375031;
+"T" | "T C": 0.189201;
+"A" | "T C A": 0.214613;
+"C" | "T C A": 0.214972;
+"G" | "T C A": 0.359842;
+"T" | "T C A": 0.210574;
+"A" | "T C A A": 0.228437; # leaf
+"C" | "T C A A": 0.220783; # leaf
+"G" | "T C A A": 0.348837; # leaf
+"T" | "T C A A": 0.201943; # leaf
+"A" | "T C A C": 0.192506; # leaf
+"C" | "T C A C": 0.218023; # leaf
+"G" | "T C A C": 0.373708; # leaf
+"T" | "T C A C": 0.215762; # leaf
+"A" | "T C A G": 0.208063; # leaf
+"C" | "T C A G": 0.201576; # leaf
+"G" | "T C A G": 0.385542; # leaf
+"T" | "T C A G": 0.204819; # leaf
+"A" | "T C A T": 0.229017; # leaf
+"C" | "T C A T": 0.215028; # leaf
+"G" | "T C A T": 0.334932; # leaf
+"T" | "T C A T": 0.221023; # leaf
+"A" | "T C C": 0.213174;
+"C" | "T C C": 0.243593;
+"G" | "T C C": 0.367305;
+"T" | "T C C": 0.175928;
+"A" | "T C C A": 0.213675; # leaf
+"C" | "T C C A": 0.254701; # leaf
+"G" | "T C C A": 0.350427; # leaf
+"T" | "T C C A": 0.181197; # leaf
+"A" | "T C C C": 0.193156; # leaf
+"C" | "T C C C": 0.276806; # leaf
+"G" | "T C C C": 0.376426; # leaf
+"T" | "T C C C": 0.153612; # leaf
+"A" | "T C C G": 0.202049; # leaf
+"C" | "T C C G": 0.228799; # leaf
+"G" | "T C C G": 0.37564; # leaf
+"T" | "T C C G": 0.193512; # leaf
+"A" | "T C C T": 0.228475; # leaf
+"C" | "T C C T": 0.228814; # leaf
+"G" | "T C C T": 0.371186; # leaf
+"T" | "T C C T": 0.171525; # leaf
+"A" | "T C G": 0.189775;
+"C" | "T C G": 0.23642;
+"G" | "T C G": 0.398493;
+"T" | "T C G": 0.175312;
+"A" | "T C G A": 0.194907; # leaf
+"C" | "T C G A": 0.220862; # leaf
+"G" | "T C G A": 0.408178; # leaf
+"T" | "T C G A": 0.176053; # leaf
+"A" | "T C G C": 0.179154; # leaf
+"C" | "T C G C": 0.230222; # leaf
+"G" | "T C G C": 0.414399; # leaf
+"T" | "T C G C": 0.176224; # leaf
+"A" | "T C G G": 0.193509; # leaf
+"C" | "T C G G": 0.257808; # leaf
+"G" | "T C G G": 0.370484; # leaf
+"T" | "T C G G": 0.1782; # leaf
+"A" | "T C G T": 0.188362; # leaf
+"C" | "T C G T": 0.238152; # leaf
+"G" | "T C G T": 0.40092; # leaf
+"T" | "T C G T": 0.172565; # leaf
+"A" | "T C T": 0.21183;
+"C" | "T C T": 0.22737;
+"G" | "T C T": 0.364025;
+"T" | "T C T": 0.196775;
+"A" | "T C T A": 0.22496; # leaf
+"C" | "T C T A": 0.22656; # leaf
+"G" | "T C T A": 0.35584; # leaf
+"T" | "T C T A": 0.19264; # leaf
+"A" | "T C T C": 0.201359; # leaf
+"C" | "T C T C": 0.208151; # leaf
+"G" | "T C T C": 0.398836; # leaf
+"T" | "T C T C": 0.191655; # leaf
+"A" | "T C T G": 0.175961; # leaf
+"C" | "T C T G": 0.24039; # leaf
+"G" | "T C T G": 0.378452; # leaf
+"T" | "T C T G": 0.205198; # leaf
+"A" | "T C T T": 0.22626; # leaf
+"C" | "T C T T": 0.232977; # leaf
+"G" | "T C T T": 0.341374; # leaf
+"T" | "T C T T": 0.199389; # leaf
+"A" | "T G": 0.212104;
+"C" | "T G": 0.231757;
+"G" | "T G": 0.367931;
+"T" | "T G": 0.188208;
+"A" | "T G A": 0.223769;
+"C" | "T G A": 0.22367;
+"G" | "T G A": 0.351002;
+"T" | "T G A": 0.20156;
+"A" | "T G A A": 0.249012; # leaf
+"C" | "T G A A": 0.199066; # leaf
+"G" | "T G A A": 0.349263; # leaf
+"T" | "T G A A": 0.202659; # leaf
+"A" | "T G A C": 0.194696; # leaf
+"C" | "T G A C": 0.229017; # leaf
+"G" | "T G A C": 0.371295; # leaf
+"T" | "T G A C": 0.204992; # leaf
+"A" | "T G A G": 0.204465; # leaf
+"C" | "T G A G": 0.267884; # leaf
+"G" | "T G A G": 0.327752; # leaf
+"T" | "T G A G": 0.199899; # leaf
+"A" | "T G A T": 0.251832; # leaf
+"C" | "T G A T": 0.207418; # leaf
+"G" | "T G A T": 0.343864; # leaf
+"T" | "T G A T": 0.196886; # leaf
+"A" | "T G C": 0.201121;
+"C" | "T G C": 0.254504;
+"G" | "T G C": 0.358868;
+"T" | "T G C": 0.185506;
+"A" | "T G C A": 0.202475; # leaf
+"C" | "T G C A": 0.229471; # leaf
+"G" | "T G C A": 0.376828; # leaf
+"T" | "T G C A": 0.191226; # leaf
+"A" | "T G C C": 0.198187; # leaf
+"C" | "T G C C": 0.248057; # leaf
+"G" | "T G C C": 0.370466; # leaf
+"T" | "T G C C": 0.18329; # leaf
+"A" | "T G C G": 0.188406; # leaf
+"C" | "T G C G": 0.295072; # leaf
+"G" | "T G C G": 0.343768; # leaf
+"T" | "T G C G": 0.172754; # leaf
+"A" | "T G C T": 0.211147; # leaf
+"C" | "T G C T": 0.248169; # leaf
+"G" | "T G C T": 0.348657; # leaf
+"T" | "T G C T": 0.192026; # leaf
+"A" | "T G G": 0.207285;
+"C" | "T G G": 0.220486;
+"G" | "T G G": 0.393767;
+"T" | "T G G": 0.178461;
+"A" | "T G G A": 0.192513; # leaf
+"C" | "T G G A": 0.214795; # leaf
+"G" | "T G G A": 0.4082; # leaf
+"T" | "T G G A": 0.184492; # leaf
+"A" | "T G G C": 0.202952; # leaf
+"C" | "T G G C": 0.200369; # leaf
+"G" | "T G G C": 0.418081; # leaf
+"T" | "T G G C": 0.178598; # leaf
+"A" | "T G G G": 0.202875; # leaf
+"C" | "T G G G": 0.265708; # leaf
+"G" | "T G G G": 0.363039; # leaf
+"T" | "T G G G": 0.168378; # leaf
+"A" | "T G G T": 0.219512; # leaf
+"C" | "T G G T": 0.211237; # leaf
+"G" | "T G G T": 0.388284; # leaf
+"T" | "T G G T": 0.180967; # leaf
+"A" | "T G T": 0.215303;
+"C" | "T G T": 0.238458;
+"G" | "T G T": 0.357687;
+"T" | "T G T": 0.188552;
+"A" | "T G T A": 0.21705; # leaf
+"C" | "T G T A": 0.211441; # leaf
+"G" | "T G T A": 0.369041; # leaf
+"T" | "T G T A": 0.202468; # leaf
+"A" | "T G T C": 0.178375; # leaf
+"C" | "T G T C": 0.23763; # leaf
+"G" | "T G T C": 0.414783; # leaf
+"T" | "T G T C": 0.169212; # leaf
+"A" | "T G T G": 0.214286; # leaf
+"C" | "T G T G": 0.267493; # leaf
+"G" | "T G T G": 0.335277; # leaf
+"T" | "T G T G": 0.182945; # leaf
+"A" | "T G T T": 0.242522; # leaf
+"C" | "T G T T": 0.242982; # leaf
+"G" | "T G T T": 0.318914; # leaf
+"T" | "T G T T": 0.195582; # leaf
+"A" | "T T": 0.217169;
+"C" | "T T": 0.233221;
+"G" | "T T": 0.354501;
+"T" | "T T": 0.195109;
+"A" | "T T A": 0.211872;
+"C" | "T T A": 0.235616;
+"G" | "T T A": 0.354177;
+"T" | "T T A": 0.198335;
+"A" | "T T A A": 0.208699; # leaf
+"C" | "T T A A": 0.23464; # leaf
+"G" | "T T A A": 0.353228; # leaf
+"T" | "T T A A": 0.203433; # leaf
+"A" | "T T A C": 0.198588; # leaf
+"C" | "T T A C": 0.232348; # leaf
+"G" | "T T A C": 0.367829; # leaf
+"T" | "T T A C": 0.201236; # leaf
+"A" | "T T A G": 0.211328; # leaf
+"C" | "T T A G": 0.252204; # leaf
+"G" | "T T A G": 0.352124; # leaf
+"T" | "T T A G": 0.184344; # leaf
+"A" | "T T A T": 0.226986; # leaf
+"C" | "T T A T": 0.22756; # leaf
+"G" | "T T A T": 0.344498; # leaf
+"T" | "T T A T": 0.200957; # leaf
+"A" | "T T C": 0.208203;
+"C" | "T T C": 0.281542;
+"G" | "T T C": 0.318458;
+"T" | "T T C": 0.191797;
+"A" | "T T C A": 0.193528; # leaf
+"C" | "T T C A": 0.266646; # leaf
+"G" | "T T C A": 0.322029; # leaf
+"T" | "T T C A": 0.217797; # leaf
+"A" | "T T C C": 0.219744; # leaf
+"C" | "T T C C": 0.286189; # leaf
+"G" | "T T C C": 0.311818; # leaf
+"T" | "T T C C": 0.18225; # leaf
+"A" | "T T C G": 0.22375; # leaf
+"C" | "T T C G": 0.27415; # leaf
+"G" | "T T C G": 0.312333; # leaf
+"T" | "T T C G": 0.189767; # leaf
+"A" | "T T C T": 0.20413; # leaf
+"C" | "T T C T": 0.294932; # leaf
+"G" | "T T C T": 0.322618; # leaf
+"T" | "T T C T": 0.17832; # leaf
+"A" | "T T G": 0.212755;
+"C" | "T T G": 0.23354;
+"G" | "T T G": 0.352623;
+"T" | "T T G": 0.201082;
+"A" | "T T G A": 0.205836; # leaf
+"C" | "T T G A": 0.222923; # leaf
+"G" | "T T G A": 0.367245; # leaf
+"T" | "T T G A": 0.203996; # leaf
+"A" | "T T G C": 0.206436; # leaf
+"C" | "T T G C": 0.222527; # leaf
+"G" | "T T G C": 0.326531; # leaf
+"T" | "T T G C": 0.244505; # leaf
+"A" | "T T G G": 0.239047; # leaf
+"C" | "T T G G": 0.239431; # leaf
+"G" | "T T G G": 0.327825; # leaf
+"T" | "T T G G": 0.193697; # leaf
+"A" | "T T G T": 0.207754; # leaf
+"C" | "T T G T": 0.243979; # leaf
+"G" | "T T G T": 0.367143; # leaf
+"T" | "T T G T": 0.181124; # leaf
+"A" | "T T T": 0.235306;
+"C" | "T T T": 0.190419;
+"G" | "T T T": 0.386071;
+"T" | "T T T": 0.188205;
+"A" | "T T T A": 0.214753; # leaf
+"C" | "T T T A": 0.194; # leaf
+"G" | "T T T A": 0.359125; # leaf
+"T" | "T T T A": 0.232123; # leaf
+"A" | "T T T C": 0.223225; # leaf
+"C" | "T T T C": 0.17148; # leaf
+"G" | "T T T C": 0.432611; # leaf
+"T" | "T T T C": 0.172684; # leaf
+"A" | "T T T G": 0.237042; # leaf
+"C" | "T T T G": 0.194454; # leaf
+"G" | "T T T G": 0.383955; # leaf
+"T" | "T T T G": 0.184549; # leaf
+"A" | "T T T T": 0.26586; # leaf
+"C" | "T T T T": 0.199031; # leaf
+"G" | "T T T T": 0.378692; # leaf
+"T" | "T T T T": 0.156416; # leaf
+)
+p1 = ("A" | "" : 0.329186;
+"C" | "" : 0.229584;
+"G" | "" : 0.171996;
+"T" | "" : 0.269234;
+"A" | "A": 0.375148;
+"C" | "A": 0.193323;
+"G" | "A": 0.157908;
+"T" | "A": 0.273622;
+"A" | "A A": 0.378102;
+"C" | "A A": 0.193279;
+"G" | "A A": 0.156938;
+"T" | "A A": 0.271681;
+"A" | "A A A": 0.385472;
+"C" | "A A A": 0.181297;
+"G" | "A A A": 0.150778;
+"T" | "A A A": 0.282453;
+"A" | "A A A A": 0.382557; # leaf
+"C" | "A A A A": 0.19398; # leaf
+"G" | "A A A A": 0.138024; # leaf
+"T" | "A A A A": 0.285439; # leaf
+"A" | "A A A C": 0.381594; # leaf
+"C" | "A A A C": 0.173624; # leaf
+"G" | "A A A C": 0.164896; # leaf
+"T" | "A A A C": 0.279886; # leaf
+"A" | "A A A G": 0.390458; # leaf
+"C" | "A A A G": 0.17446; # leaf
+"G" | "A A A G": 0.15381; # leaf
+"T" | "A A A G": 0.281272; # leaf
+"A" | "A A C": 0.366758;
+"C" | "A A C": 0.220553;
+"G" | "A A C": 0.160538;
+"T" | "A A C": 0.25215;
+"A" | "A A C A": 0.349176; # leaf
+"C" | "A A C A": 0.234353; # leaf
+"G" | "A A C A": 0.154824; # leaf
+"T" | "A A C A": 0.261647; # leaf
+"A" | "A A C C": 0.361022; # leaf
+"C" | "A A C C": 0.232581; # leaf
+"G" | "A A C C": 0.168113; # leaf
+"T" | "A A C C": 0.238284; # leaf
+"A" | "A A C G": 0.37509; # leaf
+"C" | "A A C G": 0.21007; # leaf
+"G" | "A A C G": 0.157311; # leaf
+"T" | "A A C G": 0.257528; # leaf
+"A" | "A A C T": 0.38383; # leaf
+"C" | "A A C T": 0.203091; # leaf
+"G" | "A A C T": 0.162804; # leaf
+"T" | "A A C T": 0.250276; # leaf
+"A" | "A A G": 0.377815;
+"C" | "A A G": 0.16959;
+"G" | "A A G": 0.18143;
+"T" | "A A G": 0.271165;
+"A" | "A A G A": 0.391768; # leaf
+"C" | "A A G A": 0.163459; # leaf
+"G" | "A A G A": 0.196328; # leaf
+"T" | "A A G A": 0.248445; # leaf
+"A" | "A A G C": 0.388004; # leaf
+"C" | "A A G C": 0.16776; # leaf
+"G" | "A A G C": 0.178538; # leaf
+"T" | "A A G C": 0.265698; # leaf
+"A" | "A A G G": 0.36562; # leaf
+"C" | "A A G G": 0.173997; # leaf
+"G" | "A A G G": 0.173822; # leaf
+"T" | "A A G G": 0.286562; # leaf
+"A" | "A A T": 0.380376;
+"C" | "A A T": 0.200962;
+"G" | "A A T": 0.139168;
+"T" | "A A T": 0.279494;
+"A" | "A A T A": 0.351189; # leaf
+"C" | "A A T A": 0.215468; # leaf
+"G" | "A A T A": 0.145652; # leaf
+"T" | "A A T A": 0.287692; # leaf
+"A" | "A A T C": 0.374382; # leaf
+"C" | "A A T C": 0.195846; # leaf
+"G" | "A A T C": 0.164194; # leaf
+"T" | "A A T C": 0.265579; # leaf
+"A" | "A A T G": 0.391219; # leaf
+"C" | "A A T G": 0.198354; # leaf
+"G" | "A A T G": 0.105841; # leaf
+"T" | "A A T G": 0.304586; # leaf
+"A" | "A A T T": 0.404243; # leaf
+"C" | "A A T T": 0.191814; # leaf
+"G" | "A A T T": 0.143412; # leaf
+"T" | "A A T T": 0.260532; # leaf
+"A" | "A C": 0.383444;
+"C" | "A C": 0.203574;
+"G" | "A C": 0.16581;
+"T" | "A C": 0.247173;
+"A" | "A C A": 0.390037;
+"C" | "A C A": 0.188011;
+"G" | "A C A": 0.166479;
+"T" | "A C A": 0.255473;
+"A" | "A C A A": 0.398639; # leaf
+"C" | "A C A A": 0.178668; # leaf
+"G" | "A C A A": 0.164266; # leaf
+"T" | "A C A A": 0.258427; # leaf
+"A" | "A C A C": 0.377945; # leaf
+"C" | "A C A C": 0.189463; # leaf
+"G" | "A C A C": 0.180628; # leaf
+"T" | "A C A C": 0.251963; # leaf
+"A" | "A C A G": 0.383715; # leaf
+"C" | "A C A G": 0.185574; # leaf
+"G" | "A C A G": 0.1644; # leaf
+"T" | "A C A G": 0.266311; # leaf
+"A" | "A C A T": 0.394064; # leaf
+"C" | "A C A T": 0.203881; # leaf
+"G" | "A C A T": 0.162785; # leaf
+"T" | "A C A T": 0.239269; # leaf
+"A" | "A C C": 0.361597;
+"C" | "A C C": 0.238054;
+"G" | "A C C": 0.16049;
+"T" | "A C C": 0.23986;
+"A" | "A C C A": 0.355886; # leaf
+"C" | "A C C A": 0.263086; # leaf
+"G" | "A C C A": 0.141029; # leaf
+"T" | "A C C A": 0.24; # leaf
+"A" | "A C C C": 0.356429; # leaf
+"C" | "A C C C": 0.237512; # leaf
+"G" | "A C C C": 0.165968; # leaf
+"T" | "A C C C": 0.24009; # leaf
+"A" | "A C C G": 0.368264; # leaf
+"C" | "A C C G": 0.227823; # leaf
+"G" | "A C C G": 0.155861; # leaf
+"T" | "A C C G": 0.248052; # leaf
+"A" | "A C C T": 0.361452; # leaf
+"C" | "A C C T": 0.225498; # leaf
+"G" | "A C C T": 0.187005; # leaf
+"T" | "A C C T": 0.226044; # leaf
+"A" | "A C G": 0.382497;
+"C" | "A C G": 0.183466;
+"G" | "A C G": 0.202283;
+"T" | "A C G": 0.231754;
+"A" | "A C G A": 0.377595; # leaf
+"C" | "A C G A": 0.193475; # leaf
+"G" | "A C G A": 0.245266; # leaf
+"T" | "A C G A": 0.183664; # leaf
+"A" | "A C G C": 0.406431; # leaf
+"C" | "A C G C": 0.169798; # leaf
+"G" | "A C G C": 0.176662; # leaf
+"T" | "A C G C": 0.24711; # leaf
+"A" | "A C G G": 0.374602; # leaf
+"C" | "A C G G": 0.189637; # leaf
+"G" | "A C G G": 0.196857; # leaf
+"T" | "A C G G": 0.238904; # leaf
+"A" | "A C G T": 0.37898; # leaf
+"C" | "A C G T": 0.170311; # leaf
+"G" | "A C G T": 0.167242; # leaf
+"T" | "A C G T": 0.283468; # leaf
+"A" | "A C T": 0.397855;
+"C" | "A C T": 0.203786;
+"G" | "A C T": 0.140791;
+"T" | "A C T": 0.257567;
+"A" | "A C T A": 0.399777; # leaf
+"C" | "A C T A": 0.206379; # leaf
+"G" | "A C T A": 0.13499; # leaf
+"T" | "A C T A": 0.258854; # leaf
+"A" | "A C T C": 0.407998; # leaf
+"C" | "A C T C": 0.186436; # leaf
+"G" | "A C T C": 0.166712; # leaf
+"T" | "A C T C": 0.238854; # leaf
+"A" | "A C T G": 0.386729; # leaf
+"C" | "A C T G": 0.225505; # leaf
+"G" | "A C T G": 0.139191; # leaf
+"T" | "A C T G": 0.248574; # leaf
+"A" | "A C T T": 0.396496; # leaf
+"C" | "A C T T": 0.197141; # leaf
+"G" | "A C T T": 0.129279; # leaf
+"T" | "A C T T": 0.277084; # leaf
+"A" | "A G": 0.396011;
+"C" | "A G": 0.180229;
+"G" | "A G": 0.155711;
+"T" | "A G": 0.268048;
+"A" | "A G A": 0.433192;
+"C" | "A G A": 0.165275;
+"G" | "A G A": 0.15259;
+"T" | "A G A": 0.248943;
+"A" | "A G A A": 0.440352; # leaf
+"C" | "A G A A": 0.17107; # leaf
+"G" | "A G A A": 0.147718; # leaf
+"T" | "A G A A": 0.240859; # leaf
+"A" | "A G A C": 0.39945; # leaf
+"C" | "A G A C": 0.170144; # leaf
+"G" | "A G A C": 0.178399; # leaf
+"T" | "A G A C": 0.252006; # leaf
+"A" | "A G A G": 0.446204; # leaf
+"C" | "A G A G": 0.156228; # leaf
+"G" | "A G A G": 0.141948; # leaf
+"T" | "A G A G": 0.25562; # leaf
+"A" | "A G C": 0.358939;
+"C" | "A G C": 0.203934;
+"G" | "A G C": 0.16391;
+"T" | "A G C": 0.273217;
+"A" | "A G C A": 0.356267; # leaf
+"C" | "A G C A": 0.222222; # leaf
+"G" | "A G C A": 0.158561; # leaf
+"T" | "A G C A": 0.26295; # leaf
+"A" | "A G C C": 0.361876; # leaf
+"C" | "A G C C": 0.216437; # leaf
+"G" | "A G C C": 0.154045; # leaf
+"T" | "A G C C": 0.267642; # leaf
+"A" | "A G C G": 0.343886; # leaf
+"C" | "A G C G": 0.170162; # leaf
+"G" | "A G C G": 0.168975; # leaf
+"T" | "A G C G": 0.316977; # leaf
+"A" | "A G C T": 0.371799; # leaf
+"C" | "A G C T": 0.207646; # leaf
+"G" | "A G C T": 0.172571; # leaf
+"T" | "A G C T": 0.247983; # leaf
+"A" | "A G G": 0.393065;
+"C" | "A G G": 0.171983;
+"G" | "A G G": 0.180721;
+"T" | "A G G": 0.25423;
+"A" | "A G G A": 0.401886; # leaf
+"C" | "A G G A": 0.165586; # leaf
+"G" | "A G G A": 0.198586; # leaf
+"T" | "A G G A": 0.233942; # leaf
+"A" | "A G G C": 0.399471; # leaf
+"C" | "A G G C": 0.161376; # leaf
+"G" | "A G G C": 0.194004; # leaf
+"T" | "A G G C": 0.24515; # leaf
+"A" | "A G G G": 0.407652; # leaf
+"C" | "A G G G": 0.164908; # leaf
+"G" | "A G G G": 0.158311; # leaf
+"T" | "A G G G": 0.269129; # leaf
+"A" | "A G G T": 0.377043; # leaf
+"C" | "A G G T": 0.184; # leaf
+"G" | "A G G T": 0.177043; # leaf
+"T" | "A G G T": 0.261913; # leaf
+"A" | "A G T": 0.37975;
+"C" | "A G T": 0.185612;
+"G" | "A G T": 0.144844;
+"T" | "A G T": 0.289795;
+"A" | "A G T A": 0.350179; # leaf
+"C" | "A G T A": 0.183945; # leaf
+"G" | "A G T A": 0.146571; # leaf
+"T" | "A G T A": 0.319305; # leaf
+"A" | "A G T C": 0.386938; # leaf
+"C" | "A G T C": 0.180009; # leaf
+"G" | "A G T C": 0.154026; # leaf
+"T" | "A G T C": 0.279026; # leaf
+"A" | "A G T G": 0.38775; # leaf
+"C" | "A G T G": 0.201649; # leaf
+"G" | "A G T G": 0.123439; # leaf
+"T" | "A G T G": 0.287161; # leaf
+"A" | "A G T T": 0.40794; # leaf
+"C" | "A G T T": 0.177545; # leaf
+"G" | "A G T T": 0.155139; # leaf
+"T" | "A G T T": 0.259377; # leaf
+"A" | "A T": 0.333833;
+"C" | "A T": 0.193689;
+"G" | "A T": 0.149966;
+"T" | "A T": 0.322511;
+"A" | "A T A": 0.347883;
+"C" | "A T A": 0.180349;
+"G" | "A T A": 0.144255;
+"T" | "A T A": 0.327514;
+"A" | "A T A A": 0.35044; # leaf
+"C" | "A T A A": 0.183384; # leaf
+"G" | "A T A A": 0.13691; # leaf
+"T" | "A T A A": 0.329266; # leaf
+"A" | "A T A C": 0.320258; # leaf
+"C" | "A T A C": 0.189176; # leaf
+"G" | "A T A C": 0.158888; # leaf
+"T" | "A T A C": 0.331678; # leaf
+"A" | "A T A G": 0.346508; # leaf
+"C" | "A T A G": 0.169506; # leaf
+"G" | "A T A G": 0.149915; # leaf
+"T" | "A T A G": 0.334072; # leaf
+"A" | "A T A T": 0.365719; # leaf
+"C" | "A T A T": 0.191356; # leaf
+"G" | "A T A T": 0.136683; # leaf
+"T" | "A T A T": 0.306243; # leaf
+"A" | "A T C": 0.312343;
+"C" | "A T C": 0.223133;
+"G" | "A T C": 0.162676;
+"T" | "A T C": 0.301848;
+"A" | "A T C A": 0.302005; # leaf
+"C" | "A T C A": 0.24269; # leaf
+"G" | "A T C A": 0.150376; # leaf
+"T" | "A T C A": 0.304929; # leaf
+"A" | "A T C C": 0.308469; # leaf
+"C" | "A T C C": 0.226024; # leaf
+"G" | "A T C C": 0.181155; # leaf
+"T" | "A T C C": 0.284352; # leaf
+"A" | "A T C G": 0.321301; # leaf
+"C" | "A T C G": 0.208721; # leaf
+"G" | "A T C G": 0.147248; # leaf
+"T" | "A T C G": 0.322731; # leaf
+"A" | "A T C T": 0.315018; # leaf
+"C" | "A T C T": 0.217949; # leaf
+"G" | "A T C T": 0.181319; # leaf
+"T" | "A T C T": 0.285714; # leaf
+"A" | "A T G": 0.334365;
+"C" | "A T G": 0.186017;
+"G" | "A T G": 0.175826;
+"T" | "A T G": 0.303793;
+"A" | "A T G A": 0.36696; # leaf
+"C" | "A T G A": 0.169163; # leaf
+"G" | "A T G A": 0.186344; # leaf
+"T" | "A T G A": 0.277533; # leaf
+"A" | "A T G C": 0.34702; # leaf
+"C" | "A T G C": 0.168212; # leaf
+"G" | "A T G C": 0.175497; # leaf
+"T" | "A T G C": 0.309272; # leaf
+"A" | "A T G G": 0.288647; # leaf
+"C" | "A T G G": 0.208535; # leaf
+"G" | "A T G G": 0.192029; # leaf
+"T" | "A T G G": 0.310789; # leaf
+"A" | "A T G T": 0.347333; # leaf
+"C" | "A T G T": 0.192667; # leaf
+"G" | "A T G T": 0.134; # leaf
+"T" | "A T G T": 0.326; # leaf
+"A" | "A T T": 0.331099;
+"C" | "A T T": 0.194175;
+"G" | "A T T": 0.132763;
+"T" | "A T T": 0.341963;
+"A" | "A T T A": 0.341018; # leaf
+"C" | "A T T A": 0.183177; # leaf
+"G" | "A T T A": 0.127185; # leaf
+"T" | "A T T A": 0.348619; # leaf
+"A" | "A T T C": 0.321527; # leaf
+"C" | "A T T C": 0.190083; # leaf
+"G" | "A T T C": 0.157025; # leaf
+"T" | "A T T C": 0.331366; # leaf
+"A" | "A T T G": 0.334559; # leaf
+"C" | "A T T G": 0.206551; # leaf
+"G" | "A T T G": 0.135027; # leaf
+"T" | "A T T G": 0.323864; # leaf
+"A" | "A T T T": 0.323647; # leaf
+"C" | "A T T T": 0.199145; # leaf
+"G" | "A T T T": 0.119943; # leaf
+"T" | "A T T T": 0.357265; # leaf
+"A" | "C": 0.326759;
+"C" | "C": 0.241751;
+"G" | "C": 0.162196;
+"T" | "C": 0.269294;
+"A" | "C A": 0.326678;
+"C" | "C A": 0.271045;
+"G" | "C A": 0.155309;
+"T" | "C A": 0.246968;
+"A" | "C A A": 0.372307;
+"C" | "C A A": 0.201027;
+"G" | "C A A": 0.166286;
+"T" | "C A A": 0.26038;
+"A" | "C A A A": 0.319611; # leaf
+"C" | "C A A A": 0.216384; # leaf
+"G" | "C A A A": 0.196731; # leaf
+"T" | "C A A A": 0.267273; # leaf
+"A" | "C A A C": 0.477888; # leaf
+"C" | "C A A C": 0.189439; # leaf
+"G" | "C A A C": 0.110891; # leaf
+"T" | "C A A C": 0.221782; # leaf
+"A" | "C A A G": 0.323719; # leaf
+"C" | "C A A G": 0.196513; # leaf
+"G" | "C A A G": 0.188765; # leaf
+"T" | "C A A G": 0.291003; # leaf
+"A" | "C A A T": 0.372307; # leaf
+"C" | "C A A T": 0.201027; # leaf
+"G" | "C A A T": 0.166286; # leaf
+"T" | "C A A T": 0.26038; # leaf
+"A" | "C A C": 0.283249;
+"C" | "C A C": 0.35631;
+"G" | "C A C": 0.126205;
+"T" | "C A C": 0.234236;
+"A" | "C A C A": 0.288096; # leaf
+"C" | "C A C A": 0.35285; # leaf
+"G" | "C A C A": 0.11361; # leaf
+"T" | "C A C A": 0.245444; # leaf
+"A" | "C A C C": 0.263783; # leaf
+"C" | "C A C C": 0.413627; # leaf
+"G" | "C A C C": 0.129206; # leaf
+"T" | "C A C C": 0.193384; # leaf
+"A" | "C A C G": 0.292449; # leaf
+"C" | "C A C G": 0.307014; # leaf
+"G" | "C A C G": 0.141817; # leaf
+"T" | "C A C G": 0.25872; # leaf
+"A" | "C A C T": 0.297892; # leaf
+"C" | "C A C T": 0.325848; # leaf
+"G" | "C A C T": 0.11824; # leaf
+"T" | "C A C T": 0.25802; # leaf
+"A" | "C A G": 0.315766;
+"C" | "C A G": 0.264715;
+"G" | "C A G": 0.187688;
+"T" | "C A G": 0.231832;
+"A" | "C A G A": 0.331658; # leaf
+"C" | "C A G A": 0.243998; # leaf
+"G" | "C A G A": 0.20268; # leaf
+"T" | "C A G A": 0.221664; # leaf
+"A" | "C A G C": 0.317358; # leaf
+"C" | "C A G C": 0.240795; # leaf
+"G" | "C A G C": 0.19813; # leaf
+"T" | "C A G C": 0.243717; # leaf
+"A" | "C A G G": 0.305845; # leaf
+"C" | "C A G G": 0.289415; # leaf
+"G" | "C A G G": 0.173776; # leaf
+"T" | "C A G G": 0.230964; # leaf
+"A" | "C A G T": 0.315766; # leaf
+"C" | "C A G T": 0.264715; # leaf
+"G" | "C A G T": 0.187688; # leaf
+"T" | "C A G T": 0.231832; # leaf
+"A" | "C A T": 0.314226;
+"C" | "C A T": 0.28346;
+"G" | "C A T": 0.148567;
+"T" | "C A T": 0.253747;
+"A" | "C A T A": 0.298455; # leaf
+"C" | "C A T A": 0.301545; # leaf
+"G" | "C A T A": 0.162472; # leaf
+"T" | "C A T A": 0.237528; # leaf
+"A" | "C A T C": 0.3125; # leaf
+"C" | "C A T C": 0.253906; # leaf
+"G" | "C A T C": 0.15625; # leaf
+"T" | "C A T C": 0.277344; # leaf
+"A" | "C A T G": 0.315616; # leaf
+"C" | "C A T G": 0.287123; # leaf
+"G" | "C A T G": 0.124384; # leaf
+"T" | "C A T G": 0.272877; # leaf
+"A" | "C A T T": 0.331827; # leaf
+"C" | "C A T T": 0.282129; # leaf
+"G" | "C A T T": 0.149598; # leaf
+"T" | "C A T T": 0.236446; # leaf
+"A" | "C C": 0.346751;
+"C" | "C C": 0.186229;
+"G" | "C C": 0.172605;
+"T" | "C C": 0.294415;
+"A" | "C C A": 0.359432;
+"C" | "C C A": 0.20158;
+"G" | "C C A": 0.172047;
+"T" | "C C A": 0.266941;
+"A" | "C C A A": 0.333073; # leaf
+"C" | "C C A A": 0.227379; # leaf
+"G" | "C C A A": 0.175897; # leaf
+"T" | "C C A A": 0.263651; # leaf
+"A" | "C C A C": 0.463849; # leaf
+"C" | "C C A C": 0.166852; # leaf
+"G" | "C C A C": 0.149611; # leaf
+"T" | "C C A C": 0.219689; # leaf
+"A" | "C C A G": 0.316428; # leaf
+"C" | "C C A G": 0.224534; # leaf
+"G" | "C C A G": 0.164716; # leaf
+"T" | "C C A G": 0.294322; # leaf
+"A" | "C C A T": 0.348725; # leaf
+"C" | "C C A T": 0.174603; # leaf
+"G" | "C C A T": 0.195286; # leaf
+"T" | "C C A T": 0.281385; # leaf
+"A" | "C C C": 0.346807;
+"C" | "C C C": 0.189706;
+"G" | "C C C": 0.158044;
+"T" | "C C C": 0.305443;
+"A" | "C C C A": 0.33692; # leaf
+"C" | "C C C A": 0.201586; # leaf
+"G" | "C C C A": 0.152322; # leaf
+"T" | "C C C A": 0.309173; # leaf
+"A" | "C C C C": 0.359386; # leaf
+"C" | "C C C C": 0.221329; # leaf
+"G" | "C C C C": 0.154127; # leaf
+"T" | "C C C C": 0.265157; # leaf
+"A" | "C C C G": 0.360146; # leaf
+"C" | "C C C G": 0.172191; # leaf
+"G" | "C C C G": 0.148343; # leaf
+"T" | "C C C G": 0.319321; # leaf
+"A" | "C C C T": 0.328219; # leaf
+"C" | "C C C T": 0.17863; # leaf
+"G" | "C C C T": 0.180274; # leaf
+"T" | "C C C T": 0.312877; # leaf
+"A" | "C C G": 0.357083;
+"C" | "C C G": 0.18477;
+"G" | "C C G": 0.184351;
+"T" | "C C G": 0.273796;
+"A" | "C C G A": 0.352201; # leaf
+"C" | "C C G A": 0.2247; # leaf
+"G" | "C C G A": 0.176101; # leaf
+"T" | "C C G A": 0.246998; # leaf
+"A" | "C C G C": 0.356959; # leaf
+"C" | "C C G C": 0.138531; # leaf
+"G" | "C C G C": 0.227448; # leaf
+"T" | "C C G C": 0.277062; # leaf
+"A" | "C C G G": 0.382284; # leaf
+"C" | "C C G G": 0.175758; # leaf
+"G" | "C C G G": 0.151049; # leaf
+"T" | "C C G G": 0.290909; # leaf
+"A" | "C C G T": 0.329825; # leaf
+"C" | "C C G T": 0.197661; # leaf
+"G" | "C C G T": 0.195906; # leaf
+"T" | "C C G T": 0.276608; # leaf
+"A" | "C C T": 0.326415;
+"C" | "C C T": 0.16998;
+"G" | "C C T": 0.175879;
+"T" | "C C T": 0.327726;
+"A" | "C C T A": 0.317018; # leaf
+"C" | "C C T A": 0.150979; # leaf
+"G" | "C C T A": 0.176581; # leaf
+"T" | "C C T A": 0.355422; # leaf
+"A" | "C C T C": 0.360562; # leaf
+"C" | "C C T C": 0.14933; # leaf
+"G" | "C C T C": 0.179962; # leaf
+"T" | "C C T C": 0.310147; # leaf
+"A" | "C C T G": 0.332733; # leaf
+"C" | "C C T G": 0.191592; # leaf
+"G" | "C C T G": 0.166967; # leaf
+"T" | "C C T G": 0.308709; # leaf
+"A" | "C C T T": 0.314216; # leaf
+"C" | "C C T T": 0.184564; # leaf
+"G" | "C C T T": 0.178157; # leaf
+"T" | "C C T T": 0.323063; # leaf
+"A" | "C G": 0.334139;
+"C" | "C G": 0.239757;
+"G" | "C G": 0.15265;
+"T" | "C G": 0.273454;
+"A" | "C G A": 0.393007;
+"C" | "C G A": 0.186013;
+"G" | "C G A": 0.152779;
+"T" | "C G A": 0.268201;
+"A" | "C G A A": 0.308735; # leaf
+"C" | "C G A A": 0.21964; # leaf
+"G" | "C G A A": 0.177804; # leaf
+"T" | "C G A A": 0.293821; # leaf
+"A" | "C G A C": 0.510146; # leaf
+"C" | "C G A C": 0.164504; # leaf
+"G" | "C G A C": 0.126248; # leaf
+"T" | "C G A C": 0.199102; # leaf
+"A" | "C G A G": 0.344418; # leaf
+"C" | "C G A G": 0.178141; # leaf
+"G" | "C G A G": 0.158368; # leaf
+"T" | "C G A G": 0.319072; # leaf
+"A" | "C G C": 0.283254;
+"C" | "C G C": 0.343844;
+"G" | "C G C": 0.125161;
+"T" | "C G C": 0.24774;
+"A" | "C G C A": 0.257011; # leaf
+"C" | "C G C A": 0.35908; # leaf
+"G" | "C G C A": 0.135632; # leaf
+"T" | "C G C A": 0.248276; # leaf
+"A" | "C G C C": 0.279315; # leaf
+"C" | "C G C C": 0.398398; # leaf
+"G" | "C G C C": 0.103059; # leaf
+"T" | "C G C C": 0.219228; # leaf
+"A" | "C G C G": 0.287738; # leaf
+"C" | "C G C G": 0.298638; # leaf
+"G" | "C G C G": 0.137875; # leaf
+"T" | "C G C G": 0.275749; # leaf
+"A" | "C G C T": 0.306515; # leaf
+"C" | "C G C T": 0.30416; # leaf
+"G" | "C G C T": 0.131476; # leaf
+"T" | "C G C T": 0.257849; # leaf
+"A" | "C G G": 0.309405;
+"C" | "C G G": 0.221295;
+"G" | "C G G": 0.180115;
+"T" | "C G G": 0.289186;
+"A" | "C G G A": 0.318035; # leaf
+"C" | "C G G A": 0.240741; # leaf
+"G" | "C G G A": 0.195652; # leaf
+"T" | "C G G A": 0.245572; # leaf
+"A" | "C G G C": 0.333901; # leaf
+"C" | "C G G C": 0.199319; # leaf
+"G" | "C G G C": 0.204429; # leaf
+"T" | "C G G C": 0.262351; # leaf
+"A" | "C G G G": 0.283509; # leaf
+"C" | "C G G G": 0.259139; # leaf
+"G" | "C G G G": 0.14866; # leaf
+"T" | "C G G G": 0.308692; # leaf
+"A" | "C G G T": 0.30467; # leaf
+"C" | "C G G T": 0.1959; # leaf
+"G" | "C G G T": 0.175399; # leaf
+"T" | "C G G T": 0.324032; # leaf
+"A" | "C G T": 0.307968;
+"C" | "C G T": 0.241935;
+"G" | "C G T": 0.159981;
+"T" | "C G T": 0.290116;
+"A" | "C G T A": 0.327098; # leaf
+"C" | "C G T A": 0.246616; # leaf
+"G" | "C G T A": 0.150135; # leaf
+"T" | "C G T A": 0.276151; # leaf
+"A" | "C G T C": 0.297847; # leaf
+"C" | "C G T C": 0.232775; # leaf
+"G" | "C G T C": 0.177751; # leaf
+"T" | "C G T C": 0.291627; # leaf
+"A" | "C G T G": 0.292411; # leaf
+"C" | "C G T G": 0.245536; # leaf
+"G" | "C G T G": 0.154576; # leaf
+"T" | "C G T G": 0.307478; # leaf
+"A" | "C G T T": 0.315262; # leaf
+"C" | "C G T T": 0.244337; # leaf
+"G" | "C G T T": 0.154846; # leaf
+"T" | "C G T T": 0.285555; # leaf
+"A" | "C T": 0.306636;
+"C" | "C T": 0.256981;
+"G" | "C T": 0.169782;
+"T" | "C T": 0.266601;
+"A" | "C T A": 0.318578;
+"C" | "C T A": 0.262048;
+"G" | "C T A": 0.174678;
+"T" | "C T A": 0.244697;
+"A" | "C T A A": 0.321346; # leaf
+"C" | "C T A A": 0.267614; # leaf
+"G" | "C T A A": 0.172068; # leaf
+"T" | "C T A A": 0.238971; # leaf
+"A" | "C T A C": 0.379702; # leaf
+"C" | "C T A C": 0.245136; # leaf
+"G" | "C T A C": 0.180285; # leaf
+"T" | "C T A C": 0.194877; # leaf
+"A" | "C T A G": 0.283873; # leaf
+"C" | "C T A G": 0.264364; # leaf
+"G" | "C T A G": 0.182746; # leaf
+"T" | "C T A G": 0.269017; # leaf
+"A" | "C T A T": 0.315551; # leaf
+"C" | "C T A T": 0.266388; # leaf
+"G" | "C T A T": 0.157601; # leaf
+"T" | "C T A T": 0.26046; # leaf
+"A" | "C T C": 0.300917;
+"C" | "C T C": 0.286286;
+"G" | "C T C": 0.149044;
+"T" | "C T C": 0.263753;
+"A" | "C T C A": 0.282736; # leaf
+"C" | "C T C A": 0.316931; # leaf
+"G" | "C T C A": 0.14804; # leaf
+"T" | "C T C A": 0.252294; # leaf
+"A" | "C T C C": 0.28866; # leaf
+"C" | "C T C C": 0.34217; # leaf
+"G" | "C T C C": 0.140893; # leaf
+"T" | "C T C C": 0.228277; # leaf
+"A" | "C T C G": 0.319656; # leaf
+"C" | "C T C G": 0.249928; # leaf
+"G" | "C T C G": 0.141463; # leaf
+"T" | "C T C G": 0.288953; # leaf
+"A" | "C T C T": 0.302048; # leaf
+"C" | "C T C T": 0.260239; # leaf
+"G" | "C T C T": 0.168942; # leaf
+"T" | "C T C T": 0.268771; # leaf
+"A" | "C T G": 0.299528;
+"C" | "C T G": 0.235773;
+"G" | "C T G": 0.194805;
+"T" | "C T G": 0.269894;
+"A" | "C T G A": 0.275011; # leaf
+"C" | "C T G A": 0.285588; # leaf
+"G" | "C T G A": 0.173645; # leaf
+"T" | "C T G A": 0.265756; # leaf
+"A" | "C T G C": 0.32356; # leaf
+"C" | "C T G C": 0.190576; # leaf
+"G" | "C T G C": 0.229843; # leaf
+"T" | "C T G C": 0.256021; # leaf
+"A" | "C T G G": 0.3081; # leaf
+"C" | "C T G G": 0.210825; # leaf
+"G" | "C T G G": 0.197199; # leaf
+"T" | "C T G G": 0.283876; # leaf
+"A" | "C T G T": 0.291391; # leaf
+"C" | "C T G T": 0.259482; # leaf
+"G" | "C T G T": 0.180012; # leaf
+"T" | "C T G T": 0.269115; # leaf
+"A" | "C T T": 0.301141;
+"C" | "C T T": 0.242376;
+"G" | "C T T": 0.164167;
+"T" | "C T T": 0.292315;
+"A" | "C T T A": 0.305537; # leaf
+"C" | "C T T A": 0.252905; # leaf
+"G" | "C T T A": 0.163591; # leaf
+"T" | "C T T A": 0.277968; # leaf
+"A" | "C T T C": 0.318777; # leaf
+"C" | "C T T C": 0.222125; # leaf
+"G" | "C T T C": 0.167103; # leaf
+"T" | "C T T C": 0.291994; # leaf
+"A" | "C T T G": 0.300244; # leaf
+"C" | "C T T G": 0.254263; # leaf
+"G" | "C T T G": 0.168392; # leaf
+"T" | "C T T G": 0.277101; # leaf
+"A" | "C T T T": 0.273847; # leaf
+"C" | "C T T T": 0.236888; # leaf
+"G" | "C T T T": 0.156987; # leaf
+"T" | "C T T T": 0.332277; # leaf
+"A" | "G": 0.381255;
+"C" | "G": 0.221171;
+"G" | "G": 0.197248;
+"T" | "G": 0.200326;
+"A" | "G A": 0.38513;
+"C" | "G A": 0.239732;
+"G" | "G A": 0.168574;
+"T" | "G A": 0.206565;
+"A" | "G A A": 0.429112;
+"C" | "G A A": 0.207251;
+"G" | "G A A": 0.156385;
+"T" | "G A A": 0.207251;
+"A" | "G A A A": 0.422298; # leaf
+"C" | "G A A A": 0.211434; # leaf
+"G" | "G A A A": 0.153407; # leaf
+"T" | "G A A A": 0.21286; # leaf
+"A" | "G A A C": 0.362065; # leaf
+"C" | "G A A C": 0.225262; # leaf
+"G" | "G A A C": 0.18597; # leaf
+"T" | "G A A C": 0.226702; # leaf
+"A" | "G A A G": 0.471726; # leaf
+"C" | "G A A G": 0.19391; # leaf
+"G" | "G A A G": 0.142399; # leaf
+"T" | "G A A G": 0.191964; # leaf
+"A" | "G A C": 0.338381;
+"C" | "G A C": 0.282304;
+"G" | "G A C": 0.167041;
+"T" | "G A C": 0.212274;
+"A" | "G A C A": 0.363685; # leaf
+"C" | "G A C A": 0.257004; # leaf
+"G" | "G A C A": 0.169989; # leaf
+"T" | "G A C A": 0.209321; # leaf
+"A" | "G A C C": 0.349343; # leaf
+"C" | "G A C C": 0.244683; # leaf
+"G" | "G A C C": 0.18184; # leaf
+"T" | "G A C C": 0.224134; # leaf
+"A" | "G A C G": 0.295143; # leaf
+"C" | "G A C G": 0.358092; # leaf
+"G" | "G A C G": 0.147898; # leaf
+"T" | "G A C G": 0.198867; # leaf
+"A" | "G A C T": 0.360166; # leaf
+"C" | "G A C T": 0.245654; # leaf
+"G" | "G A C T": 0.173091; # leaf
+"T" | "G A C T": 0.221088; # leaf
+"A" | "G A G": 0.357678;
+"C" | "G A G": 0.238553;
+"G" | "G A G": 0.20938;
+"T" | "G A G": 0.194388;
+"A" | "G A G A": 0.429312; # leaf
+"C" | "G A G A": 0.215396; # leaf
+"G" | "G A G A": 0.168024; # leaf
+"T" | "G A G A": 0.187269; # leaf
+"A" | "G A G C": 0.374695; # leaf
+"C" | "G A G C": 0.23107; # leaf
+"G" | "G A G C": 0.172936; # leaf
+"T" | "G A G C": 0.221299; # leaf
+"A" | "G A G G": 0.312865; # leaf
+"C" | "G A G G": 0.253801; # leaf
+"G" | "G A G G": 0.245809; # leaf
+"T" | "G A G G": 0.187524; # leaf
+"A" | "G A G T": 0.357678; # leaf
+"C" | "G A G T": 0.238553; # leaf
+"G" | "G A G T": 0.20938; # leaf
+"T" | "G A G T": 0.194388; # leaf
+"A" | "G A T": 0.392469;
+"C" | "G A T": 0.243619;
+"G" | "G A T": 0.15523;
+"T" | "G A T": 0.208682;
+"A" | "G A T A": 0.381371; # leaf
+"C" | "G A T A": 0.257426; # leaf
+"G" | "G A T A": 0.148515; # leaf
+"T" | "G A T A": 0.212688; # leaf
+"A" | "G A T C": 0.404589; # leaf
+"C" | "G A T C": 0.243984; # leaf
+"G" | "G A T C": 0.143257; # leaf
+"T" | "G A T C": 0.20817; # leaf
+"A" | "G A T G": 0.364103; # leaf
+"C" | "G A T G": 0.249145; # leaf
+"G" | "G A T G": 0.157692; # leaf
+"T" | "G A T G": 0.22906; # leaf
+"A" | "G A T T": 0.419426; # leaf
+"C" | "G A T T": 0.224798; # leaf
+"G" | "G A T T": 0.168138; # leaf
+"T" | "G A T T": 0.187638; # leaf
+"A" | "G C": 0.411889;
+"C" | "G C": 0.186503;
+"G" | "G C": 0.21147;
+"T" | "G C": 0.190138;
+"A" | "G C A": 0.458291;
+"C" | "G C A": 0.168309;
+"G" | "G C A": 0.189099;
+"T" | "G C A": 0.184301;
+"A" | "G C A A": 0.421213; # leaf
+"C" | "G C A A": 0.168659; # leaf
+"G" | "G C A A": 0.218431; # leaf
+"T" | "G C A A": 0.191697; # leaf
+"A" | "G C A C": 0.406402; # leaf
+"C" | "G C A C": 0.19611; # leaf
+"G" | "G C A C": 0.205835; # leaf
+"T" | "G C A C": 0.191653; # leaf
+"A" | "G C A G": 0.521054; # leaf
+"C" | "G C A G": 0.154201; # leaf
+"G" | "G C A G": 0.148625; # leaf
+"T" | "G C A G": 0.17612; # leaf
+"A" | "G C A T": 0.449318; # leaf
+"C" | "G C A T": 0.169532; # leaf
+"G" | "G C A T": 0.199467; # leaf
+"T" | "G C A T": 0.181683; # leaf
+"A" | "G C C": 0.366021;
+"C" | "G C C": 0.229535;
+"G" | "G C C": 0.214644;
+"T" | "G C C": 0.1898;
+"A" | "G C C A": 0.374706; # leaf
+"C" | "G C C A": 0.19792; # leaf
+"G" | "G C C A": 0.209326; # leaf
+"T" | "G C C A": 0.218048; # leaf
+"A" | "G C C C": 0.412126; # leaf
+"C" | "G C C C": 0.204834; # leaf
+"G" | "G C C C": 0.196641; # leaf
+"T" | "G C C C": 0.186399; # leaf
+"A" | "G C C G": 0.345611; # leaf
+"C" | "G C C G": 0.275942; # leaf
+"G" | "G C C G": 0.199537; # leaf
+"T" | "G C C G": 0.17891; # leaf
+"A" | "G C C T": 0.350714; # leaf
+"C" | "G C C T": 0.206071; # leaf
+"G" | "G C C T": 0.261786; # leaf
+"T" | "G C C T": 0.181429; # leaf
+"A" | "G C G": 0.396717;
+"C" | "G C G": 0.155865;
+"G" | "G C G": 0.267185;
+"T" | "G C G": 0.180233;
+"A" | "G C G A": 0.402769; # leaf
+"C" | "G C G A": 0.172709; # leaf
+"G" | "G C G A": 0.258075; # leaf
+"T" | "G C G A": 0.166447; # leaf
+"A" | "G C G C": 0.466726; # leaf
+"C" | "G C G C": 0.152618; # leaf
+"G" | "G C G C": 0.208075; # leaf
+"T" | "G C G C": 0.172582; # leaf
+"A" | "G C G G": 0.346371; # leaf
+"C" | "G C G G": 0.141376; # leaf
+"G" | "G C G G": 0.329171; # leaf
+"T" | "G C G G": 0.183082; # leaf
+"A" | "G C G T": 0.413143; # leaf
+"C" | "G C G T": 0.164522; # leaf
+"G" | "G C G T": 0.220129; # leaf
+"T" | "G C G T": 0.202206; # leaf
+"A" | "G C T": 0.415035;
+"C" | "G C T": 0.192546;
+"G" | "G C T": 0.187333;
+"T" | "G C T": 0.205087;
+"A" | "G C T A": 0.433379; # leaf
+"C" | "G C T A": 0.193452; # leaf
+"G" | "G C T A": 0.184753; # leaf
+"T" | "G C T A": 0.188416; # leaf
+"A" | "G C T C": 0.405238; # leaf
+"C" | "G C T C": 0.198254; # leaf
+"G" | "G C T C": 0.181157; # leaf
+"T" | "G C T C": 0.215351; # leaf
+"A" | "G C T G": 0.401748; # leaf
+"C" | "G C T G": 0.190029; # leaf
+"G" | "G C T G": 0.199094; # leaf
+"T" | "G C T G": 0.209129; # leaf
+"A" | "G C T T": 0.4115; # leaf
+"C" | "G C T T": 0.18975; # leaf
+"G" | "G C T T": 0.1855; # leaf
+"T" | "G C T T": 0.21325; # leaf
+"A" | "G G": 0.418612;
+"C" | "G G": 0.240923;
+"G" | "G G": 0.160699;
+"T" | "G G": 0.179766;
+"A" | "G G A": 0.47354;
+"C" | "G G A": 0.217533;
+"G" | "G G A": 0.146334;
+"T" | "G G A": 0.162593;
+"A" | "G G A A": 0.463149; # leaf
+"C" | "G G A A": 0.219929; # leaf
+"G" | "G G A A": 0.147995; # leaf
+"T" | "G G A A": 0.168927; # leaf
+"A" | "G G A C": 0.410262; # leaf
+"C" | "G G A C": 0.260205; # leaf
+"G" | "G G A C": 0.159863; # leaf
+"T" | "G G A C": 0.169669; # leaf
+"A" | "G G A G": 0.51601; # leaf
+"C" | "G G A G": 0.192614; # leaf
+"G" | "G G A G": 0.137775; # leaf
+"T" | "G G A G": 0.153601; # leaf
+"A" | "G G C": 0.369922;
+"C" | "G G C": 0.27454;
+"G" | "G G C": 0.167797;
+"T" | "G G C": 0.18774;
+"A" | "G G C A": 0.387993; # leaf
+"C" | "G G C A": 0.234648; # leaf
+"G" | "G G C A": 0.176672; # leaf
+"T" | "G G C A": 0.200686; # leaf
+"A" | "G G C C": 0.453903; # leaf
+"C" | "G G C C": 0.224164; # leaf
+"G" | "G G C C": 0.153532; # leaf
+"T" | "G G C C": 0.168401; # leaf
+"A" | "G G C G": 0.317107; # leaf
+"C" | "G G C G": 0.348735; # leaf
+"G" | "G G C G": 0.152915; # leaf
+"T" | "G G C G": 0.181243; # leaf
+"A" | "G G C T": 0.340652; # leaf
+"C" | "G G C T": 0.268463; # leaf
+"G" | "G G C T": 0.190286; # leaf
+"T" | "G G C T": 0.200599; # leaf
+"A" | "G G G": 0.425779;
+"C" | "G G G": 0.219151;
+"G" | "G G G": 0.178528;
+"T" | "G G G": 0.176542;
+"A" | "G G G A": 0.464694; # leaf
+"C" | "G G G A": 0.198386; # leaf
+"G" | "G G G A": 0.164761; # leaf
+"T" | "G G G A": 0.172159; # leaf
+"A" | "G G G C": 0.483969; # leaf
+"C" | "G G G C": 0.225191; # leaf
+"G" | "G G G C": 0.131298; # leaf
+"T" | "G G G C": 0.159542; # leaf
+"A" | "G G G G": 0.39529; # leaf
+"C" | "G G G G": 0.233609; # leaf
+"G" | "G G G G": 0.190961; # leaf
+"T" | "G G G G": 0.18014; # leaf
+"A" | "G G G T": 0.385493; # leaf
+"C" | "G G G T": 0.219434; # leaf
+"G" | "G G G T": 0.207573; # leaf
+"T" | "G G G T": 0.1875; # leaf
+"A" | "G G T": 0.394815;
+"C" | "G G T": 0.249398;
+"G" | "G G T": 0.164167;
+"T" | "G G T": 0.19162;
+"A" | "G G T A": 0.400389; # leaf
+"C" | "G G T A": 0.242213; # leaf
+"G" | "G G T A": 0.179104; # leaf
+"T" | "G G T A": 0.178293; # leaf
+"A" | "G G T C": 0.400385; # leaf
+"C" | "G G T C": 0.245385; # leaf
+"G" | "G G T C": 0.165962; # leaf
+"T" | "G G T C": 0.188269; # leaf
+"A" | "G G T G": 0.371423; # leaf
+"C" | "G G T G": 0.262577; # leaf
+"G" | "G G T G": 0.141762; # leaf
+"T" | "G G T G": 0.224238; # leaf
+"A" | "G G T T": 0.40706; # leaf
+"C" | "G G T T": 0.248317; # leaf
+"G" | "G G T T": 0.168129; # leaf
+"T" | "G G T T": 0.176495; # leaf
+"A" | "G T": 0.326195;
+"C" | "G T": 0.216972;
+"G" | "G T": 0.237251;
+"T" | "G T": 0.219582;
+"A" | "G T A": 0.359814;
+"C" | "G T A": 0.203667;
+"G" | "G T A": 0.21888;
+"T" | "G T A": 0.21764;
+"A" | "G T A A": 0.323689; # leaf
+"C" | "G T A A": 0.204618; # leaf
+"G" | "G T A A": 0.23689; # leaf
+"T" | "G T A A": 0.234803; # leaf
+"A" | "G T A C": 0.336231; # leaf
+"C" | "G T A C": 0.218707; # leaf
+"G" | "G T A C": 0.230529; # leaf
+"T" | "G T A C": 0.214534; # leaf
+"A" | "G T A G": 0.406013; # leaf
+"C" | "G T A G": 0.199743; # leaf
+"G" | "G T A G": 0.189687; # leaf
+"T" | "G T A G": 0.204558; # leaf
+"A" | "G T A T": 0.333417; # leaf
+"C" | "G T A T": 0.20045; # leaf
+"G" | "G T A T": 0.246438; # leaf
+"T" | "G T A T": 0.219695; # leaf
+"A" | "G T C": 0.289822;
+"C" | "G T C": 0.243096;
+"G" | "G T C": 0.247469;
+"T" | "G T C": 0.219613;
+"A" | "G T C A": 0.283649; # leaf
+"C" | "G T C A": 0.228315; # leaf
+"G" | "G T C A": 0.25; # leaf
+"T" | "G T C A": 0.238036; # leaf
+"A" | "G T C C": 0.331922; # leaf
+"C" | "G T C C": 0.214007; # leaf
+"G" | "G T C C": 0.234202; # leaf
+"T" | "G T C C": 0.21987; # leaf
+"A" | "G T C G": 0.263283; # leaf
+"C" | "G T C G": 0.285593; # leaf
+"G" | "G T C G": 0.239441; # leaf
+"T" | "G T C G": 0.211683; # leaf
+"A" | "G T C T": 0.303386; # leaf
+"C" | "G T C T": 0.216209; # leaf
+"G" | "G T C T": 0.268195; # leaf
+"T" | "G T C T": 0.21221; # leaf
+"A" | "G T G": 0.312012;
+"C" | "G T G": 0.205355;
+"G" | "G T G": 0.273856;
+"T" | "G T G": 0.208776;
+"A" | "G T G A": 0.327339; # leaf
+"C" | "G T G A": 0.220006; # leaf
+"G" | "G T G A": 0.258781; # leaf
+"T" | "G T G A": 0.193875; # leaf
+"A" | "G T G C": 0.340639; # leaf
+"C" | "G T G C": 0.209138; # leaf
+"G" | "G T G C": 0.2474; # leaf
+"T" | "G T G C": 0.202823; # leaf
+"A" | "G T G G": 0.255513; # leaf
+"C" | "G T G G": 0.194232; # leaf
+"G" | "G T G G": 0.335666; # leaf
+"T" | "G T G G": 0.214589; # leaf
+"A" | "G T G T": 0.365863; # leaf
+"C" | "G T G T": 0.201606; # leaf
+"G" | "G T G T": 0.206827; # leaf
+"T" | "G T G T": 0.225703; # leaf
+"A" | "G T T": 0.326677;
+"C" | "G T T": 0.218477;
+"G" | "G T T": 0.226266;
+"T" | "G T T": 0.22858;
+"A" | "G T T A": 0.33399; # leaf
+"C" | "G T T A": 0.219224; # leaf
+"G" | "G T T A": 0.20755; # leaf
+"T" | "G T T A": 0.239236; # leaf
+"A" | "G T T C": 0.302445; # leaf
+"C" | "G T T C": 0.223423; # leaf
+"G" | "G T T C": 0.25843; # leaf
+"T" | "G T T C": 0.215701; # leaf
+"A" | "G T T G": 0.320355; # leaf
+"C" | "G T T G": 0.220093; # leaf
+"G" | "G T T G": 0.225136; # leaf
+"T" | "G T T G": 0.234416; # leaf
+"A" | "G T T T": 0.339934; # leaf
+"C" | "G T T T": 0.212958; # leaf
+"G" | "G T T T": 0.227028; # leaf
+"T" | "G T T T": 0.22008; # leaf
+"A" | "T": 0.170363;
+"C" | "T": 0.287704;
+"G" | "T": 0.16306;
+"T" | "T": 0.378873;
+"A" | "T A": 0.151149;
+"C" | "T A": 0.306124;
+"G" | "T A": 0.148352;
+"T" | "T A": 0.394375;
+"A" | "T A A": 0.175026;
+"C" | "T A A": 0.275177;
+"G" | "T A A": 0.168966;
+"T" | "T A A": 0.380831;
+"A" | "T A A A": 0.181173; # leaf
+"C" | "T A A A": 0.278353; # leaf
+"G" | "T A A A": 0.17042; # leaf
+"T" | "T A A A": 0.370055; # leaf
+"A" | "T A A C": 0.169579; # leaf
+"C" | "T A A C": 0.265372; # leaf
+"G" | "T A A C": 0.158576; # leaf
+"T" | "T A A C": 0.406472; # leaf
+"A" | "T A A G": 0.172185; # leaf
+"C" | "T A A G": 0.278366; # leaf
+"G" | "T A A G": 0.174614; # leaf
+"T" | "T A A G": 0.374834; # leaf
+"A" | "T A C": 0.128844;
+"C" | "T A C": 0.354613;
+"G" | "T A C": 0.120889;
+"T" | "T A C": 0.395653;
+"A" | "T A C A": 0.139517; # leaf
+"C" | "T A C A": 0.322346; # leaf
+"G" | "T A C A": 0.125335; # leaf
+"T" | "T A C A": 0.412802; # leaf
+"A" | "T A C C": 0.133285; # leaf
+"C" | "T A C C": 0.378004; # leaf
+"G" | "T A C C": 0.123088; # leaf
+"T" | "T A C C": 0.365623; # leaf
+"A" | "T A C G": 0.122287; # leaf
+"C" | "T A C G": 0.332489; # leaf
+"G" | "T A C G": 0.117583; # leaf
+"T" | "T A C G": 0.427641; # leaf
+"A" | "T A C T": 0.119545; # leaf
+"C" | "T A C T": 0.390909; # leaf
+"G" | "T A C T": 0.117727; # leaf
+"T" | "T A C T": 0.371818; # leaf
+"A" | "T A G": 0.168215;
+"C" | "T A G": 0.279548;
+"G" | "T A G": 0.156067;
+"T" | "T A G": 0.39617;
+"A" | "T A G A": 0.187762; # leaf
+"C" | "T A G A": 0.274582; # leaf
+"G" | "T A G A": 0.150628; # leaf
+"T" | "T A G A": 0.387029; # leaf
+"A" | "T A G C": 0.145266; # leaf
+"C" | "T A G C": 0.263294; # leaf
+"G" | "T A G C": 0.160182; # leaf
+"T" | "T A G C": 0.431258; # leaf
+"A" | "T A G G": 0.167887; # leaf
+"C" | "T A G G": 0.289296; # leaf
+"G" | "T A G G": 0.157465; # leaf
+"T" | "T A G G": 0.385352; # leaf
+"A" | "T A G T": 0.168215; # leaf
+"C" | "T A G T": 0.279548; # leaf
+"G" | "T A G T": 0.156067; # leaf
+"T" | "T A G T": 0.39617; # leaf
+"A" | "T A T": 0.127881;
+"C" | "T A T": 0.315242;
+"G" | "T A T": 0.144857;
+"T" | "T A T": 0.41202;
+"A" | "T A T A": 0.134988; # leaf
+"C" | "T A T A": 0.302172; # leaf
+"G" | "T A T A": 0.133437; # leaf
+"T" | "T A T A": 0.429403; # leaf
+"A" | "T A T C": 0.116653; # leaf
+"C" | "T A T C": 0.337892; # leaf
+"G" | "T A T C": 0.175382; # leaf
+"T" | "T A T C": 0.370072; # leaf
+"A" | "T A T G": 0.118797; # leaf
+"C" | "T A T G": 0.338847; # leaf
+"G" | "T A T G": 0.142356; # leaf
+"T" | "T A T G": 0.4; # leaf
+"A" | "T A T T": 0.134598; # leaf
+"C" | "T A T T": 0.296558; # leaf
+"G" | "T A T T": 0.143866; # leaf
+"T" | "T A T T": 0.424978; # leaf
+"A" | "T C": 0.198795;
+"C" | "T C": 0.287718;
+"G" | "T C": 0.180211;
+"T" | "T C": 0.333277;
+"A" | "T C A": 0.193892;
+"C" | "T C A": 0.266636;
+"G" | "T C A": 0.181675;
+"T" | "T C A": 0.357797;
+"A" | "T C A A": 0.200479; # leaf
+"C" | "T C A A": 0.284088; # leaf
+"G" | "T C A A": 0.174708; # leaf
+"T" | "T C A A": 0.340725; # leaf
+"A" | "T C A C": 0.200226; # leaf
+"C" | "T C A C": 0.27806; # leaf
+"G" | "T C A C": 0.168077; # leaf
+"T" | "T C A C": 0.353638; # leaf
+"A" | "T C A G": 0.190833; # leaf
+"C" | "T C A G": 0.258838; # leaf
+"G" | "T C A G": 0.18604; # leaf
+"T" | "T C A G": 0.36429; # leaf
+"A" | "T C A T": 0.184466; # leaf
+"C" | "T C A T": 0.244407; # leaf
+"G" | "T C A T": 0.195863; # leaf
+"T" | "T C A T": 0.375264; # leaf
+"A" | "T C C": 0.174057;
+"C" | "T C C": 0.31595;
+"G" | "T C C": 0.183984;
+"T" | "T C C": 0.326009;
+"A" | "T C C A": 0.203655; # leaf
+"C" | "T C C A": 0.268407; # leaf
+"G" | "T C C A": 0.208355; # leaf
+"T" | "T C C A": 0.319582; # leaf
+"A" | "T C C C": 0.170063; # leaf
+"C" | "T C C C": 0.299373; # leaf
+"G" | "T C C C": 0.188871; # leaf
+"T" | "T C C C": 0.341693; # leaf
+"A" | "T C C G": 0.185779; # leaf
+"C" | "T C C G": 0.313194; # leaf
+"G" | "T C C G": 0.166461; # leaf
+"T" | "T C C G": 0.334566; # leaf
+"A" | "T C C T": 0.133299; # leaf
+"C" | "T C C T": 0.376737; # leaf
+"G" | "T C C T": 0.179104; # leaf
+"T" | "T C C T": 0.310859; # leaf
+"A" | "T C G": 0.20685;
+"C" | "T C G": 0.304746;
+"G" | "T C G": 0.178263;
+"T" | "T C G": 0.31014;
+"A" | "T C G A": 0.180921; # leaf
+"C" | "T C G A": 0.343985; # leaf
+"G" | "T C G A": 0.151316; # leaf
+"T" | "T C G A": 0.323778; # leaf
+"A" | "T C G C": 0.208459; # leaf
+"C" | "T C G C": 0.268882; # leaf
+"G" | "T C G C": 0.227341; # leaf
+"T" | "T C G C": 0.295317; # leaf
+"A" | "T C G G": 0.25217; # leaf
+"C" | "T C G G": 0.29351; # leaf
+"G" | "T C G G": 0.15709; # leaf
+"T" | "T C G G": 0.29723; # leaf
+"A" | "T C G T": 0.170841; # leaf
+"C" | "T C G T": 0.298651; # leaf
+"G" | "T C G T": 0.206808; # leaf
+"T" | "T C G T": 0.323699; # leaf
+"A" | "T C T": 0.217333;
+"C" | "T C T": 0.276205;
+"G" | "T C T": 0.177231;
+"T" | "T C T": 0.329231;
+"A" | "T C T A": 0.224736; # leaf
+"C" | "T C T A": 0.282051; # leaf
+"G" | "T C T A": 0.197964; # leaf
+"T" | "T C T A": 0.295249; # leaf
+"A" | "T C T C": 0.229335; # leaf
+"C" | "T C T C": 0.303931; # leaf
+"G" | "T C T C": 0.161794; # leaf
+"T" | "T C T C": 0.30494; # leaf
+"A" | "T C T G": 0.22817; # leaf
+"C" | "T C T G": 0.283264; # leaf
+"G" | "T C T G": 0.183472; # leaf
+"T" | "T C T G": 0.305094; # leaf
+"A" | "T C T T": 0.197377; # leaf
+"C" | "T C T T": 0.249844; # leaf
+"G" | "T C T T": 0.166146; # leaf
+"T" | "T C T T": 0.386633; # leaf
+"A" | "T G": 0.175599;
+"C" | "T G": 0.276565;
+"G" | "T G": 0.171464;
+"T" | "T G": 0.376373;
+"A" | "T G A": 0.198672;
+"C" | "T G A": 0.243857;
+"G" | "T G A": 0.185295;
+"T" | "T G A": 0.372176;
+"A" | "T G A A": 0.209834; # leaf
+"C" | "T G A A": 0.258217; # leaf
+"G" | "T G A A": 0.188798; # leaf
+"T" | "T G A A": 0.34315; # leaf
+"A" | "T G A C": 0.164627; # leaf
+"C" | "T G A C": 0.249537; # leaf
+"G" | "T G A C": 0.188728; # leaf
+"T" | "T G A C": 0.397108; # leaf
+"A" | "T G A G": 0.2125; # leaf
+"C" | "T G A G": 0.224444; # leaf
+"G" | "T G A G": 0.179167; # leaf
+"T" | "T G A G": 0.383889; # leaf
+"A" | "T G C": 0.150261;
+"C" | "T G C": 0.319915;
+"G" | "T G C": 0.153846;
+"T" | "T G C": 0.375978;
+"A" | "T G C A": 0.144937; # leaf
+"C" | "T G C A": 0.313038; # leaf
+"G" | "T G C A": 0.180013; # leaf
+"T" | "T G C A": 0.362012; # leaf
+"A" | "T G C C": 0.175329; # leaf
+"C" | "T G C C": 0.320859; # leaf
+"G" | "T G C C": 0.14553; # leaf
+"T" | "T G C C": 0.358281; # leaf
+"A" | "T G C G": 0.138428; # leaf
+"C" | "T G C G": 0.288392; # leaf
+"G" | "T G C G": 0.149243; # leaf
+"T" | "T G C G": 0.423937; # leaf
+"A" | "T G C T": 0.144438; # leaf
+"C" | "T G C T": 0.348644; # leaf
+"G" | "T G C T": 0.142778; # leaf
+"T" | "T G C T": 0.364139; # leaf
+"A" | "T G G": 0.174515;
+"C" | "T G G": 0.258726;
+"G" | "T G G": 0.173684;
+"T" | "T G G": 0.393075;
+"A" | "T G G A": 0.181009; # leaf
+"C" | "T G G A": 0.278932; # leaf
+"G" | "T G G A": 0.149852; # leaf
+"T" | "T G G A": 0.390208; # leaf
+"A" | "T G G C": 0.173451; # leaf
+"C" | "T G G C": 0.221239; # leaf
+"G" | "T G G C": 0.175221; # leaf
+"T" | "T G G C": 0.430088; # leaf
+"A" | "T G G G": 0.19437; # leaf
+"C" | "T G G G": 0.238606; # leaf
+"G" | "T G G G": 0.183646; # leaf
+"T" | "T G G G": 0.383378; # leaf
+"A" | "T G G T": 0.163714; # leaf
+"C" | "T G G T": 0.27245; # leaf
+"G" | "T G G T": 0.178986; # leaf
+"T" | "T G G T": 0.38485; # leaf
+"A" | "T G T": 0.168621;
+"C" | "T G T": 0.288887;
+"G" | "T G T": 0.167756;
+"T" | "T G T": 0.374736;
+"A" | "T G T A": 0.17784; # leaf
+"C" | "T G T A": 0.317532; # leaf
+"G" | "T G T A": 0.145021; # leaf
+"T" | "T G T A": 0.359607; # leaf
+"A" | "T G T C": 0.174297; # leaf
+"C" | "T G T C": 0.265855; # leaf
+"G" | "T G T C": 0.196556; # leaf
+"T" | "T G T C": 0.363293; # leaf
+"A" | "T G T G": 0.150341; # leaf
+"C" | "T G T G": 0.268739; # leaf
+"G" | "T G T G": 0.196763; # leaf
+"T" | "T G T G": 0.384157; # leaf
+"A" | "T G T T": 0.167453; # leaf
+"C" | "T G T T": 0.288679; # leaf
+"G" | "T G T T": 0.141981; # leaf
+"T" | "T G T T": 0.401887; # leaf
+"A" | "T T": 0.159508;
+"C" | "T T": 0.278737;
+"G" | "T T": 0.155525;
+"T" | "T T": 0.40623;
+"A" | "T T A": 0.166469;
+"C" | "T T A": 0.254604;
+"G" | "T T A": 0.153029;
+"T" | "T T A": 0.425898;
+"A" | "T T A A": 0.149209; # leaf
+"C" | "T T A A": 0.274805; # leaf
+"G" | "T T A A": 0.137905; # leaf
+"T" | "T T A A": 0.438081; # leaf
+"A" | "T T A C": 0.163654; # leaf
+"C" | "T T A C": 0.24768; # leaf
+"G" | "T T A C": 0.167074; # leaf
+"T" | "T T A C": 0.421593; # leaf
+"A" | "T T A G": 0.173867; # leaf
+"C" | "T T A G": 0.252012; # leaf
+"G" | "T T A G": 0.156501; # leaf
+"T" | "T T A G": 0.41762; # leaf
+"A" | "T T A T": 0.181319; # leaf
+"C" | "T T A T": 0.234799; # leaf
+"G" | "T T A T": 0.158974; # leaf
+"T" | "T T A T": 0.424908; # leaf
+"A" | "T T C": 0.145198;
+"C" | "T T C": 0.323281;
+"G" | "T T C": 0.150896;
+"T" | "T T C": 0.380624;
+"A" | "T T C A": 0.156662; # leaf
+"C" | "T T C A": 0.306513; # leaf
+"G" | "T T C A": 0.149851; # leaf
+"T" | "T T C A": 0.386973; # leaf
+"A" | "T T C C": 0.168478; # leaf
+"C" | "T T C C": 0.315217; # leaf
+"G" | "T T C C": 0.154891; # leaf
+"T" | "T T C C": 0.361413; # leaf
+"A" | "T T C G": 0.137718; # leaf
+"C" | "T T C G": 0.294004; # leaf
+"G" | "T T C G": 0.153191; # leaf
+"T" | "T T C G": 0.415087; # leaf
+"A" | "T T C T": 0.125185; # leaf
+"C" | "T T C T": 0.385412; # leaf
+"G" | "T T C T": 0.14687; # leaf
+"T" | "T T C T": 0.342533; # leaf
+"A" | "T T G": 0.162669;
+"C" | "T T G": 0.282308;
+"G" | "T T G": 0.155837;
+"T" | "T T G": 0.399186;
+"A" | "T T G A": 0.150122; # leaf
+"C" | "T T G A": 0.31687; # leaf
+"G" | "T T G A": 0.157457; # leaf
+"T" | "T T G A": 0.37555; # leaf
+"A" | "T T G C": 0.157215; # leaf
+"C" | "T T G C": 0.2972; # leaf
+"G" | "T T G C": 0.157215; # leaf
+"T" | "T T G C": 0.38837; # leaf
+"A" | "T T G G": 0.183731; # leaf
+"C" | "T T G G": 0.255727; # leaf
+"G" | "T T G G": 0.151473; # leaf
+"T" | "T T G G": 0.40907; # leaf
+"A" | "T T G T": 0.15449; # leaf
+"C" | "T T G T": 0.255708; # leaf
+"G" | "T T G T": 0.159817; # leaf
+"T" | "T T G T": 0.429985; # leaf
+"A" | "T T T": 0.160034;
+"C" | "T T T": 0.272298;
+"G" | "T T T": 0.161664;
+"T" | "T T T": 0.406003;
+"A" | "T T T A": 0.152368; # leaf
+"C" | "T T T A": 0.283085; # leaf
+"G" | "T T T A": 0.16157; # leaf
+"T" | "T T T A": 0.402977; # leaf
+"A" | "T T T C": 0.155916; # leaf
+"C" | "T T T C": 0.280222; # leaf
+"G" | "T T T C": 0.162324; # leaf
+"T" | "T T T C": 0.401538; # leaf
+"A" | "T T T G": 0.15983; # leaf
+"C" | "T T T G": 0.265912; # leaf
+"G" | "T T T G": 0.164427; # leaf
+"T" | "T T T G": 0.40983; # leaf
+"A" | "T T T T": 0.174145; # leaf
+"C" | "T T T T": 0.257835; # leaf
+"G" | "T T T T": 0.158832; # leaf
+"T" | "T T T T": 0.409188; # leaf
+)
+p2 = ("A" | "" : 0.245422;
+"C" | "" : 0.244493;
+"G" | "" : 0.241704;
+"T" | "" : 0.268382;
+"A" | "A": 0.266265;
+"C" | "A": 0.21236;
+"G" | "A": 0.252366;
+"T" | "A": 0.269009;
+"A" | "A A": 0.285087;
+"C" | "A A": 0.195263;
+"G" | "A A": 0.269891;
+"T" | "A A": 0.24976;
+"A" | "A A A": 0.326144;
+"C" | "A A A": 0.156655;
+"G" | "A A A": 0.228632;
+"T" | "A A A": 0.288568;
+"A" | "A A A A": 0.301595; # leaf
+"C" | "A A A A": 0.155631; # leaf
+"G" | "A A A A": 0.246858; # leaf
+"T" | "A A A A": 0.295916; # leaf
+"A" | "A A A C": 0.324728; # leaf
+"C" | "A A A C": 0.155231; # leaf
+"G" | "A A A C": 0.225543; # leaf
+"T" | "A A A C": 0.294497; # leaf
+"A" | "A A A G": 0.34801; # leaf
+"C" | "A A A G": 0.159407; # leaf
+"G" | "A A A G": 0.213563; # leaf
+"T" | "A A A G": 0.27902; # leaf
+"A" | "A A A T": 0.353684; # leaf
+"C" | "A A A T": 0.158129; # leaf
+"G" | "A A A T": 0.212632; # leaf
+"T" | "A A A T": 0.275556; # leaf
+"A" | "A A C": 0.219302;
+"C" | "A A C": 0.241164;
+"G" | "A A C": 0.323365;
+"T" | "A A C": 0.216168;
+"A" | "A A C A": 0.227684; # leaf
+"C" | "A A C A": 0.240005; # leaf
+"G" | "A A C A": 0.306855; # leaf
+"T" | "A A C A": 0.225455; # leaf
+"A" | "A A C C": 0.203447; # leaf
+"C" | "A A C C": 0.235825; # leaf
+"G" | "A A C C": 0.342461; # leaf
+"T" | "A A C C": 0.218267; # leaf
+"A" | "A A C G": 0.230658; # leaf
+"C" | "A A C G": 0.256327; # leaf
+"G" | "A A C G": 0.300795; # leaf
+"T" | "A A C G": 0.21222; # leaf
+"A" | "A A C T": 0.215378; # leaf
+"C" | "A A C T": 0.235302; # leaf
+"G" | "A A C T": 0.341799; # leaf
+"T" | "A A C T": 0.207521; # leaf
+"A" | "A A G": 0.28936;
+"C" | "A A G": 0.194144;
+"G" | "A A G": 0.301686;
+"T" | "A A G": 0.214809;
+"A" | "A A G A": 0.275887; # leaf
+"C" | "A A G A": 0.184047; # leaf
+"G" | "A A G A": 0.355165; # leaf
+"T" | "A A G A": 0.184901; # leaf
+"A" | "A A G C": 0.305911; # leaf
+"C" | "A A G C": 0.198039; # leaf
+"G" | "A A G C": 0.236175; # leaf
+"T" | "A A G C": 0.259875; # leaf
+"A" | "A A G G": 0.328164; # leaf
+"C" | "A A G G": 0.179062; # leaf
+"G" | "A A G G": 0.246035; # leaf
+"T" | "A A G G": 0.24674; # leaf
+"A" | "A A G T": 0.280825; # leaf
+"C" | "A A G T": 0.209847; # leaf
+"G" | "A A G T": 0.295974; # leaf
+"T" | "A A G T": 0.213354; # leaf
+"A" | "A A T": 0.331793;
+"C" | "A A T": 0.174748;
+"G" | "A A T": 0.193427;
+"T" | "A A T": 0.300033;
+"A" | "A A T A": 0.320349; # leaf
+"C" | "A A T A": 0.166133; # leaf
+"G" | "A A T A": 0.18979; # leaf
+"T" | "A A T A": 0.323728; # leaf
+"A" | "A A T C": 0.35035; # leaf
+"C" | "A A T C": 0.163636; # leaf
+"G" | "A A T C": 0.203846; # leaf
+"T" | "A A T C": 0.282168; # leaf
+"A" | "A A T G": 0.347592; # leaf
+"C" | "A A T G": 0.209249; # leaf
+"G" | "A A T G": 0.143353; # leaf
+"T" | "A A T G": 0.299807; # leaf
+"A" | "A A T T": 0.324651; # leaf
+"C" | "A A T T": 0.172791; # leaf
+"G" | "A A T T": 0.221628; # leaf
+"T" | "A A T T": 0.28093; # leaf
+"A" | "A C": 0.327022;
+"C" | "A C": 0.167215;
+"G" | "A C": 0.321323;
+"T" | "A C": 0.18444;
+"A" | "A C A": 0.38295;
+"C" | "A C A": 0.128536;
+"G" | "A C A": 0.290592;
+"T" | "A C A": 0.197922;
+"A" | "A C A A": 0.38491; # leaf
+"C" | "A C A A": 0.121218; # leaf
+"G" | "A C A A": 0.312141; # leaf
+"T" | "A C A A": 0.181731; # leaf
+"A" | "A C A C": 0.386857; # leaf
+"C" | "A C A C": 0.124636; # leaf
+"G" | "A C A C": 0.286177; # leaf
+"T" | "A C A C": 0.202331; # leaf
+"A" | "A C A G": 0.354701; # leaf
+"C" | "A C A G": 0.152422; # leaf
+"G" | "A C A G": 0.278253; # leaf
+"T" | "A C A G": 0.214625; # leaf
+"A" | "A C A T": 0.397827; # leaf
+"C" | "A C A T": 0.129127; # leaf
+"G" | "A C A T": 0.259925; # leaf
+"T" | "A C A T": 0.213122; # leaf
+"A" | "A C C": 0.264107;
+"C" | "A C C": 0.205634;
+"G" | "A C C": 0.36417;
+"T" | "A C C": 0.166089;
+"A" | "A C C A": 0.242444; # leaf
+"C" | "A C C A": 0.229717; # leaf
+"G" | "A C C A": 0.370665; # leaf
+"T" | "A C C A": 0.157175; # leaf
+"A" | "A C C C": 0.273962; # leaf
+"C" | "A C C C": 0.175786; # leaf
+"G" | "A C C C": 0.378735; # leaf
+"T" | "A C C C": 0.171517; # leaf
+"A" | "A C C G": 0.267424; # leaf
+"C" | "A C C G": 0.198121; # leaf
+"G" | "A C C G": 0.369225; # leaf
+"T" | "A C C G": 0.165231; # leaf
+"A" | "A C C T": 0.275493; # leaf
+"C" | "A C C T": 0.212638; # leaf
+"G" | "A C C T": 0.34002; # leaf
+"T" | "A C C T": 0.171849; # leaf
+"A" | "A C G": 0.285211;
+"C" | "A C G": 0.171609;
+"G" | "A C G": 0.388646;
+"T" | "A C G": 0.154533;
+"A" | "A C G A": 0.278352; # leaf
+"C" | "A C G A": 0.150806; # leaf
+"G" | "A C G A": 0.430526; # leaf
+"T" | "A C G A": 0.140316; # leaf
+"A" | "A C G C": 0.278937; # leaf
+"C" | "A C G C": 0.182922; # leaf
+"G" | "A C G C": 0.364706; # leaf
+"T" | "A C G C": 0.173435; # leaf
+"A" | "A C G G": 0.300419; # leaf
+"C" | "A C G G": 0.196888; # leaf
+"G" | "A C G G": 0.325554; # leaf
+"T" | "A C G G": 0.177139; # leaf
+"A" | "A C G T": 0.293223; # leaf
+"C" | "A C G T": 0.186312; # leaf
+"G" | "A C G T": 0.364348; # leaf
+"T" | "A C G T": 0.156117; # leaf
+"A" | "A C T": 0.369164;
+"C" | "A C T": 0.166966;
+"G" | "A C T": 0.246553;
+"T" | "A C T": 0.217316;
+"A" | "A C T A": 0.354491; # leaf
+"C" | "A C T A": 0.169648; # leaf
+"G" | "A C T A": 0.258704; # leaf
+"T" | "A C T A": 0.217157; # leaf
+"A" | "A C T C": 0.400583; # leaf
+"C" | "A C T C": 0.155764; # leaf
+"G" | "A C T C": 0.235751; # leaf
+"T" | "A C T C": 0.207902; # leaf
+"A" | "A C T G": 0.333071; # leaf
+"C" | "A C T G": 0.189764; # leaf
+"G" | "A C T G": 0.246457; # leaf
+"T" | "A C T G": 0.230709; # leaf
+"A" | "A C T T": 0.385714; # leaf
+"C" | "A C T T": 0.158333; # leaf
+"G" | "A C T T": 0.239524; # leaf
+"T" | "A C T T": 0.216429; # leaf
+"A" | "A G": 0.283495;
+"C" | "A G": 0.179365;
+"G" | "A G": 0.262351;
+"T" | "A G": 0.274788;
+"A" | "A G A": 0.355398;
+"C" | "A G A": 0.143449;
+"G" | "A G A": 0.215197;
+"T" | "A G A": 0.285956;
+"A" | "A G A A": 0.369516; # leaf
+"C" | "A G A A": 0.134215; # leaf
+"G" | "A G A A": 0.217209; # leaf
+"T" | "A G A A": 0.279059; # leaf
+"A" | "A G A C": 0.336328; # leaf
+"C" | "A G A C": 0.141016; # leaf
+"G" | "A G A C": 0.232813; # leaf
+"T" | "A G A C": 0.289844; # leaf
+"A" | "A G A G": 0.352009; # leaf
+"C" | "A G A G": 0.14884; # leaf
+"G" | "A G A G": 0.201754; # leaf
+"T" | "A G A G": 0.297397; # leaf
+"A" | "A G A T": 0.350999; # leaf
+"C" | "A G A T": 0.163782; # leaf
+"G" | "A G A T": 0.199201; # leaf
+"T" | "A G A T": 0.286019; # leaf
+"A" | "A G C": 0.213913;
+"C" | "A G C": 0.219573;
+"G" | "A G C": 0.307679;
+"T" | "A G C": 0.258835;
+"A" | "A G C A": 0.212223; # leaf
+"C" | "A G C A": 0.227152; # leaf
+"G" | "A G C A": 0.318404; # leaf
+"T" | "A G C A": 0.242221; # leaf
+"A" | "A G C C": 0.225195; # leaf
+"C" | "A G C C": 0.205393; # leaf
+"G" | "A G C C": 0.294502; # leaf
+"T" | "A G C C": 0.27491; # leaf
+"A" | "A G C G": 0.211286; # leaf
+"C" | "A G C G": 0.221839; # leaf
+"G" | "A G C G": 0.299806; # leaf
+"T" | "A G C G": 0.267069; # leaf
+"A" | "A G C T": 0.209026; # leaf
+"C" | "A G C T": 0.220054; # leaf
+"G" | "A G C T": 0.311334; # leaf
+"T" | "A G C T": 0.259586; # leaf
+"A" | "A G G": 0.252571;
+"C" | "A G G": 0.186857;
+"G" | "A G G": 0.314323;
+"T" | "A G G": 0.246248;
+"A" | "A G G A": 0.240708; # leaf
+"C" | "A G G A": 0.172387; # leaf
+"G" | "A G G A": 0.359969; # leaf
+"T" | "A G G A": 0.226935; # leaf
+"A" | "A G G C": 0.263414; # leaf
+"C" | "A G G C": 0.199161; # leaf
+"G" | "A G G C": 0.278649; # leaf
+"T" | "A G G C": 0.258777; # leaf
+"A" | "A G G G": 0.259764; # leaf
+"C" | "A G G G": 0.186671; # leaf
+"G" | "A G G G": 0.285561; # leaf
+"T" | "A G G G": 0.268004; # leaf
+"A" | "A G G T": 0.25718; # leaf
+"C" | "A G G T": 0.195991; # leaf
+"G" | "A G G T": 0.293635; # leaf
+"T" | "A G G T": 0.253194; # leaf
+"A" | "A G T": 0.31658;
+"C" | "A G T": 0.166003;
+"G" | "A G T": 0.208427;
+"T" | "A G T": 0.308989;
+"A" | "A G T A": 0.307373; # leaf
+"C" | "A G T A": 0.165143; # leaf
+"G" | "A G T A": 0.219993; # leaf
+"T" | "A G T A": 0.307491; # leaf
+"A" | "A G T C": 0.34559; # leaf
+"C" | "A G T C": 0.150382; # leaf
+"G" | "A G T C": 0.19624; # leaf
+"T" | "A G T C": 0.307788; # leaf
+"A" | "A G T G": 0.296332; # leaf
+"C" | "A G T G": 0.195093; # leaf
+"G" | "A G T G": 0.181277; # leaf
+"T" | "A G T G": 0.327299; # leaf
+"A" | "A G T T": 0.319659; # leaf
+"C" | "A G T T": 0.16048; # leaf
+"G" | "A G T T": 0.219414; # leaf
+"T" | "A G T T": 0.300448; # leaf
+"A" | "A T": 0;
+"C" | "A T": 0.497698;
+"G" | "A T": 0;
+"T" | "A T": 0.502302;
+"A" | "A T A": 0;
+"C" | "A T A": 0.398499;
+"G" | "A T A": 0;
+"T" | "A T A": 0.601501;
+"A" | "A T A A": 0; # leaf
+"C" | "A T A A": 0.377049; # leaf
+"G" | "A T A A": 0; # leaf
+"T" | "A T A A": 0.622951; # leaf
+"A" | "A T A C": 0; # leaf
+"C" | "A T A C": 0.3845; # leaf
+"G" | "A T A C": 0; # leaf
+"T" | "A T A C": 0.6155; # leaf
+"A" | "A T A G": 0; # leaf
+"C" | "A T A G": 0.429907; # leaf
+"G" | "A T A G": 0; # leaf
+"T" | "A T A G": 0.570093; # leaf
+"A" | "A T A T": 0; # leaf
+"C" | "A T A T": 0.426912; # leaf
+"G" | "A T A T": 0; # leaf
+"T" | "A T A T": 0.573088; # leaf
+"A" | "A T C": 0;
+"C" | "A T C": 0.583912;
+"G" | "A T C": 0;
+"T" | "A T C": 0.416088;
+"A" | "A T C A": 0; # leaf
+"C" | "A T C A": 0.590649; # leaf
+"G" | "A T C A": 0; # leaf
+"T" | "A T C A": 0.409351; # leaf
+"A" | "A T C C": 0; # leaf
+"C" | "A T C C": 0.572188; # leaf
+"G" | "A T C C": 0; # leaf
+"T" | "A T C C": 0.427812; # leaf
+"A" | "A T C G": 0; # leaf
+"C" | "A T C G": 0.559609; # leaf
+"G" | "A T C G": 0; # leaf
+"T" | "A T C G": 0.440391; # leaf
+"A" | "A T C T": 0; # leaf
+"C" | "A T C T": 0.601887; # leaf
+"G" | "A T C T": 0; # leaf
+"T" | "A T C T": 0.398113; # leaf
+"A" | "A T G": 0;
+"C" | "A T G": 0.584102;
+"G" | "A T G": 0;
+"T" | "A T G": 0.415898;
+"A" | "A T G A": 0; # leaf
+"C" | "A T G A": 0.628116; # leaf
+"G" | "A T G A": 0; # leaf
+"T" | "A T G A": 0.371884; # leaf
+"A" | "A T G C": 0; # leaf
+"C" | "A T G C": 0.555796; # leaf
+"G" | "A T G C": 0; # leaf
+"T" | "A T G C": 0.444204; # leaf
+"A" | "A T G G": 0; # leaf
+"C" | "A T G G": 0.510301; # leaf
+"G" | "A T G G": 0; # leaf
+"T" | "A T G G": 0.489699; # leaf
+"A" | "A T G T": 0; # leaf
+"C" | "A T G T": 0.574929; # leaf
+"G" | "A T G T": 0; # leaf
+"T" | "A T G T": 0.425071; # leaf
+"A" | "A T T": 0;
+"C" | "A T T": 0.420285;
+"G" | "A T T": 0;
+"T" | "A T T": 0.579715;
+"A" | "A T T A": 0; # leaf
+"C" | "A T T A": 0.398573; # leaf
+"G" | "A T T A": 0; # leaf
+"T" | "A T T A": 0.601427; # leaf
+"A" | "A T T C": 0; # leaf
+"C" | "A T T C": 0.406863; # leaf
+"G" | "A T T C": 0; # leaf
+"T" | "A T T C": 0.593137; # leaf
+"A" | "A T T G": 0; # leaf
+"C" | "A T T G": 0.454464; # leaf
+"G" | "A T T G": 0; # leaf
+"T" | "A T T G": 0.545536; # leaf
+"A" | "A T T T": 0; # leaf
+"C" | "A T T T": 0.434922; # leaf
+"G" | "A T T T": 0; # leaf
+"T" | "A T T T": 0.565078; # leaf
+"A" | "C": 0.291255;
+"C" | "C": 0.250576;
+"G" | "C": 0.210546;
+"T" | "C": 0.247623;
+"A" | "C A": 0.295873;
+"C" | "C A": 0.247955;
+"G" | "C A": 0.205408;
+"T" | "C A": 0.250764;
+"A" | "C A A": 0.339545;
+"C" | "C A A": 0.183057;
+"G" | "C A A": 0.184265;
+"T" | "C A A": 0.293133;
+"A" | "C A A A": 0.323318; # leaf
+"C" | "C A A A": 0.177452; # leaf
+"G" | "C A A A": 0.20416; # leaf
+"T" | "C A A A": 0.295069; # leaf
+"A" | "C A A C": 0.351496; # leaf
+"C" | "C A A C": 0.160079; # leaf
+"G" | "C A A C": 0.18323; # leaf
+"T" | "C A A C": 0.305195; # leaf
+"A" | "C A A G": 0.343291; # leaf
+"C" | "C A A G": 0.199161; # leaf
+"G" | "C A A G": 0.157757; # leaf
+"T" | "C A A G": 0.29979; # leaf
+"A" | "C A A T": 0.345133; # leaf
+"C" | "C A A T": 0.215487; # leaf
+"G" | "C A A T": 0.174336; # leaf
+"T" | "C A A T": 0.265044; # leaf
+"A" | "C A C": 0.245484;
+"C" | "C A C": 0.325914;
+"G" | "C A C": 0.208363;
+"T" | "C A C": 0.220239;
+"A" | "C A C A": 0.25034; # leaf
+"C" | "C A C A": 0.288394; # leaf
+"G" | "C A C A": 0.237836; # leaf
+"T" | "C A C A": 0.22343; # leaf
+"A" | "C A C C": 0.236791; # leaf
+"C" | "C A C C": 0.34907; # leaf
+"G" | "C A C C": 0.21135; # leaf
+"T" | "C A C C": 0.202789; # leaf
+"A" | "C A C G": 0.251977; # leaf
+"C" | "C A C G": 0.32919; # leaf
+"G" | "C A C G": 0.19661; # leaf
+"T" | "C A C G": 0.222222; # leaf
+"A" | "C A C T": 0.245619; # leaf
+"C" | "C A C T": 0.335159; # leaf
+"G" | "C A C T": 0.184009; # leaf
+"T" | "C A C T": 0.235214; # leaf
+"A" | "C A G": 0.271593;
+"C" | "C A G": 0.254278;
+"G" | "C A G": 0.256594;
+"T" | "C A G": 0.217536;
+"A" | "C A G A": 0.257188; # leaf
+"C" | "C A G A": 0.240256; # leaf
+"G" | "C A G A": 0.269329; # leaf
+"T" | "C A G A": 0.233227; # leaf
+"A" | "C A G C": 0.267849; # leaf
+"C" | "C A G C": 0.240057; # leaf
+"G" | "C A G C": 0.307619; # leaf
+"T" | "C A G C": 0.184475; # leaf
+"A" | "C A G G": 0.331456; # leaf
+"C" | "C A G G": 0.199517; # leaf
+"G" | "C A G G": 0.246179; # leaf
+"T" | "C A G G": 0.222848; # leaf
+"A" | "C A G T": 0.265347; # leaf
+"C" | "C A G T": 0.294894; # leaf
+"G" | "C A G T": 0.218302; # leaf
+"T" | "C A G T": 0.221457; # leaf
+"A" | "C A T": 0.345559;
+"C" | "C A T": 0.202333;
+"G" | "C A T": 0.171265;
+"T" | "C A T": 0.280843;
+"A" | "C A T A": 0.345679; # leaf
+"C" | "C A T A": 0.193416; # leaf
+"G" | "C A T A": 0.183471; # leaf
+"T" | "C A T A": 0.277435; # leaf
+"A" | "C A T C": 0.353718; # leaf
+"C" | "C A T C": 0.190313; # leaf
+"G" | "C A T C": 0.170744; # leaf
+"T" | "C A T C": 0.285225; # leaf
+"A" | "C A T G": 0.344637; # leaf
+"C" | "C A T G": 0.210381; # leaf
+"G" | "C A T G": 0.15917; # leaf
+"T" | "C A T G": 0.285813; # leaf
+"A" | "C A T T": 0.338882; # leaf
+"C" | "C A T T": 0.217994; # leaf
+"G" | "C A T T": 0.164883; # leaf
+"T" | "C A T T": 0.27824; # leaf
+"A" | "C C": 0.360359;
+"C" | "C C": 0.203275;
+"G" | "C C": 0.228495;
+"T" | "C C": 0.207872;
+"A" | "C C A": 0.399284;
+"C" | "C C A": 0.171014;
+"G" | "C C A": 0.208965;
+"T" | "C C A": 0.220736;
+"A" | "C C A A": 0.402694; # leaf
+"C" | "C C A A": 0.138958; # leaf
+"G" | "C C A A": 0.22687; # leaf
+"T" | "C C A A": 0.231478; # leaf
+"A" | "C C A C": 0.388932; # leaf
+"C" | "C C A C": 0.167053; # leaf
+"G" | "C C A C": 0.228571; # leaf
+"T" | "C C A C": 0.215444; # leaf
+"A" | "C C A G": 0.426954; # leaf
+"C" | "C C A G": 0.201019; # leaf
+"G" | "C C A G": 0.17667; # leaf
+"T" | "C C A G": 0.195357; # leaf
+"A" | "C C A T": 0.389995; # leaf
+"C" | "C C A T": 0.195924; # leaf
+"G" | "C C A T": 0.176934; # leaf
+"T" | "C C A T": 0.237147; # leaf
+"A" | "C C C": 0.341108;
+"C" | "C C C": 0.206452;
+"G" | "C C C": 0.23507;
+"T" | "C C C": 0.21737;
+"A" | "C C C A": 0.322562; # leaf
+"C" | "C C C A": 0.193878; # leaf
+"G" | "C C C A": 0.262472; # leaf
+"T" | "C C C A": 0.221088; # leaf
+"A" | "C C C C": 0.360737; # leaf
+"C" | "C C C C": 0.183558; # leaf
+"G" | "C C C C": 0.242381; # leaf
+"T" | "C C C C": 0.213324; # leaf
+"A" | "C C C G": 0.326531; # leaf
+"C" | "C C C G": 0.235072; # leaf
+"G" | "C C C G": 0.226002; # leaf
+"T" | "C C C G": 0.212396; # leaf
+"A" | "C C C T": 0.355997; # leaf
+"C" | "C C C T": 0.217447; # leaf
+"G" | "C C C T": 0.20526; # leaf
+"T" | "C C C T": 0.221296; # leaf
+"A" | "C C G": 0.312988;
+"C" | "C C G": 0.253406;
+"G" | "C C G": 0.273751;
+"T" | "C C G": 0.159855;
+"A" | "C C G A": 0.356982; # leaf
+"C" | "C C G A": 0.209631; # leaf
+"G" | "C C G A": 0.270947; # leaf
+"T" | "C C G A": 0.16244; # leaf
+"A" | "C C G C": 0.273296; # leaf
+"C" | "C C G C": 0.266104; # leaf
+"G" | "C C G C": 0.310507; # leaf
+"T" | "C C G C": 0.150094; # leaf
+"A" | "C C G G": 0.343645; # leaf
+"C" | "C C G G": 0.197324; # leaf
+"G" | "C C G G": 0.271739; # leaf
+"T" | "C C G G": 0.187291; # leaf
+"A" | "C C G T": 0.299459; # leaf
+"C" | "C C G T": 0.299744; # leaf
+"G" | "C C G T": 0.243382; # leaf
+"T" | "C C G T": 0.157415; # leaf
+"A" | "C C T": 0.378099;
+"C" | "C C T": 0.185156;
+"G" | "C C T": 0.202241;
+"T" | "C C T": 0.234504;
+"A" | "C C T A": 0.32967; # leaf
+"C" | "C C T A": 0.203414; # leaf
+"G" | "C C T A": 0.240823; # leaf
+"T" | "C C T A": 0.226093; # leaf
+"A" | "C C T C": 0.431926; # leaf
+"C" | "C C T C": 0.139891; # leaf
+"G" | "C C T C": 0.183458; # leaf
+"T" | "C C T C": 0.244724; # leaf
+"A" | "C C T G": 0.3445; # leaf
+"C" | "C C T G": 0.229; # leaf
+"G" | "C C T G": 0.219; # leaf
+"T" | "C C T G": 0.2075; # leaf
+"A" | "C C T T": 0.412008; # leaf
+"C" | "C C T T": 0.175688; # leaf
+"G" | "C C T T": 0.160012; # leaf
+"T" | "C C T T": 0.252292; # leaf
+"A" | "C G": 0.261748;
+"C" | "C G": 0.29082;
+"G" | "C G": 0.174029;
+"T" | "C G": 0.273403;
+"A" | "C G A": 0.31967;
+"C" | "C G A": 0.216214;
+"G" | "C G A": 0.155184;
+"T" | "C G A": 0.308931;
+"A" | "C G A A": 0.30096; # leaf
+"C" | "C G A A": 0.20688; # leaf
+"G" | "C G A A": 0.166862; # leaf
+"T" | "C G A A": 0.325298; # leaf
+"A" | "C G A C": 0.332865; # leaf
+"C" | "C G A C": 0.204822; # leaf
+"G" | "C G A C": 0.165028; # leaf
+"T" | "C G A C": 0.297285; # leaf
+"A" | "C G A G": 0.307464; # leaf
+"C" | "C G A G": 0.245971; # leaf
+"G" | "C G A G": 0.135284; # leaf
+"T" | "C G A G": 0.311281; # leaf
+"A" | "C G A T": 0.341767; # leaf
+"C" | "C G A T": 0.224271; # leaf
+"G" | "C G A T": 0.136364; # leaf
+"T" | "C G A T": 0.297599; # leaf
+"A" | "C G C": 0.185987;
+"C" | "C G C": 0.403858;
+"G" | "C G C": 0.174966;
+"T" | "C G C": 0.23519;
+"A" | "C G C A": 0.201595; # leaf
+"C" | "C G C A": 0.34738; # leaf
+"G" | "C G C A": 0.216781; # leaf
+"T" | "C G C A": 0.234244; # leaf
+"A" | "C G C C": 0.172263; # leaf
+"C" | "C G C C": 0.439893; # leaf
+"G" | "C G C C": 0.143721; # leaf
+"T" | "C G C C": 0.244124; # leaf
+"A" | "C G C G": 0.163746; # leaf
+"C" | "C G C G": 0.456188; # leaf
+"G" | "C G C G": 0.162103; # leaf
+"T" | "C G C G": 0.217963; # leaf
+"A" | "C G C T": 0.201023; # leaf
+"C" | "C G C T": 0.383406; # leaf
+"G" | "C G C T": 0.177632; # leaf
+"T" | "C G C T": 0.237939; # leaf
+"A" | "C G G": 0.240787;
+"C" | "C G G": 0.297247;
+"G" | "C G G": 0.234321;
+"T" | "C G G": 0.227646;
+"A" | "C G G A": 0.235252; # leaf
+"C" | "C G G A": 0.28687; # leaf
+"G" | "C G G A": 0.252854; # leaf
+"T" | "C G G A": 0.225024; # leaf
+"A" | "C G G C": 0.242118; # leaf
+"C" | "C G G C": 0.252528; # leaf
+"G" | "C G G C": 0.293873; # leaf
+"T" | "C G G C": 0.211481; # leaf
+"A" | "C G G G": 0.2879; # leaf
+"C" | "C G G G": 0.252434; # leaf
+"G" | "C G G G": 0.220445; # leaf
+"T" | "C G G G": 0.239221; # leaf
+"A" | "C G G T": 0.231725; # leaf
+"C" | "C G G T": 0.345083; # leaf
+"G" | "C G G T": 0.186456; # leaf
+"T" | "C G G T": 0.236735; # leaf
+"A" | "C G T": 0.280577;
+"C" | "C G T": 0.275088;
+"G" | "C G T": 0.135385;
+"T" | "C G T": 0.30895;
+"A" | "C G T A": 0.273013; # leaf
+"C" | "C G T A": 0.287901; # leaf
+"G" | "C G T A": 0.156637; # leaf
+"T" | "C G T A": 0.282449; # leaf
+"A" | "C G T C": 0.299434; # leaf
+"C" | "C G T C": 0.245506; # leaf
+"G" | "C G T C": 0.127801; # leaf
+"T" | "C G T C": 0.327259; # leaf
+"A" | "C G T G": 0.273878; # leaf
+"C" | "C G T G": 0.294501; # leaf
+"G" | "C G T G": 0.125543; # leaf
+"T" | "C G T G": 0.306078; # leaf
+"A" | "C G T T": 0.27575; # leaf
+"C" | "C G T T": 0.276182; # leaf
+"G" | "C G T T": 0.126323; # leaf
+"T" | "C G T T": 0.321745; # leaf
+"A" | "C T": 0.257606;
+"C" | "C T": 0.246918;
+"G" | "C T": 0.246194;
+"T" | "C T": 0.249282;
+"A" | "C T A": 0.296571;
+"C" | "C T A": 0.208254;
+"G" | "C T A": 0.225142;
+"T" | "C T A": 0.270033;
+"A" | "C T A A": 0.303995; # leaf
+"C" | "C T A A": 0.181529; # leaf
+"G" | "C T A A": 0.224088; # leaf
+"T" | "C T A A": 0.290388; # leaf
+"A" | "C T A C": 0.29579; # leaf
+"C" | "C T A C": 0.211044; # leaf
+"G" | "C T A C": 0.220612; # leaf
+"T" | "C T A C": 0.272553; # leaf
+"A" | "C T A G": 0.270036; # leaf
+"C" | "C T A G": 0.228178; # leaf
+"G" | "C T A G": 0.244002; # leaf
+"T" | "C T A G": 0.257785; # leaf
+"A" | "C T A T": 0.307813; # leaf
+"C" | "C T A T": 0.225363; # leaf
+"G" | "C T A T": 0.218689; # leaf
+"T" | "C T A T": 0.248135; # leaf
+"A" | "C T C": 0.203992;
+"C" | "C T C": 0.307015;
+"G" | "C T C": 0.286176;
+"T" | "C T C": 0.202818;
+"A" | "C T C A": 0.197989; # leaf
+"C" | "C T C A": 0.250693; # leaf
+"G" | "C T C A": 0.332871; # leaf
+"T" | "C T C A": 0.218447; # leaf
+"A" | "C T C C": 0.169038; # leaf
+"C" | "C T C C": 0.331381; # leaf
+"G" | "C T C C": 0.31841; # leaf
+"T" | "C T C C": 0.181172; # leaf
+"A" | "C T C G": 0.216085; # leaf
+"C" | "C T C G": 0.348652; # leaf
+"G" | "C T C G": 0.224039; # leaf
+"T" | "C T C G": 0.211224; # leaf
+"A" | "C T C T": 0.231454; # leaf
+"C" | "C T C T": 0.31046; # leaf
+"G" | "C T C T": 0.259644; # leaf
+"T" | "C T C T": 0.198442; # leaf
+"A" | "C T G": 0.227909;
+"C" | "C T G": 0.267488;
+"G" | "C T G": 0.283391;
+"T" | "C T G": 0.221212;
+"A" | "C T G A": 0.211445; # leaf
+"C" | "C T G A": 0.271104; # leaf
+"G" | "C T G A": 0.295049; # leaf
+"T" | "C T G A": 0.222403; # leaf
+"A" | "C T G C": 0.21821; # leaf
+"C" | "C T G C": 0.254832; # leaf
+"G" | "C T G C": 0.321465; # leaf
+"T" | "C T G C": 0.205493; # leaf
+"A" | "C T G G": 0.290288; # leaf
+"C" | "C T G G": 0.22412; # leaf
+"G" | "C T G G": 0.240128; # leaf
+"T" | "C T G G": 0.245464; # leaf
+"A" | "C T G T": 0.228391; # leaf
+"C" | "C T G T": 0.286237; # leaf
+"G" | "C T G T": 0.262301; # leaf
+"T" | "C T G T": 0.223072; # leaf
+"A" | "C T T": 0.288136;
+"C" | "C T T": 0.216967;
+"G" | "C T T": 0.204011;
+"T" | "C T T": 0.290887;
+"A" | "C T T A": 0.284674; # leaf
+"C" | "C T T A": 0.202214; # leaf
+"G" | "C T T A": 0.22873; # leaf
+"T" | "C T T A": 0.284382; # leaf
+"A" | "C T T C": 0.327219; # leaf
+"C" | "C T T C": 0.197726; # leaf
+"G" | "C T T C": 0.175348; # leaf
+"T" | "C T T C": 0.299707; # leaf
+"A" | "C T T G": 0.252442; # leaf
+"C" | "C T T G": 0.230334; # leaf
+"G" | "C T T G": 0.22982; # leaf
+"T" | "C T T G": 0.287404; # leaf
+"A" | "C T T T": 0.28005; # leaf
+"C" | "C T T T": 0.241347; # leaf
+"G" | "C T T T": 0.186281; # leaf
+"T" | "C T T T": 0.292322; # leaf
+"A" | "G": 0.257854;
+"C" | "G": 0.302047;
+"G" | "G": 0.168899;
+"T" | "G": 0.2712;
+"A" | "G A": 0.269413;
+"C" | "G A": 0.310963;
+"G" | "G A": 0.140168;
+"T" | "G A": 0.279456;
+"A" | "G A A": 0.347604;
+"C" | "G A A": 0.215978;
+"G" | "G A A": 0.140125;
+"T" | "G A A": 0.296292;
+"A" | "G A A A": 0.355357; # leaf
+"C" | "G A A A": 0.198827; # leaf
+"G" | "G A A A": 0.144798; # leaf
+"T" | "G A A A": 0.301019; # leaf
+"A" | "G A A C": 0.322218; # leaf
+"C" | "G A A C": 0.230322; # leaf
+"G" | "G A A C": 0.141528; # leaf
+"T" | "G A A C": 0.305933; # leaf
+"A" | "G A A G": 0.360608; # leaf
+"C" | "G A A G": 0.211661; # leaf
+"G" | "G A A G": 0.127878; # leaf
+"T" | "G A A G": 0.299853; # leaf
+"A" | "G A A T": 0.355683; # leaf
+"C" | "G A A T": 0.233716; # leaf
+"G" | "G A A T": 0.144955; # leaf
+"T" | "G A A T": 0.265645; # leaf
+"A" | "G A C": 0.190501;
+"C" | "G A C": 0.405448;
+"G" | "G A C": 0.123712;
+"T" | "G A C": 0.280339;
+"A" | "G A C A": 0.21946; # leaf
+"C" | "G A C A": 0.370473; # leaf
+"G" | "G A C A": 0.135359; # leaf
+"T" | "G A C A": 0.274708; # leaf
+"A" | "G A C C": 0.171926; # leaf
+"C" | "G A C C": 0.39971; # leaf
+"G" | "G A C C": 0.125499; # leaf
+"T" | "G A C C": 0.302865; # leaf
+"A" | "G A C G": 0.139392; # leaf
+"C" | "G A C G": 0.482747; # leaf
+"G" | "G A C G": 0.091903; # leaf
+"T" | "G A C G": 0.285958; # leaf
+"A" | "G A C T": 0.232964; # leaf
+"C" | "G A C T": 0.366482; # leaf
+"G" | "G A C T": 0.144216; # leaf
+"T" | "G A C T": 0.256339; # leaf
+"A" | "G A G": 0.271234;
+"C" | "G A G": 0.320517;
+"G" | "G A G": 0.178376;
+"T" | "G A G": 0.229873;
+"A" | "G A G A": 0.285121; # leaf
+"C" | "G A G A": 0.319031; # leaf
+"G" | "G A G A": 0.182353; # leaf
+"T" | "G A G A": 0.213495; # leaf
+"A" | "G A G C": 0.243147; # leaf
+"C" | "G A G C": 0.331943; # leaf
+"G" | "G A G C": 0.177592; # leaf
+"T" | "G A G C": 0.247318; # leaf
+"A" | "G A G G": 0.262634; # leaf
+"C" | "G A G G": 0.277948; # leaf
+"G" | "G A G G": 0.185299; # leaf
+"T" | "G A G G": 0.274119; # leaf
+"A" | "G A G T": 0.277839; # leaf
+"C" | "G A G T": 0.335171; # leaf
+"G" | "G A G T": 0.171628; # leaf
+"T" | "G A G T": 0.215362; # leaf
+"A" | "G A T": 0.291425;
+"C" | "G A T": 0.271727;
+"G" | "G A T": 0.12022;
+"T" | "G A T": 0.316628;
+"A" | "G A T A": 0.299186; # leaf
+"C" | "G A T A": 0.264038; # leaf
+"G" | "G A T A": 0.129876; # leaf
+"T" | "G A T A": 0.306901; # leaf
+"A" | "G A T C": 0.302482; # leaf
+"C" | "G A T C": 0.260228; # leaf
+"G" | "G A T C": 0.127431; # leaf
+"T" | "G A T C": 0.309859; # leaf
+"A" | "G A T G": 0.262811; # leaf
+"C" | "G A T G": 0.306735; # leaf
+"G" | "G A T G": 0.100293; # leaf
+"T" | "G A T G": 0.330161; # leaf
+"A" | "G A T T": 0.293743; # leaf
+"C" | "G A T T": 0.264195; # leaf
+"G" | "G A T T": 0.117613; # leaf
+"T" | "G A T T": 0.32445; # leaf
+"A" | "G C": 0.275229;
+"C" | "G C": 0.292449;
+"G" | "G C": 0.154575;
+"T" | "G C": 0.277747;
+"A" | "G C A": 0.318271;
+"C" | "G C A": 0.244331;
+"G" | "G C A": 0.145251;
+"T" | "G C A": 0.292146;
+"A" | "G C A A": 0.317481; # leaf
+"C" | "G C A A": 0.234362; # leaf
+"G" | "G C A A": 0.158526; # leaf
+"T" | "G C A A": 0.289632; # leaf
+"A" | "G C A C": 0.290276; # leaf
+"C" | "G C A C": 0.251814; # leaf
+"G" | "G C A C": 0.12627; # leaf
+"T" | "G C A C": 0.33164; # leaf
+"A" | "G C A G": 0.302474; # leaf
+"C" | "G C A G": 0.269753; # leaf
+"G" | "G C A G": 0.134078; # leaf
+"T" | "G C A G": 0.293695; # leaf
+"A" | "G C A T": 0.370697; # leaf
+"C" | "G C A T": 0.227714; # leaf
+"G" | "G C A T": 0.154457; # leaf
+"T" | "G C A T": 0.247132; # leaf
+"A" | "G C C": 0.223452;
+"C" | "G C C": 0.339639;
+"G" | "G C C": 0.161521;
+"T" | "G C C": 0.275388;
+"A" | "G C C A": 0.234396; # leaf
+"C" | "G C C A": 0.370518; # leaf
+"G" | "G C C A": 0.155378; # leaf
+"T" | "G C C A": 0.239708; # leaf
+"A" | "G C C C": 0.187075; # leaf
+"C" | "G C C C": 0.356293; # leaf
+"G" | "G C C C": 0.14966; # leaf
+"T" | "G C C C": 0.306973; # leaf
+"A" | "G C C G": 0.222727; # leaf
+"C" | "G C C G": 0.336364; # leaf
+"G" | "G C C G": 0.176515; # leaf
+"T" | "G C C G": 0.264394; # leaf
+"A" | "G C C T": 0.240546; # leaf
+"C" | "G C C T": 0.300682; # leaf
+"G" | "G C C T": 0.16429; # leaf
+"T" | "G C C T": 0.294482; # leaf
+"A" | "G C G": 0.249893;
+"C" | "G C G": 0.324918;
+"G" | "G C G": 0.179432;
+"T" | "G C G": 0.245757;
+"A" | "G C G A": 0.244236; # leaf
+"C" | "G C G A": 0.338023; # leaf
+"G" | "G C G A": 0.185619; # leaf
+"T" | "G C G A": 0.232122; # leaf
+"A" | "G C G C": 0.259005; # leaf
+"C" | "G C G C": 0.30789; # leaf
+"G" | "G C G C": 0.165523; # leaf
+"T" | "G C G C": 0.267581; # leaf
+"A" | "G C G G": 0.267967; # leaf
+"C" | "G C G G": 0.261807; # leaf
+"G" | "G C G G": 0.214579; # leaf
+"T" | "G C G G": 0.255647; # leaf
+"A" | "G C G T": 0.243976; # leaf
+"C" | "G C G T": 0.345095; # leaf
+"G" | "G C G T": 0.165232; # leaf
+"T" | "G C G T": 0.245697; # leaf
+"A" | "G C T": 0.29994;
+"C" | "G C T": 0.268431;
+"G" | "G C T": 0.135899;
+"T" | "G C T": 0.295731;
+"A" | "G C T A": 0.290673; # leaf
+"C" | "G C T A": 0.275596; # leaf
+"G" | "G C T A": 0.162342; # leaf
+"T" | "G C T A": 0.271388; # leaf
+"A" | "G C T C": 0.291313; # leaf
+"C" | "G C T C": 0.239059; # leaf
+"G" | "G C T C": 0.125408; # leaf
+"T" | "G C T C": 0.344219; # leaf
+"A" | "G C T G": 0.254688; # leaf
+"C" | "G C T G": 0.325469; # leaf
+"G" | "G C T G": 0.117967; # leaf
+"T" | "G C T G": 0.301875; # leaf
+"A" | "G C T T": 0.349629; # leaf
+"C" | "G C T T": 0.237887; # leaf
+"G" | "G C T T": 0.123527; # leaf
+"T" | "G C T T": 0.288957; # leaf
+"A" | "G G": 0.365149;
+"C" | "G G": 0.280838;
+"G" | "G G": 0.105067;
+"T" | "G G": 0.248946;
+"A" | "G G A": 0.44736;
+"C" | "G G A": 0.200129;
+"G" | "G G A": 0.111195;
+"T" | "G G A": 0.241316;
+"A" | "G G A A": 0.460155; # leaf
+"C" | "G G A A": 0.196899; # leaf
+"G" | "G G A A": 0.100465; # leaf
+"T" | "G G A A": 0.242481; # leaf
+"A" | "G G A C": 0.455911; # leaf
+"C" | "G G A C": 0.192962; # leaf
+"G" | "G G A C": 0.126137; # leaf
+"T" | "G G A C": 0.22499; # leaf
+"A" | "G G A G": 0.445411; # leaf
+"C" | "G G A G": 0.210145; # leaf
+"G" | "G G A G": 0.0942029; # leaf
+"T" | "G G A G": 0.250242; # leaf
+"A" | "G G A T": 0.406187; # leaf
+"C" | "G G A T": 0.205783; # leaf
+"G" | "G G A T": 0.133826; # leaf
+"T" | "G G A T": 0.254203; # leaf
+"A" | "G G C": 0.322687;
+"C" | "G G C": 0.327113;
+"G" | "G G C": 0.114911;
+"T" | "G G C": 0.235289;
+"A" | "G G C A": 0.334572; # leaf
+"C" | "G G C A": 0.303143; # leaf
+"G" | "G G C A": 0.137209; # leaf
+"T" | "G G C A": 0.225076; # leaf
+"A" | "G G C C": 0.350449; # leaf
+"C" | "G G C C": 0.324955; # leaf
+"G" | "G G C C": 0.097307; # leaf
+"T" | "G G C C": 0.227289; # leaf
+"A" | "G G C G": 0.283568; # leaf
+"C" | "G G C G": 0.378517; # leaf
+"G" | "G G C G": 0.105499; # leaf
+"T" | "G G C G": 0.232417; # leaf
+"A" | "G G C T": 0.326071; # leaf
+"C" | "G G C T": 0.295267; # leaf
+"G" | "G G C T": 0.12021; # leaf
+"T" | "G G C T": 0.258452; # leaf
+"A" | "G G G": 0.29654;
+"C" | "G G G": 0.347822;
+"G" | "G G G": 0.10173;
+"T" | "G G G": 0.253909;
+"A" | "G G G A": 0.275009; # leaf
+"C" | "G G G A": 0.362319; # leaf
+"G" | "G G G A": 0.107812; # leaf
+"T" | "G G G A": 0.25486; # leaf
+"A" | "G G G C": 0.308366; # leaf
+"C" | "G G G C": 0.349708; # leaf
+"G" | "G G G C": 0.0992218; # leaf
+"T" | "G G G C": 0.242704; # leaf
+"A" | "G G G G": 0.321672; # leaf
+"C" | "G G G G": 0.295222; # leaf
+"G" | "G G G G": 0.118601; # leaf
+"T" | "G G G G": 0.264505; # leaf
+"A" | "G G G T": 0.298394; # leaf
+"C" | "G G G T": 0.352212; # leaf
+"G" | "G G G T": 0.0932657; # leaf
+"T" | "G G G T": 0.256128; # leaf
+"A" | "G G T": 0.386676;
+"C" | "G G T": 0.256825;
+"G" | "G G T": 0.0973601;
+"T" | "G G T": 0.259138;
+"A" | "G G T A": 0.37561; # leaf
+"C" | "G G T A": 0.271024; # leaf
+"G" | "G G T A": 0.106341; # leaf
+"T" | "G G T A": 0.247024; # leaf
+"A" | "G G T C": 0.414611; # leaf
+"C" | "G G T C": 0.236575; # leaf
+"G" | "G G T C": 0.091195; # leaf
+"T" | "G G T C": 0.25762; # leaf
+"A" | "G G T G": 0.36038; # leaf
+"C" | "G G T G": 0.273813; # leaf
+"G" | "G G T G": 0.0914518; # leaf
+"T" | "G G T G": 0.274355; # leaf
+"A" | "G G T T": 0.394287; # leaf
+"C" | "G G T T": 0.246038; # leaf
+"G" | "G G T T": 0.0979983; # leaf
+"T" | "G G T T": 0.261676; # leaf
+"A" | "G T": 0;
+"C" | "G T": 0.342771;
+"G" | "G T": 0.360695;
+"T" | "G T": 0.296534;
+"A" | "G T A": 0;
+"C" | "G T A": 0.281244;
+"G" | "G T A": 0.4016;
+"T" | "G T A": 0.317156;
+"A" | "G T A A": 0; # leaf
+"C" | "G T A A": 0.273927; # leaf
+"G" | "G T A A": 0.405469; # leaf
+"T" | "G T A A": 0.320603; # leaf
+"A" | "G T A C": 0; # leaf
+"C" | "G T A C": 0.237179; # leaf
+"G" | "G T A C": 0.411058; # leaf
+"T" | "G T A C": 0.351763; # leaf
+"A" | "G T A G": 0; # leaf
+"C" | "G T A G": 0.323583; # leaf
+"G" | "G T A G": 0.391225; # leaf
+"T" | "G T A G": 0.285192; # leaf
+"A" | "G T A T": 0; # leaf
+"C" | "G T A T": 0.302306; # leaf
+"G" | "G T A T": 0.393681; # leaf
+"T" | "G T A T": 0.304014; # leaf
+"A" | "G T C": 0;
+"C" | "G T C": 0.397438;
+"G" | "G T C": 0.347133;
+"T" | "G T C": 0.255429;
+"A" | "G T C A": 0; # leaf
+"C" | "G T C A": 0.380662; # leaf
+"G" | "G T C A": 0.375064; # leaf
+"T" | "G T C A": 0.244275; # leaf
+"A" | "G T C C": 0; # leaf
+"C" | "G T C C": 0.41954; # leaf
+"G" | "G T C C": 0.339799; # leaf
+"T" | "G T C C": 0.240661; # leaf
+"A" | "G T C G": 0; # leaf
+"C" | "G T C G": 0.397281; # leaf
+"G" | "G T C G": 0.339124; # leaf
+"T" | "G T C G": 0.263595; # leaf
+"A" | "G T C T": 0; # leaf
+"C" | "G T C T": 0.398496; # leaf
+"G" | "G T C T": 0.327357; # leaf
+"T" | "G T C T": 0.274147; # leaf
+"A" | "G T G": 0;
+"C" | "G T G": 0.378785;
+"G" | "G T G": 0.356991;
+"T" | "G T G": 0.264224;
+"A" | "G T G A": 0; # leaf
+"C" | "G T G A": 0.400107; # leaf
+"G" | "G T G A": 0.348825; # leaf
+"T" | "G T G A": 0.251068; # leaf
+"A" | "G T G C": 0; # leaf
+"C" | "G T G C": 0.325581; # leaf
+"G" | "G T G C": 0.37315; # leaf
+"T" | "G T G C": 0.301268; # leaf
+"A" | "G T G G": 0; # leaf
+"C" | "G T G G": 0.325914; # leaf
+"G" | "G T G G": 0.36089; # leaf
+"T" | "G T G G": 0.313196; # leaf
+"A" | "G T G T": 0; # leaf
+"C" | "G T G T": 0.403549; # leaf
+"G" | "G T G T": 0.355467; # leaf
+"T" | "G T G T": 0.240985; # leaf
+"A" | "G T T": 0;
+"C" | "G T T": 0.31244;
+"G" | "G T T": 0.340916;
+"T" | "G T T": 0.346643;
+"A" | "G T T A": 0; # leaf
+"C" | "G T T A": 0.310713; # leaf
+"G" | "G T T A": 0.363548; # leaf
+"T" | "G T T A": 0.325739; # leaf
+"A" | "G T T C": 0; # leaf
+"C" | "G T T C": 0.30165; # leaf
+"G" | "G T T C": 0.322859; # leaf
+"T" | "G T T C": 0.375491; # leaf
+"A" | "G T T G": 0; # leaf
+"C" | "G T T G": 0.303821; # leaf
+"G" | "G T T G": 0.340168; # leaf
+"T" | "G T T G": 0.356011; # leaf
+"A" | "G T T T": 0; # leaf
+"C" | "G T T T": 0.326617; # leaf
+"G" | "G T T T": 0.328738; # leaf
+"T" | "G T T T": 0.344645; # leaf
+"A" | "T": 0.172912;
+"C" | "T": 0.241825;
+"G" | "T": 0.301749;
+"T" | "T": 0.283514;
+"A" | "T A": 0.173016;
+"C" | "T A": 0.239396;
+"G" | "T A": 0.291483;
+"T" | "T A": 0.296105;
+"A" | "T A A": 0.19892;
+"C" | "T A A": 0.182041;
+"G" | "T A A": 0.303873;
+"T" | "T A A": 0.315166;
+"A" | "T A A A": 0.203792; # leaf
+"C" | "T A A A": 0.188623; # leaf
+"G" | "T A A A": 0.307337; # leaf
+"T" | "T A A A": 0.300247; # leaf
+"A" | "T A A C": 0.182761; # leaf
+"C" | "T A A C": 0.156088; # leaf
+"G" | "T A A C": 0.313658; # leaf
+"T" | "T A A C": 0.347493; # leaf
+"A" | "T A A G": 0.183995; # leaf
+"C" | "T A A G": 0.205969; # leaf
+"G" | "T A A G": 0.297475; # leaf
+"T" | "T A A G": 0.312561; # leaf
+"A" | "T A A T": 0.225016; # leaf
+"C" | "T A A T": 0.179822; # leaf
+"G" | "T A A T": 0.290579; # leaf
+"T" | "T A A T": 0.304583; # leaf
+"A" | "T A C": 0.13905;
+"C" | "T A C": 0.304809;
+"G" | "T A C": 0.290634;
+"T" | "T A C": 0.265507;
+"A" | "T A C A": 0.151861; # leaf
+"C" | "T A C A": 0.27451; # leaf
+"G" | "T A C A": 0.30112; # leaf
+"T" | "T A C A": 0.272509; # leaf
+"A" | "T A C C": 0.125516; # leaf
+"C" | "T A C C": 0.295217; # leaf
+"G" | "T A C C": 0.302015; # leaf
+"T" | "T A C C": 0.277252; # leaf
+"A" | "T A C G": 0.136594; # leaf
+"C" | "T A C G": 0.314942; # leaf
+"G" | "T A C G": 0.279749; # leaf
+"T" | "T A C G": 0.268715; # leaf
+"A" | "T A C T": 0.139328; # leaf
+"C" | "T A C T": 0.338678; # leaf
+"G" | "T A C T": 0.276923; # leaf
+"T" | "T A C T": 0.24507; # leaf
+"A" | "T A G": 0.156231;
+"C" | "T A G": 0.26826;
+"G" | "T A G": 0.322006;
+"T" | "T A G": 0.253503;
+"A" | "T A G A": 0.146616; # leaf
+"C" | "T A G A": 0.301931; # leaf
+"G" | "T A G A": 0.285169; # leaf
+"T" | "T A G A": 0.266285; # leaf
+"A" | "T A G C": 0.155635; # leaf
+"C" | "T A G C": 0.268336; # leaf
+"G" | "T A G C": 0.294097; # leaf
+"T" | "T A G C": 0.281932; # leaf
+"A" | "T A G G": 0.203159; # leaf
+"C" | "T A G G": 0.247821; # leaf
+"G" | "T A G G": 0.294118; # leaf
+"T" | "T A G G": 0.254902; # leaf
+"A" | "T A G T": 0.149237; # leaf
+"C" | "T A G T": 0.245911; # leaf
+"G" | "T A G T": 0.377504; # leaf
+"T" | "T A G T": 0.227348; # leaf
+"A" | "T A T": 0.200418;
+"C" | "T A T": 0.198397;
+"G" | "T A T": 0.248451;
+"T" | "T A T": 0.352735;
+"A" | "T A T A": 0.195919; # leaf
+"C" | "T A T A": 0.196864; # leaf
+"G" | "T A T A": 0.261477; # leaf
+"T" | "T A T A": 0.34574; # leaf
+"A" | "T A T C": 0.199711; # leaf
+"C" | "T A T C": 0.17547; # leaf
+"G" | "T A T C": 0.25; # leaf
+"T" | "T A T C": 0.374819; # leaf
+"A" | "T A T G": 0.200594; # leaf
+"C" | "T A T G": 0.219254; # leaf
+"G" | "T A T G": 0.215013; # leaf
+"T" | "T A T G": 0.36514; # leaf
+"A" | "T A T T": 0.20626; # leaf
+"C" | "T A T T": 0.203558; # leaf
+"G" | "T A T T": 0.249719; # leaf
+"T" | "T A T T": 0.340464; # leaf
+"A" | "T C": 0.146796;
+"C" | "T C": 0.223105;
+"G" | "T C": 0.357476;
+"T" | "T C": 0.272624;
+"A" | "T C A": 0.160294;
+"C" | "T C A": 0.186131;
+"G" | "T C A": 0.320897;
+"T" | "T C A": 0.332679;
+"A" | "T C A A": 0.169724; # leaf
+"C" | "T C A A": 0.18259; # leaf
+"G" | "T C A A": 0.329318; # leaf
+"T" | "T C A A": 0.318368; # leaf
+"A" | "T C A C": 0.147554; # leaf
+"C" | "T C A C": 0.154207; # leaf
+"G" | "T C A C": 0.354207; # leaf
+"T" | "T C A C": 0.344031; # leaf
+"A" | "T C A G": 0.144796; # leaf
+"C" | "T C A G": 0.219134; # leaf
+"G" | "T C A G": 0.289593; # leaf
+"T" | "T C A G": 0.346477; # leaf
+"A" | "T C A T": 0.172271; # leaf
+"C" | "T C A T": 0.209002; # leaf
+"G" | "T C A T": 0.285566; # leaf
+"T" | "T C A T": 0.333161; # leaf
+"A" | "T C C": 0.134799;
+"C" | "T C C": 0.25034;
+"G" | "T C C": 0.394244;
+"T" | "T C C": 0.220617;
+"A" | "T C C A": 0.161884; # leaf
+"C" | "T C C A": 0.218844; # leaf
+"G" | "T C C A": 0.394433; # leaf
+"T" | "T C C A": 0.224839; # leaf
+"A" | "T C C C": 0.127313; # leaf
+"C" | "T C C C": 0.248899; # leaf
+"G" | "T C C C": 0.414978; # leaf
+"T" | "T C C C": 0.208811; # leaf
+"A" | "T C C G": 0.134252; # leaf
+"C" | "T C C G": 0.232261; # leaf
+"G" | "T C C G": 0.418581; # leaf
+"T" | "T C C G": 0.214906; # leaf
+"A" | "T C C T": 0.120213; # leaf
+"C" | "T C C T": 0.287712; # leaf
+"G" | "T C C T": 0.361971; # leaf
+"T" | "T C C T": 0.230103; # leaf
+"A" | "T C G": 0.132595;
+"C" | "T C G": 0.23461;
+"G" | "T C G": 0.423509;
+"T" | "T C G": 0.209286;
+"A" | "T C G A": 0.133853; # leaf
+"C" | "T C G A": 0.208686; # leaf
+"G" | "T C G A": 0.432962; # leaf
+"T" | "T C G A": 0.224499; # leaf
+"A" | "T C G C": 0.12321; # leaf
+"C" | "T C G C": 0.204772; # leaf
+"G" | "T C G C": 0.496746; # leaf
+"T" | "T C G C": 0.175271; # leaf
+"A" | "T C G G": 0.165813; # leaf
+"C" | "T C G G": 0.233675; # leaf
+"G" | "T C G G": 0.354033; # leaf
+"T" | "T C G G": 0.246479; # leaf
+"A" | "T C G T": 0.124406; # leaf
+"C" | "T C G T": 0.278965; # leaf
+"G" | "T C G T": 0.398623; # leaf
+"T" | "T C G T": 0.198006; # leaf
+"A" | "T C T": 0.159326;
+"C" | "T C T": 0.219533;
+"G" | "T C T": 0.294064;
+"T" | "T C T": 0.327078;
+"A" | "T C T A": 0.170756; # leaf
+"C" | "T C T A": 0.2003; # leaf
+"G" | "T C T A": 0.332999; # leaf
+"T" | "T C T A": 0.295944; # leaf
+"A" | "T C T C": 0.152198; # leaf
+"C" | "T C T C": 0.214998; # leaf
+"G" | "T C T C": 0.269302; # leaf
+"T" | "T C T C": 0.363502; # leaf
+"A" | "T C T G": 0.148973; # leaf
+"C" | "T C T G": 0.22062; # leaf
+"G" | "T C T G": 0.310179; # leaf
+"T" | "T C T G": 0.320227; # leaf
+"A" | "T C T T": 0.15894; # leaf
+"C" | "T C T T": 0.240863; # leaf
+"G" | "T C T T": 0.263184; # leaf
+"T" | "T C T T": 0.337013; # leaf
+"A" | "T G": 0.178368;
+"C" | "T G": 0.215826;
+"G" | "T G": 0.317724;
+"T" | "T G": 0.288082;
+"A" | "T G A": 0.211427;
+"C" | "T G A": 0.182903;
+"G" | "T G A": 0.271283;
+"T" | "T G A": 0.334387;
+"A" | "T G A A": 0.203604; # leaf
+"C" | "T G A A": 0.184648; # leaf
+"G" | "T G A A": 0.268664; # leaf
+"T" | "T G A A": 0.343084; # leaf
+"A" | "T G A C": 0.21662; # leaf
+"C" | "T G A C": 0.173358; # leaf
+"G" | "T G A C": 0.283224; # leaf
+"T" | "T G A C": 0.326797; # leaf
+"A" | "T G A G": 0.204995; # leaf
+"C" | "T G A G": 0.19615; # leaf
+"G" | "T G A G": 0.265869; # leaf
+"T" | "T G A G": 0.332986; # leaf
+"A" | "T G A T": 0.226226; # leaf
+"C" | "T G A T": 0.182182; # leaf
+"G" | "T G A T": 0.262763; # leaf
+"T" | "T G A T": 0.328829; # leaf
+"A" | "T G C": 0.148069;
+"C" | "T G C": 0.262645;
+"G" | "T G C": 0.342664;
+"T" | "T G C": 0.246622;
+"A" | "T G C A": 0.136269; # leaf
+"C" | "T G C A": 0.220527; # leaf
+"G" | "T G C A": 0.390083; # leaf
+"T" | "T G C A": 0.253121; # leaf
+"A" | "T G C C": 0.153877; # leaf
+"C" | "T G C C": 0.265936; # leaf
+"G" | "T G C C": 0.348356; # leaf
+"T" | "T G C C": 0.231831; # leaf
+"A" | "T G C G": 0.147324; # leaf
+"C" | "T G C G": 0.268593; # leaf
+"G" | "T G C G": 0.326386; # leaf
+"T" | "T G C G": 0.257698; # leaf
+"A" | "T G C T": 0.1558; # leaf
+"C" | "T G C T": 0.297186; # leaf
+"G" | "T G C T": 0.302334; # leaf
+"T" | "T G C T": 0.244681; # leaf
+"A" | "T G G": 0.139862;
+"C" | "T G G": 0.226426;
+"G" | "T G G": 0.39126;
+"T" | "T G G": 0.242452;
+"A" | "T G G A": 0.118676; # leaf
+"C" | "T G G A": 0.206491; # leaf
+"G" | "T G G A": 0.42189; # leaf
+"T" | "T G G A": 0.252943; # leaf
+"A" | "T G G C": 0.153043; # leaf
+"C" | "T G G C": 0.201304; # leaf
+"G" | "T G G C": 0.41913; # leaf
+"T" | "T G G C": 0.226522; # leaf
+"A" | "T G G G": 0.176014; # leaf
+"C" | "T G G G": 0.201898; # leaf
+"G" | "T G G G": 0.364107; # leaf
+"T" | "T G G G": 0.257981; # leaf
+"A" | "T G G T": 0.138822; # leaf
+"C" | "T G G T": 0.262434; # leaf
+"G" | "T G G T": 0.35973; # leaf
+"T" | "T G G T": 0.239015; # leaf
+"A" | "T G T": 0.199781;
+"C" | "T G T": 0.202218;
+"G" | "T G T": 0.28608;
+"T" | "T G T": 0.311921;
+"A" | "T G T A": 0.191523; # leaf
+"C" | "T G T A": 0.17916; # leaf
+"G" | "T G T A": 0.314168; # leaf
+"T" | "T G T A": 0.315149; # leaf
+"A" | "T G T C": 0.207141; # leaf
+"C" | "T G T C": 0.204143; # leaf
+"G" | "T G T C": 0.269556; # leaf
+"T" | "T G T C": 0.319161; # leaf
+"A" | "T G T G": 0.198577; # leaf
+"C" | "T G T G": 0.214947; # leaf
+"G" | "T G T G": 0.265125; # leaf
+"T" | "T G T G": 0.321352; # leaf
+"A" | "T G T T": 0.203715; # leaf
+"C" | "T G T T": 0.21775; # leaf
+"G" | "T G T T": 0.281115; # leaf
+"T" | "T G T T": 0.29742; # leaf
+"A" | "T T": 0.189373;
+"C" | "T T": 0.283291;
+"G" | "T T": 0.253499;
+"T" | "T T": 0.273837;
+"A" | "T T A": 0.229483;
+"C" | "T T A": 0.233897;
+"G" | "T T A": 0.239382;
+"T" | "T T A": 0.297238;
+"A" | "T T A A": 0.258841; # leaf
+"C" | "T T A A": 0.224524; # leaf
+"G" | "T T A A": 0.256539; # leaf
+"T" | "T T A A": 0.260096; # leaf
+"A" | "T T A C": 0.206812; # leaf
+"C" | "T T A C": 0.238912; # leaf
+"G" | "T T A C": 0.242098; # leaf
+"T" | "T T A C": 0.312178; # leaf
+"A" | "T T A G": 0.194955; # leaf
+"C" | "T T A G": 0.25982; # leaf
+"G" | "T T A G": 0.244685; # leaf
+"T" | "T T A G": 0.300541; # leaf
+"A" | "T T A T": 0.24399; # leaf
+"C" | "T T A T": 0.219651; # leaf
+"G" | "T T A T": 0.207031; # leaf
+"T" | "T T A T": 0.329327; # leaf
+"A" | "T T C": 0.112932;
+"C" | "T T C": 0.376552;
+"G" | "T T C": 0.228989;
+"T" | "T T C": 0.281527;
+"A" | "T T C A": 0.11114; # leaf
+"C" | "T T C A": 0.331352; # leaf
+"G" | "T T C A": 0.240631; # leaf
+"T" | "T T C A": 0.316878; # leaf
+"A" | "T T C C": 0.133009; # leaf
+"C" | "T T C C": 0.387267; # leaf
+"G" | "T T C C": 0.233982; # leaf
+"T" | "T T C C": 0.245742; # leaf
+"A" | "T T C G": 0.112462; # leaf
+"C" | "T T C G": 0.357794; # leaf
+"G" | "T T C G": 0.250109; # leaf
+"T" | "T T C G": 0.279635; # leaf
+"A" | "T T C T": 0.100529; # leaf
+"C" | "T T C T": 0.43573; # leaf
+"G" | "T T C T": 0.196078; # leaf
+"T" | "T T C T": 0.267663; # leaf
+"A" | "T T G": 0.145958;
+"C" | "T T G": 0.326011;
+"G" | "T T G": 0.261336;
+"T" | "T T G": 0.266696;
+"A" | "T T G A": 0.125831; # leaf
+"C" | "T T G A": 0.333599; # leaf
+"G" | "T T G A": 0.252727; # leaf
+"T" | "T T G A": 0.287843; # leaf
+"A" | "T T G C": 0.140693; # leaf
+"C" | "T T G C": 0.299567; # leaf
+"G" | "T T G C": 0.328139; # leaf
+"T" | "T T G C": 0.231602; # leaf
+"A" | "T T G G": 0.182841; # leaf
+"C" | "T T G G": 0.33685; # leaf
+"G" | "T T G G": 0.185654; # leaf
+"T" | "T T G G": 0.294655; # leaf
+"A" | "T T G T": 0.155345; # leaf
+"C" | "T T G T": 0.330172; # leaf
+"G" | "T T G T": 0.257626; # leaf
+"T" | "T T G T": 0.256857; # leaf
+"A" | "T T T": 0.238095;
+"C" | "T T T": 0.231397;
+"G" | "T T T": 0.27859;
+"T" | "T T T": 0.251918;
+"A" | "T T T A": 0.229831; # leaf
+"C" | "T T T A": 0.219028; # leaf
+"G" | "T T T A": 0.278097; # leaf
+"T" | "T T T A": 0.273044; # leaf
+"A" | "T T T C": 0.25148; # leaf
+"C" | "T T T C": 0.223434; # leaf
+"G" | "T T T C": 0.292615; # leaf
+"T" | "T T T C": 0.232471; # leaf
+"A" | "T T T G": 0.214987; # leaf
+"C" | "T T T G": 0.253183; # leaf
+"G" | "T T T G": 0.275009; # leaf
+"T" | "T T T G": 0.256821; # leaf
+"A" | "T T T T": 0.25248; # leaf
+"C" | "T T T T": 0.239181; # leaf
+"G" | "T T T T": 0.271691; # leaf
+"T" | "T T T T": 0.236648; # leaf
+)
+position_specific_distribution = ("p0","p1","p2")
+phased =1
+alphabet = ("A", "C", "G", "T")
+

@@ -1,0 +1,7 @@
+model_name = "MultipleSequentialModels"
+initiation_motif = "model/start.model"
+atg = "../ghmm/model/atg.model"
+initial_pattern = "model/start_initial_pattern.model"
+models = ("initiation_motif", "atg", "initial_pattern")
+max_length= (20, 3, 4)
+# myop_train = "cp ../ghmm/cnf/start_composed.model  ../ghmm/model/start_composed.model"

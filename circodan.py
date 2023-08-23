@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# cirCodAn was developed from CodAn tool on August, 2023.
+# cirCodAn was developed on August, 2023.
 # cirCodAn predicts CDS in circRNA sequences
 # Author: Denilson Fagundes Barbosa (denilsonfbar@gmail.com)
 
@@ -82,7 +82,7 @@ def calcule_circ_orf_details(circrna_seq_str, orf_start_position):
 
     if translation_cycles >= 4:  # stop_codon not located
         
-        # Same treatment as Transcirc for infinite ORFs:
+        # Same treatment as TransCirc for infinite ORFs:
         orf_end = orf_start_position - 1
         if orf_end == -1: orf_end = circrna_len - 2
         translation_cycles = 3
@@ -152,7 +152,7 @@ def create_cds_circrna_predicted_gtf_file(gtf_file_CodAn_prediction, new_gtf_fil
 
         feature_gtf = "CDS"
         end_gtf = orf_end_position + 1  # index correction
-        attribute_gtf = "translation_cycles=" + str(orf_trans_cycles) + "; length=" + str(orf_length)
+        attribute_gtf = "translation_cycles=" + str(orf_trans_cycles) + ";length=" + str(orf_length)
         with open(new_gtf_file_name, "a") as gtf_file:  # CDS
             gtf_file.write(f"{seqname_gtf}\t{source_gtf}\t{feature_gtf}\t{start_gtf}\t{end_gtf}\t{score_gtf}\t{strand_gtf}\t{frame_gtf}\t{attribute_gtf}\n")
 
