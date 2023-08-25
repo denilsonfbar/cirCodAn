@@ -2,10 +2,4 @@ name: circodan
 channels:
   - bioconda
 dependencies:
-  - python=3.7
-  - pandas
-  - biopython
-  - perl
-  - perl-bioperl 
-  - perl-mce 
-  - blast
+  - codan
