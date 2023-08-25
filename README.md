@@ -1,3 +1,11 @@
+<div align="center">
+<center>
+
+ ![cirCodAn_logo](/circodan_logo.png)
+
+</center>
+</div>
+
 cirCodAn
 =======
 **cirCodAn** (**cir**cular **Cod**ing sequence **An**notator) is a computational tool designed to predict CDS in circRNAs.
