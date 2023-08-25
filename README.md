@@ -1,41 +1,61 @@
 cirCodAn
 =======
-**cirCodAn** (**cir**cular **Cod**ing sequence **An**notator) is a computational tool designed to CDS prediction in circRNAs.
+**cirCodAn** (**cir**cular **Cod**ing sequence **An**notator) is a computational tool designed to predict CDS in circRNAs.
 
-**cirCodAn** is an extension of the **CodAn** tool, available in [https://github.com/pedronachtigall/CodAn](https://github.com/pedronachtigall/CodAn).
+ - **cirCodAn** is an extension of [**CodAn**](https://github.com/pedronachtigall/CodAn), which was designed to predict CDS in linear RNAs.
 
-Repository of cirCodAn development: [https://github.com/denilsonfbar/cirCodAn-dev-v1](https://github.com/denilsonfbar/cirCodAn-dev-v1)
+ - The developmental repository of cirCodAn is available [here](https://github.com/denilsonfbar/cirCodAn-dev-v1).
 
 
-## Fast Installation
+
+## Quick Installation
 
 Clone the cirCodAn repository:
 ```
 git clone https://github.com/denilsonfbar/cirCodAn.git
 ```
 
-Enter the cirCodAn folder:
+Add the CirCodAn and CodAn/bin folder into your PATH:
 ```
-cd cirCodAn
+export PATH=$PATH:$PWD/cicCodAn/
+export PATH=$PATH:$PWD/cicCodAn/CodAn/bin/
 ```
 
-Change the permissions of the ```CodAn/bin/``` folder, to allow the creation of temporary files necessary for running the tool:
+Apply "execution permission" to executables if needed:
 ```
-chmod -R 777 CodAn/bin/
+chmod +x $PWD/cicCodAn/*.py
+chmod +x $PWD/cicCodAn/CodAn/bin/*
 ```
+
+## Requirements
+
+- [Python3](https://www.python.org/) and [Biopython](https://biopython.org/wiki/Download)
+    - ```apt-get install python3-biopython```
+- [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE) (libmce-perl)
+    - ```apt-get install bioperl libmce-perl```
+- [CodAn]([https://www.perl.org/](https://github.com/pedronachtigall/CodAn))
+- [ToPS](https://tops.sourceforge.net/)
+
+:warning: **Conda environment installation**
+
+If you takes advantage of [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) (i.e., one of the famous environment management system), you can follow the steps below:
+
 
 Create Conda environment from ```environment.yml``` configuration file:
 ```
+#create the enviroment
 conda env create -f environment.yml
+#add cirCodAn into your PATH and give execution permission
+export PATH=$PATH:$PWD/cicCodAn/
+chmod +x $PWD/cicCodAn/*.py
 ```
 
 Activate the created environment:
 ```
-conda activate circcodan_env
+conda activate circcodan
 ```
 
-
-## Running
+## Usage
 
 Run the prediction example using Python interpreter:
 ```
