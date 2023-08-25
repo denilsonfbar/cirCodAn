@@ -20,12 +20,12 @@ cirCodAn
 - Clone the cirCodAn repository:
    - ```git clone https://github.com/denilsonfbar/cirCodAn.git```
 
-- Add the CirCodAn and CodAn/bin folder into your PATH:
-    - ```export PATH=$PATH:$PWD/cicCodAn/ && export PATH=$PATH:$PWD/cicCodAn/CodAn/bin/```
+- Add the cirCodAn and CodAn/bin folder into your PATH:
+    - ```export PATH=$PATH:$PWD/cirCodAn/ && export PATH=$PATH:$PWD/cirCodAn/CodAn/bin/```
     - to add cirCodAn permanently to your PATH, add the previous "export" commands into your ```~/.bashrc``` or ```~/.bashprofile```
 
 - Apply "execution permission" to executables if needed:
-    - ```chmod +x $PWD/cicCodAn/*.py && chmod +x $PWD/cicCodAn/CodAn/bin/*```
+    - ```chmod +x $PWD/cirCodAn/*.py && chmod +x $PWD/cirCodAn/CodAn/bin/*```
 
 ## Requirements
 
@@ -46,12 +46,12 @@ If you are not the root user and takes advantage of [Conda](https://docs.conda.i
 - Create the conda environment with all dependencies:
    - ```conda create -n circodan_env -c bioconda codan pandas```
    - ```git clone https://github.com/denilsonfbar/cirCodAn.git```
-   - ```export PATH=$PATH:$PWD/cicCodAn/```
-       - to add it permanently to your PATH, add the command ```export PATH=$PATH:$PWD/cicCodAn/``` into your ```~/.bashrc``` or ```~/.bashprofile```
-   - ```chmod +x $PWD/cicCodAn/*.py```
+   - ```export PATH=$PATH:$PWD/cirCodAn/```
+       - to add it permanently to your PATH, add the command ```export PATH=$PATH:$PWD/cirCodAn/``` into your ```~/.bashrc``` or ```~/.bashprofile```
+   - ```chmod +x $PWD/cirCodAn/*.py```
 
 - Activate the environment before use:
-   - ```conda activate circcodan_env```
+   - ```conda activate circodan_env```
 
 ## Usage
 ```
