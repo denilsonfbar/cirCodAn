@@ -33,7 +33,7 @@ cirCodAn
     - ```apt-get install python3-biopython python3-pandas```
 - [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE)
     - ```apt-get install bioperl libmce-perl```
-- [CodAn]([https://www.perl.org/](https://github.com/pedronachtigall/CodAn))
+- [CodAn](https://github.com/pedronachtigall/CodAn)
 - [ToPS](https://tops.sourceforge.net/)
 
 Ensure that all requirements are working properly.
@@ -104,9 +104,9 @@ cirCodAn_output/
 
 ## Citation
 
-If you use or discuss circCodAn, please cite the following:
+If you use or discuss cirCodAn, please cite the following:
 
-(circCodAn book chapter under peer review)
+(cirCodAn book chapter under peer review)
 
 Nachtigall, P. G., Kashiwabara, A. Y., & Durham, A. M. (2021). CodAn: Predictive models for precise identification of coding regions in eukaryotic transcripts. Briefings in Bioinformatics, 22(3), 1–11. https://doi.org/10.1093/bib/bbaa045
 
