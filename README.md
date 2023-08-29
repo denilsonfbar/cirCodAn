@@ -12,8 +12,6 @@ cirCodAn
 
  - **cirCodAn** is an extension of [**CodAn**](https://github.com/pedronachtigall/CodAn), which was designed to predict CDS in linear RNAs.
 
- - The developmental repository of cirCodAn is available [here](https://github.com/denilsonfbar/cirCodAn-dev-v1).
-
 
 ## Quick Installation
 
@@ -101,6 +99,16 @@ cirCodAn_output/
 ├── CDS_predicted_seqs_aa.fa
 └── CDS_predicted.gtf
 ```
+
+## This repository
+
+- CodAn/: original CodAn files
+- datasets/: datasets used in cirCodAn development and evaluation
+- development/: raw data and scripts of cirCodAn development and evaluation
+- example/: circRNA example file
+- literature_search/: bibliometric analysis files
+- models/: ToPS GHMM models for circRNA
+
 
 ## Citation
 
