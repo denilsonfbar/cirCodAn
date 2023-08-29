@@ -1,7 +1,7 @@
 from lib import libcc_dev as libcc
 import os
 
-datasets_path = 'data/datasets/'
+datasets_path = libcc.CIRCODAN_PATH + 'datasets/'
 results_file_path = 'results/04.tsv'
 outputs_folder = 'outputs/04/'
 os.makedirs(outputs_folder)

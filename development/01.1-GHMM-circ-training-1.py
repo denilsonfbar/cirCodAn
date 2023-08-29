@@ -1,7 +1,7 @@
 from lib import libcc_dev as libcc
 import os
 
-datasets_path = 'data/datasets/TransCirc_RP_PP_splitted/'
+datasets_path = libcc.CIRCODAN_PATH + 'datasets/TransCirc_RP_PP_splitted/'
 results_file_path = 'results/01.tsv'
 outputs_folder = 'outputs/01/'
 os.makedirs(outputs_folder)

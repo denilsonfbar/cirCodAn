@@ -1,0 +1,8 @@
+input_file	tool	model	prob	n_seqs	n_pos_seqs	n_neg_seqs	FN_seq	TN_seq	TP_start_seq	FP_start_seq	Prec_start_seq	Rec_start_seq	F1-s_start_seq	Spec_start_seq	Acc_start_seq	TP_full_seq	FP_full_seq	Prec_full_seq	Rec_full_seq	F1-s_full_seq	Spec_full_seq	Acc_full_seq	n_real_cdss	n_pred_cdss	TP_start_cds	FP_start_cds	FN_start_cds	Prec_start_cds	Rec_start_cds	F1-s_start_cds	TP_full_cds	FP_full_cds	FN_full_cds	Prec_full_cds	Rec_full_cds	F1-s_full_cds	pred_secs
+05_riboCirc_mmu.fa	cirCodAn	VERT_circ	0.5	763	763	0	129	0	614	20	96.85	82.64	89.18	0.0	0.0	614	20	96.85	82.64	89.18	0.0	0.0	1061	634	614	20	447	96.85	57.87	72.45	614	20	447	96.85	57.87	72.45	1.5
+05_riboCirc_mmu.fa	CodAn	VERT_full		763	763	0	358	0	348	57	85.93	49.29	62.65	0.0	0.0	2	403	0.49	0.56	0.52	0.0	0.0	1061	405	348	57	713	85.93	32.8	47.48	2	403	1059	0.49	0.19	0.27	1.7
+05_riboCirc_mmu.fa	CodAn	VERT_partial		763	763	0	118	0	61	584	9.46	34.08	14.81	0.0	0.0	1	644	0.16	0.84	0.26	0.0	0.0	1061	645	61	584	1000	9.46	5.75	7.15	1	644	1060	0.16	0.09	0.12	1.7
+05_riboCirc_mmu.fa	ORFfinder			763	763	0	14	0	354	395	47.26	96.2	63.38	0.0	0.0	4	745	0.53	22.22	1.04	0.0	0.0	1061	2449	393	2056	668	16.05	37.04	22.39	4	2445	1057	0.16	0.38	0.23	0.4
+05_riboCirc_mmu.fa	FragGeneScan			763	763	0	2	0	93	668	12.22	97.89	21.73	0.0	0.0	1	760	0.13	33.33	0.26	0.0	0.0	1061	830	94	736	967	11.33	8.86	9.94	1	829	1060	0.12	0.09	0.11	0.8
+05_riboCirc_mmu.fa	CPAT	mouse		763	763	0	65	0	634	64	90.83	90.7	90.77	0.0	0.0	3	695	0.43	4.41	0.78	0.0	0.0	1061	698	634	64	427	90.83	59.75	72.09	3	695	1058	0.43	0.28	0.34	0.6
+05_riboCirc_mmu.fa	CPC2			763	763	0	670	0	81	12	87.1	10.79	19.19	0.0	0.0	0	93	0.0	0.0	0.0	0.0	0.0	1061	93	81	12	980	87.1	7.63	14.04	0	93	1061	0.0	0.0	0.0	0.5

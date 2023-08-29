@@ -1,0 +1,8 @@
+input_file	tool	model	prob	n_seqs	n_pos_seqs	n_neg_seqs	FN_seq	TN_seq	TP_start_seq	FP_start_seq	Prec_start_seq	Rec_start_seq	F1-s_start_seq	Spec_start_seq	Acc_start_seq	TP_full_seq	FP_full_seq	Prec_full_seq	Rec_full_seq	F1-s_full_seq	Spec_full_seq	Acc_full_seq	n_real_cdss	n_pred_cdss	TP_start_cds	FP_start_cds	FN_start_cds	Prec_start_cds	Rec_start_cds	F1-s_start_cds	TP_full_cds	FP_full_cds	FN_full_cds	Prec_full_cds	Rec_full_cds	F1-s_full_cds	pred_secs
+01_TransCirc_no_evidence_hsa.fa	cirCodAn	VERT_circ	0.5	732	0	732	0	635	0	97	0.0	0.0	0.0	86.75	86.75	0	97	0.0	0.0	0.0	86.75	86.75	0	97	0	97	0	0.0	0.0	0.0	0	97	0	0.0	0.0	0.0	0.8
+01_TransCirc_no_evidence_hsa.fa	CodAn	VERT_full		732	0	732	0	701	0	31	0.0	0.0	0.0	95.77	95.77	0	31	0.0	0.0	0.0	95.77	95.77	0	31	0	31	0	0.0	0.0	0.0	0	31	0	0.0	0.0	0.0	0.9
+01_TransCirc_no_evidence_hsa.fa	CodAn	VERT_partial		732	0	732	0	650	0	82	0.0	0.0	0.0	88.8	88.8	0	82	0.0	0.0	0.0	88.8	88.8	0	82	0	82	0	0.0	0.0	0.0	0	82	0	0.0	0.0	0.0	0.9
+01_TransCirc_no_evidence_hsa.fa	ORFfinder			732	0	732	0	447	0	285	0.0	0.0	0.0	61.07	61.07	0	285	0.0	0.0	0.0	61.07	61.07	0	626	0	626	0	0.0	0.0	0.0	0	626	0	0.0	0.0	0.0	0.2
+01_TransCirc_no_evidence_hsa.fa	FragGeneScan			732	0	732	0	429	0	303	0.0	0.0	0.0	58.61	58.61	0	303	0.0	0.0	0.0	58.61	58.61	0	326	0	326	0	0.0	0.0	0.0	0	326	0	0.0	0.0	0.0	0.3
+01_TransCirc_no_evidence_hsa.fa	CPAT			732	0	732	0	541	0	191	0.0	0.0	0.0	73.91	73.91	0	191	0.0	0.0	0.0	73.91	73.91	0	191	0	191	0	0.0	0.0	0.0	0	191	0	0.0	0.0	0.0	0.4
+01_TransCirc_no_evidence_hsa.fa	CPC2			732	0	732	0	727	0	5	0.0	0.0	0.0	99.32	99.32	0	5	0.0	0.0	0.0	99.32	99.32	0	5	0	5	0	0.0	0.0	0.0	0	5	0	0.0	0.0	0.0	0.3
