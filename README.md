@@ -114,7 +114,8 @@ cirCodAn_output/
 
 If you use or discuss cirCodAn, please cite the following:
 
-(cirCodAn book chapter under peer review)
+Barbosa, D. F., Oliveira, L. S., Nachtigall, P. G., Valentini Junior, R., Souza, N., Paschoal, A. R., Kashiwabara, A. Y. (2024). cirCodAn: A GHMM-based tool for accurate prediction of coding regions in circRNA. Advances in Protein Chemistry and Structural Biology,
+Academic Press. ISSN 1876-1623, https://doi.org/10.1016/bs.apcsb.2023.11.012.
 
 Nachtigall, P. G., Kashiwabara, A. Y., & Durham, A. M. (2021). CodAn: Predictive models for precise identification of coding regions in eukaryotic transcripts. Briefings in Bioinformatics, 22(3), 1–11. https://doi.org/10.1093/bib/bbaa045
 
